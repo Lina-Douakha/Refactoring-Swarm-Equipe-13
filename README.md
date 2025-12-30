@@ -49,7 +49,6 @@ Les résultats seront dans data/output/
 1. Cloner le projet :
 git clone https://github.com/Lina-Douakha/refactoring-swarm.git
 cd refactoring-swarm
-cd refactoring-swarm
 2. Créer un environnement virtuel :
 python -m venv venv
 3. Activer l’environnement virtuel :

@@ -1,88 +1,66 @@
-@"
-# 🐝 The Refactoring Swarm
+# The Refactoring Swarm
 
 Système multi-agents intelligent pour la réparation et maintenance autonome de code Python.
 
-## 🎯 Objectif
+## Objectif
 
-Ce projet implémente une architecture d'agents LLM capable de:
-- Analyser du code bugué
-- Détecter les erreurs automatiquement
-- Corriger le code
-- Valider les corrections
+* Ce projet implémente une architecture d'agents LLM capable de :
+  * Analyser du code bugué
+  * Détecter les erreurs automatiquement
+  * Corriger le code
+  * Valider les corrections
 
-## 📁 Structure
 
-\`\`\`
-refactoring-swarm/
-├── src/
-│   ├── agents/         # Agents intelligents
-│   ├── core/           # Orchestrateur et workflow
-│   └── utils/          # Utilitaires
-├── data/
-│   ├── input/          # Code bugué à corriger
-│   └── output/         # Code corrigé
-├── scripts/            # Scripts d'exécution
-└── tests/              # Tests unitaires
-\`\`\`
+* Évaluation sur dataset :
 
-## 🚀 Installation
 
-\`\`\`bash
-# 1. Cloner le projet
-cd refactoring-swarm
-
-# 2. Créer l'environnement virtuel
-python -m venv venv
-venv\Scripts\activate  # Windows
-
-# 3. Installer les dépendances
-pip install -r requirements.txt
-
-# 4. Configurer l'API
-cp .env.example .env
-# Éditer .env avec votre clé OpenRouter
-\`\`\`
-
-## 💻 Utilisation
-
-### Test rapide
-
-\`\`\`bash
-python scripts/run_swarm.py
-\`\`\`
-
-### Évaluation sur dataset
-
-\`\`\`bash
-# Placer vos fichiers .py buggés dans data/input/
+placer vos fichiers .py buggés dans data/input/
 python scripts/evaluate.py
-# Les résultats seront dans data/output/
-\`\`\`
 
-## 🏗️ Architecture
+Les résultats seront dans data/output/
 
-Le système utilise **LangGraph** pour orchestrer 4 agents:
+## Architecture
 
-1. **Analyzer** - Analyse le code
-2. **Bug Detector** - Détecte les bugs
-3. **Refactor** - Corrige le code
-4. **Validator** - Valide le résultat
+* Le système utilise LangGraph pour orchestrer 4 agents :
+* Analyzer - Analyse le code
+* Bug Detector - Détecte les bugs
+* Refactor - Corrige le code
+* Validator - Valide le résultat
 
-## 📊 Évaluation
+## Évaluation
 
-Le système est évalué sur:
-- Taux de correction des bugs
-- Préservation de la fonctionnalité
-- Qualité du code produit
+* Le système est évalué sur :
+* Taux de correction des bugs
+* Préservation de la fonctionnalité
+* Qualité du code produit
 
-## 👥 Équipe
+## Équipe
 
-- DOUAKHA LINA
-- NEKKAA OUISSAL
-- TARARBIT AMELIA
-- BOUGHERARA KHADIJA
+* DOUAKHA LINA
+* NEKKAA OUISSAL
+* TARARBIT AMELIA
+* BOUGHERARA KHADIJA
 
-## 📄 License
+## License
 
-Projet académique - IGL Module
+* Projet académique - IGL Module
+
+## Installation 
+1. Cloner le projet :
+git clone https://github.com/Lina-Douakha/refactoring-swarm.git
+cd refactoring-swarm
+cd refactoring-swarm
+2. Créer un environnement virtuel :
+python -m venv venv
+3. Activer l’environnement virtuel :
+venv\Scripts\activate
+4. Installer les dépendances :
+pip install -r requirements.txt
+5. Configurer l’API :
+cp .env.example .env
+6. Vérifier que ça marche :
+Pour tester rapidement :
+streamlit run ui.py
+ou bien:
+dans data/input mettre un exemple de code buggé
+utiliser le commande python scripts/evaluate.py pour avoir le code corrigé dans data/output

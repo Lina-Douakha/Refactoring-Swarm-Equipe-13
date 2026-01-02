@@ -1,8 +1,15 @@
-def moyenne(notes):
-    somme = 0
-    for i in range(len(notes)):
-        somme = somme + notes[i]
-    return somme / i   # BUG ici
 
-notes = [12, 15, 9, 18]
-print("La moyenne est :", moyenne(notes))
+
+int main() {
+    int numbers[5] = {1, 2, 3, 4, 5};
+    int sum = 0;
+
+    for (int i = 0; i <= 5; i++) {
+        sum += numbers[i];
+    }
+
+   
+    printf("La somme des nombres est: %f\n", sum);
+
+    return 0;
+}

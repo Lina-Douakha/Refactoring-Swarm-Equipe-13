@@ -1,11 +1,196 @@
 [
-  {
-    "id": "9e82e9b0-9b43-4a78-af43-d5d5ef848a2f",
-    "timestamp": "2025-12-26T01:26:41.177789",
-    "agent": "System",
-    "model": "unknown",
-    "action": "STARTUP",
-    "details": "Target: ./sandbox",
-    "status": "INFO"
-  }
+    {
+        "id": "9e82e9b0-9b43-4a78-af43-d5d5ef848a2f",
+        "timestamp": "2025-12-26T01:26:41.177789",
+        "agent": "System",
+        "model": "unknown",
+        "action": "STARTUP",
+        "details": "Target: ./sandbox",
+        "status": "INFO"
+    },
+    {
+        "id": "4fe13508-2867-4be5-88b0-d9c856f32730",
+        "timestamp": "2026-01-03T23:54:30.865680",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "7c898ff8-7991-426d-90e0-e72b89435590",
+        "timestamp": "2026-01-03T23:54:30.895575",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c1263f20-b5f7-4661-9887-a9f095e50626",
+        "timestamp": "2026-01-03T23:54:32.475840",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox/test_case_1",
+            "input_prompt": "Exécution de pytest sur sandbox/test_case_1",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ca717246-973e-4d5e-87d5-548d355f5bb7",
+        "timestamp": "2026-01-03T23:54:32.493781",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "71ffafa2-08ec-4e8f-aec5-118ec97c443d",
+        "timestamp": "2026-01-04T00:08:56.904071",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : read_file_safe() takes 1 positional argument but 2 were given",
+            "error_type": "TypeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "f6055da8-bef6-4c2b-9812-1be6b3e855a2",
+        "timestamp": "2026-01-04T00:11:35.701533",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "eafd782c-a1e6-49d9-9b32-9fc4f4ec746e",
+        "timestamp": "2026-01-04T00:25:58.841140",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "107a2381-50ff-4838-8ca1-fa396c06ce6f",
+        "timestamp": "2026-01-04T00:29:36.323596",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key not valid. Please pass a valid API key.\"\n]",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c561db77-b5df-4c3a-80a4-e41f1e0d13b0",
+        "timestamp": "2026-01-04T10:45:49.492768",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.200.234:443: tcp handshaker shutdown",
+            "error_type": "RetryError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c127ffe6-146d-4dcb-b245-bd038a54c615",
+        "timestamp": "2026-01-04T10:56:21.175321",
+        "agent": "Auditor_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test",
+            "output_response": "Erreur : 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+            "error_type": "NotFound"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8a7b39e9-b7e2-4c9f-bd1a-0d909af659c4",
+        "timestamp": "2026-01-04T13:19:30.128211",
+        "agent": "Auditor_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test",
+            "output_response": "Erreur : [Errno 2] No such file or directory: 'C:\\\\Users\\\\DELL\\\\refactoring-swarm-template\\\\sandbox\\\\test\\\\sandbox\\\\test\\\\buggy.py'",
+            "error_type": "FileNotFoundError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8e9db40a-6451-4acd-bf2b-68d6c0965ba2",
+        "timestamp": "2026-01-04T15:34:03.170564",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : [Errno 2] No such file or directory: 'C:\\\\Users\\\\DELL\\\\refactoring-swarm-template\\\\sandbox\\\\sandbox\\\\test.py'",
+            "error_type": "FileNotFoundError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c4d4f7f2-475f-4317-afb1-0c6c31f30a92",
+        "timestamp": "2026-01-04T15:35:57.586469",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a b):  # ❌ Virgule manquante\n    return a + b\n\ndef multiply(x, y):  # ❌ Pas de docstring\n    return x*y  # ❌ Pas d'espaces autour de *\n\ndef BAD_FUNCTION():  # ❌ Nom en majuscules (PEP8)\n    x=1+2  # ❌ Pas d'espaces\n    return x\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'error', 'module': 'test', 'obj': '', 'line': 3, 'column': 11, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'syntax-error', 'message': \"Parsing failed: 'invalid syntax (<unknown>, line 3)'\", 'message-id': 'E0001'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"test.py\",\n            \"line\": 3,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Mauvaise syntaxe: virgule manquante dans la définition des paramètres de la fonction 'add'.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 6,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'multiply' manque de docstring, réduisant la clarté et la documentation du code.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 7,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Violation PEP8: espaces manquants autour de l'opérateur arithmétique '*' dans 'x*y'.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 9,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_naming_convention\",\n            \"message\": \"Violation PEP8: le nom de fonction 'BAD_FUNCTION' devrait être en snake_case (e.g., 'bad_function').\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 10,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Violation PEP8: espaces manquants autour de l'opérateur d'affectation '=' dans 'x=1+2'.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger les erreurs de syntaxe pour assurer l'exécutabilité du code.\",\n        \"Ajouter des docstrings à toutes les fonctions pour améliorer la documentation et la compréhension du code.\",\n        \"Respecter les conventions de nommage PEP8 (snake_case pour les fonctions et variables) pour une meilleure lisibilité.\",\n        \"Utiliser des espaces autour des opérateurs d'affectation et arithmétiques pour conformité PEP8 et lisibilité accrue.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e19f3eba-88ab-4601-812a-7d976ac9ff4f",
+        "timestamp": "2026-01-04T15:36:13.986103",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\ndef divide(a, b):\n    return a / b  # ❌ Pas de gestion du b=0\n\ndef get_name():\n    name = \"Alice\"\n    return Name  # ❌ Erreur de casse (NameError)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 6, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test2', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'test2', 'obj': 'get_name', 'line': 4, 'column': 0, 'endLine': 4, 'endColumn': 12, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'error', 'module': 'test2', 'obj': 'get_name', 'line': 6, 'column': 11, 'endLine': 6, 'endColumn': 15, 'path': 'sandbox\\\\test2.py', 'symbol': 'undefined-variable', 'message': \"Undefined variable 'Name'\", 'message-id': 'E0602'}, {'type': 'warning', 'module': 'test2', 'obj': 'get_name', 'line': 5, 'column': 4, 'endLine': 5, 'endColumn': 8, 'path': 'sandbox\\\\test2.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'name'\", 'message-id': 'W0612'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test2.py\"],\n    \"total_issues\": 6,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 2,\n            \"severity\": \"high\",\n            \"type\": \"error_handling\",\n            \"message\": \"La fonction 'divide' ne gère pas le cas où le diviseur 'b' est zéro, ce qui pourrait entraîner une ZeroDivisionError à l'exécution.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 6,\n            \"severity\": \"high\",\n            \"type\": \"undefined_variable\",\n            \"message\": \"La variable 'Name' n'est pas définie. Il s'agit probablement d'une erreur de casse, 'name' étant la variable locale attendue.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 5,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"La variable 'name' est définie mais jamais utilisée, probablement à cause de l'erreur de casse ('Name' au lieu de 'name') lors du retour.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Le module 'test2' manque d'un docstring, ce qui réduit la clarté et la documentabilité du code.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'divide' manque d'un docstring décrivant son rôle, ses arguments et ce qu'elle retourne.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 4,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'get_name' manque d'un docstring décrivant son rôle, ses arguments et ce qu'elle retourne.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter des docstrings significatifs au module et à toutes les fonctions pour améliorer la compréhension et la maintenabilité du code.\",\n        \"Implémenter une gestion robuste des erreurs, par exemple en ajoutant un bloc try-except ou une vérification explicite pour le cas de division par zéro.\",\n        \"Vérifier attentivement les noms de variables pour corriger les erreurs de casse et s'assurer que toutes les variables définies sont utilisées.\",\n        \"Supprimer les variables inutilisées pour éviter la confusion et maintenir un code propre.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    }
 ]

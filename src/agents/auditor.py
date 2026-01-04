@@ -4,22 +4,18 @@ Rôle : Analyser le code Python, détecter les problèmes de qualité et génér
 """
 
 import os
+from dotenv import load_dotenv 
 from typing import Dict, List
 from langchain_google_genai import ChatGoogleGenerativeAI
 from src.utils.logger import log_experiment, ActionType
 
-# Import des outils du Toolsmith (à créer)
-# Ces imports seront décommentés une fois que le Toolsmith aura créé les fichiers
-try:
-    from src.tools.file_tools import read_file_safe, list_python_files
-    from src.tools.pylint_tool import run_pylint
-except ImportError:
-    print("  ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
-    print("   Les fonctions suivantes doivent être créées :")
-    print("   - src/tools/file_tools.py : read_file_safe(), list_python_files()")
-    print("   - src/tools/pylint_tool.py : run_pylint()")
+load_dotenv()
 
-# Import du prompt système (à créer par le Prompt Engineer)
+# Import des outils du Toolsmith
+from src.tools.file_tools import read_file_safe, list_python_files
+from src.tools.pylint_tool import run_pylint, parse_pylint_output
+
+# Import du prompt système
 try:
     from src.prompts.auditor_prompts import AUDITOR_SYSTEM_PROMPT
 except ImportError:
@@ -59,14 +55,15 @@ class AuditorAgent:
         Initialise l'agent auditeur.
         
         Args:
-            model_name: Nom du modèle LLM à utiliser (défaut: gemini-2.0-flash-exp)
+            model_name: Nom du modèle LLM à utiliser (défaut: gemini-1.5-flash)
         """
         self.model_name = model_name
         self.llm = ChatGoogleGenerativeAI(
             model=model_name,
             temperature=0.1,  # Basse température pour plus de précision
+            convert_system_message_to_human=True
         )
-        print(f" AuditorAgent initialisé avec le modèle : {model_name}")
+        print(f"✅ AuditorAgent initialisé avec le modèle : {model_name}")
     
     def analyze(self, target_dir: str) -> Dict:
         """
@@ -78,15 +75,15 @@ class AuditorAgent:
         Returns:
             Dict: Rapport d'audit contenant les problèmes détectés
         """
-        print(f"\n [AUDITOR] Démarrage de l'analyse de : {target_dir}")
+        print(f"\n🔍 [AUDITOR] Démarrage de l'analyse de : {target_dir}")
         
         try:
             # Étape 1 : Lister les fichiers Python
-            print(" Recherche des fichiers Python...")
+            print("📂 Recherche des fichiers Python...")
             python_files = list_python_files(target_dir)
             
             if not python_files:
-                print("  Aucun fichier Python trouvé dans le dossier.")
+                print("⚠️  Aucun fichier Python trouvé dans le dossier.")
                 return {
                     "files_analyzed": [],
                     "total_issues": 0,
@@ -94,30 +91,34 @@ class AuditorAgent:
                     "recommendations": ["Aucun fichier Python à analyser"]
                 }
             
-            print(f" {len(python_files)} fichier(s) Python trouvé(s)")
+            print(f"✅ {len(python_files)} fichier(s) Python trouvé(s)")
             
             # Étape 2 : Analyser chaque fichier
             all_issues = []
             files_analyzed = []
             
-            for filepath in python_files:
-                print(f"\n Analyse de : {os.path.basename(filepath)}")
+            for filename in python_files:
+                print(f"\n📄 Analyse de : {filename}")
+                
+                # Construire le chemin complet
+                full_path = os.path.join(target_dir, filename)
                 
                 # Lire le contenu du fichier
-                file_content = read_file_safe(filepath, target_dir)
+                file_content = read_file_safe(full_path, target_dir)  
                 
-                # Lancer pylint
-                pylint_result = run_pylint(filepath)
+                # Lancer pylint et parser le résultat
+                pylint_output = run_pylint(full_path)
+                pylint_result = parse_pylint_output(pylint_output)
                 
                 # Construire le prompt pour le LLM
                 user_prompt = self._build_analysis_prompt(
-                    filepath=filepath,
+                    filename=filename,
                     file_content=file_content,
                     pylint_result=pylint_result
                 )
                 
                 # Appeler le LLM
-                print(f" Consultation du LLM pour l'analyse...")
+                print(f"🤖 Consultation du LLM pour l'analyse...")
                 llm_response = self._call_llm(user_prompt)
                 
                 # Logger l'interaction
@@ -126,7 +127,7 @@ class AuditorAgent:
                     model_used=self.model_name,
                     action=ActionType.ANALYSIS,
                     details={
-                        "file_analyzed": os.path.basename(filepath),
+                        "file_analyzed": filename,
                         "pylint_score": pylint_result.get("score", 0),
                         "input_prompt": user_prompt,
                         "output_response": llm_response,
@@ -135,11 +136,11 @@ class AuditorAgent:
                 )
                 
                 # Parser la réponse du LLM
-                file_issues = self._parse_llm_response(llm_response)
+                file_issues = self._parse_llm_response(llm_response, filename)
                 all_issues.extend(file_issues)
-                files_analyzed.append(os.path.basename(filepath))
+                files_analyzed.append(filename)
                 
-                print(f" Analyse terminée : {len(file_issues)} problème(s) détecté(s)")
+                print(f"✅ Analyse terminée : {len(file_issues)} problème(s) détecté(s)")
             
             # Étape 3 : Générer le rapport final
             report = {
@@ -149,11 +150,11 @@ class AuditorAgent:
                 "recommendations": self._generate_recommendations(all_issues)
             }
             
-            print(f"\n [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
+            print(f"\n✅ [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
             return report
             
         except Exception as e:
-            print(f" [AUDITOR] Erreur lors de l'analyse : {str(e)}")
+            print(f"❌ [AUDITOR] Erreur lors de l'analyse : {str(e)}")
             log_experiment(
                 agent_name="Auditor_Agent",
                 model_used=self.model_name,
@@ -167,22 +168,26 @@ class AuditorAgent:
             )
             raise
     
-    def _build_analysis_prompt(self, filepath: str, file_content: str, 
+    def _build_analysis_prompt(self, filename: str, file_content: str, 
                                pylint_result: Dict) -> str:
         """
         Construit le prompt pour l'analyse d'un fichier.
         
         Args:
-            filepath: Chemin du fichier
+            filename: Nom du fichier
             file_content: Contenu du fichier
             pylint_result: Résultat de l'analyse pylint
             
         Returns:
             str: Prompt formaté pour le LLM
         """
+        # Limiter les issues pylint pour ne pas surcharger le prompt
+        pylint_issues = pylint_result.get('issues', [])
+        issues_summary = pylint_issues[:10] if len(pylint_issues) > 10 else pylint_issues
+        
         return f"""Analyse ce code Python et le rapport pylint.
 
-FICHIER : {os.path.basename(filepath)}
+FICHIER : {filename}
 SCORE PYLINT : {pylint_result.get('score', 0)}/10
 
 CODE :
@@ -190,10 +195,10 @@ CODE :
 {file_content}
 ```
 
-ERREURS PYLINT :
-{pylint_result.get('issues', [])}
+ERREURS PYLINT (échantillon) :
+{issues_summary}
 
-Génère un rapport JSON avec les problèmes détectés."""
+Génère un rapport JSON avec les problèmes détectés les plus importants."""
     
     def _call_llm(self, prompt: str) -> str:
         """
@@ -213,12 +218,13 @@ Génère un rapport JSON avec les problèmes détectés."""
         response = self.llm.invoke(messages)
         return response.content
     
-    def _parse_llm_response(self, response: str) -> List[Dict]:
+    def _parse_llm_response(self, response: str, filename: str) -> List[Dict]:
         """
         Parse la réponse JSON du LLM.
         
         Args:
             response: Réponse brute du LLM
+            filename: Nom du fichier analysé
             
         Returns:
             List[Dict]: Liste des problèmes détectés
@@ -237,10 +243,25 @@ Génère un rapport JSON avec les problèmes détectés."""
             cleaned = cleaned.strip()
             
             data = json.loads(cleaned)
-            return data.get("issues", [])
-        except json.JSONDecodeError:
-            print("  Impossible de parser la réponse JSON du LLM")
-            return []
+            issues = data.get("issues", [])
+            
+            # S'assurer que chaque issue a le nom du fichier
+            for issue in issues:
+                if "file" not in issue:
+                    issue["file"] = filename
+            
+            return issues
+            
+        except json.JSONDecodeError as e:
+            print(f"⚠️  Impossible de parser la réponse JSON du LLM : {str(e)}")
+            # En cas d'échec, créer au moins un issue basique
+            return [{
+                "file": filename,
+                "line": 0,
+                "severity": "medium",
+                "type": "parse_error",
+                "message": "Erreur lors de l'analyse LLM"
+            }]
     
     def _generate_recommendations(self, issues: List[Dict]) -> List[str]:
         """
@@ -264,5 +285,9 @@ Génère un rapport JSON avec les problèmes détectés."""
             recommendations.append("Corriger les erreurs de syntaxe")
         if "naming_convention" in issue_types:
             recommendations.append("Respecter les conventions de nommage PEP8")
+        if "import_error" in issue_types:
+            recommendations.append("Vérifier les imports")
+        if "unused_variable" in issue_types:
+            recommendations.append("Supprimer les variables non utilisées")
             
         return recommendations if recommendations else ["Améliorer la qualité générale du code"]

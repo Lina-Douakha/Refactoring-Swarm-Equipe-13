@@ -4,17 +4,14 @@ Rôle : Corriger le code Python selon le rapport d'audit.
 """
 
 import os
+from dotenv import load_dotenv 
 from typing import Dict, List
 from langchain_google_genai import ChatGoogleGenerativeAI
 from src.utils.logger import log_experiment, ActionType
-
+load_dotenv()
 # Import des outils du Toolsmith
-try:
-    from src.tools.file_tools import read_file_safe, write_file_safe
-except ImportError:
-    print("  ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
-    print("   Les fonctions suivantes doivent être créées :")
-    print("   - src/tools/file_tools.py : read_file_safe(), write_file_safe()")
+# Import des outils du Toolsmith
+from src.tools.file_tools import read_file_safe, write_file_safe
 
 # Import du prompt système
 try:

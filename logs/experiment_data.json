@@ -1,11 +1,426 @@
 [
-  {
-    "id": "9e82e9b0-9b43-4a78-af43-d5d5ef848a2f",
-    "timestamp": "2025-12-26T01:26:41.177789",
-    "agent": "System",
-    "model": "unknown",
-    "action": "STARTUP",
-    "details": "Target: ./sandbox",
-    "status": "INFO"
-  }
+    {
+        "id": "9e82e9b0-9b43-4a78-af43-d5d5ef848a2f",
+        "timestamp": "2025-12-26T01:26:41.177789",
+        "agent": "System",
+        "model": "unknown",
+        "action": "STARTUP",
+        "details": "Target: ./sandbox",
+        "status": "INFO"
+    },
+    {
+        "id": "4fe13508-2867-4be5-88b0-d9c856f32730",
+        "timestamp": "2026-01-03T23:54:30.865680",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "7c898ff8-7991-426d-90e0-e72b89435590",
+        "timestamp": "2026-01-03T23:54:30.895575",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c1263f20-b5f7-4661-9887-a9f095e50626",
+        "timestamp": "2026-01-03T23:54:32.475840",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox/test_case_1",
+            "input_prompt": "Exécution de pytest sur sandbox/test_case_1",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ca717246-973e-4d5e-87d5-548d355f5bb7",
+        "timestamp": "2026-01-03T23:54:32.493781",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test_case_1",
+            "output_response": "Erreur : name 'list_python_files' is not defined",
+            "error_type": "NameError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "71ffafa2-08ec-4e8f-aec5-118ec97c443d",
+        "timestamp": "2026-01-04T00:08:56.904071",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : read_file_safe() takes 1 positional argument but 2 were given",
+            "error_type": "TypeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "f6055da8-bef6-4c2b-9812-1be6b3e855a2",
+        "timestamp": "2026-01-04T00:11:35.701533",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "eafd782c-a1e6-49d9-9b32-9fc4f4ec746e",
+        "timestamp": "2026-01-04T00:25:58.841140",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "107a2381-50ff-4838-8ca1-fa396c06ce6f",
+        "timestamp": "2026-01-04T00:29:36.323596",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : Invalid argument provided to Gemini: 400 API key not valid. Please pass a valid API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key not valid. Please pass a valid API key.\"\n]",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c561db77-b5df-4c3a-80a4-e41f1e0d13b0",
+        "timestamp": "2026-01-04T10:45:49.492768",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier C:\\Users\\DELL\\refactoring-swarm-template\\sandbox",
+            "output_response": "Erreur : Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:142.250.200.234:443: tcp handshaker shutdown",
+            "error_type": "RetryError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c127ffe6-146d-4dcb-b245-bd038a54c615",
+        "timestamp": "2026-01-04T10:56:21.175321",
+        "agent": "Auditor_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test",
+            "output_response": "Erreur : 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+            "error_type": "NotFound"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8a7b39e9-b7e2-4c9f-bd1a-0d909af659c4",
+        "timestamp": "2026-01-04T13:19:30.128211",
+        "agent": "Auditor_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox/test",
+            "output_response": "Erreur : [Errno 2] No such file or directory: 'C:\\\\Users\\\\DELL\\\\refactoring-swarm-template\\\\sandbox\\\\test\\\\sandbox\\\\test\\\\buggy.py'",
+            "error_type": "FileNotFoundError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8e9db40a-6451-4acd-bf2b-68d6c0965ba2",
+        "timestamp": "2026-01-04T15:34:03.170564",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : [Errno 2] No such file or directory: 'C:\\\\Users\\\\DELL\\\\refactoring-swarm-template\\\\sandbox\\\\sandbox\\\\test.py'",
+            "error_type": "FileNotFoundError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c4d4f7f2-475f-4317-afb1-0c6c31f30a92",
+        "timestamp": "2026-01-04T15:35:57.586469",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a b):  # ❌ Virgule manquante\n    return a + b\n\ndef multiply(x, y):  # ❌ Pas de docstring\n    return x*y  # ❌ Pas d'espaces autour de *\n\ndef BAD_FUNCTION():  # ❌ Nom en majuscules (PEP8)\n    x=1+2  # ❌ Pas d'espaces\n    return x\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'error', 'module': 'test', 'obj': '', 'line': 3, 'column': 11, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'syntax-error', 'message': \"Parsing failed: 'invalid syntax (<unknown>, line 3)'\", 'message-id': 'E0001'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"test.py\",\n            \"line\": 3,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Mauvaise syntaxe: virgule manquante dans la définition des paramètres de la fonction 'add'.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 6,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'multiply' manque de docstring, réduisant la clarté et la documentation du code.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 7,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Violation PEP8: espaces manquants autour de l'opérateur arithmétique '*' dans 'x*y'.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 9,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_naming_convention\",\n            \"message\": \"Violation PEP8: le nom de fonction 'BAD_FUNCTION' devrait être en snake_case (e.g., 'bad_function').\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 10,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Violation PEP8: espaces manquants autour de l'opérateur d'affectation '=' dans 'x=1+2'.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger les erreurs de syntaxe pour assurer l'exécutabilité du code.\",\n        \"Ajouter des docstrings à toutes les fonctions pour améliorer la documentation et la compréhension du code.\",\n        \"Respecter les conventions de nommage PEP8 (snake_case pour les fonctions et variables) pour une meilleure lisibilité.\",\n        \"Utiliser des espaces autour des opérateurs d'affectation et arithmétiques pour conformité PEP8 et lisibilité accrue.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e19f3eba-88ab-4601-812a-7d976ac9ff4f",
+        "timestamp": "2026-01-04T15:36:13.986103",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\ndef divide(a, b):\n    return a / b  # ❌ Pas de gestion du b=0\n\ndef get_name():\n    name = \"Alice\"\n    return Name  # ❌ Erreur de casse (NameError)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 6, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test2', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'test2', 'obj': 'get_name', 'line': 4, 'column': 0, 'endLine': 4, 'endColumn': 12, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'error', 'module': 'test2', 'obj': 'get_name', 'line': 6, 'column': 11, 'endLine': 6, 'endColumn': 15, 'path': 'sandbox\\\\test2.py', 'symbol': 'undefined-variable', 'message': \"Undefined variable 'Name'\", 'message-id': 'E0602'}, {'type': 'warning', 'module': 'test2', 'obj': 'get_name', 'line': 5, 'column': 4, 'endLine': 5, 'endColumn': 8, 'path': 'sandbox\\\\test2.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'name'\", 'message-id': 'W0612'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test2.py\"],\n    \"total_issues\": 6,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 2,\n            \"severity\": \"high\",\n            \"type\": \"error_handling\",\n            \"message\": \"La fonction 'divide' ne gère pas le cas où le diviseur 'b' est zéro, ce qui pourrait entraîner une ZeroDivisionError à l'exécution.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 6,\n            \"severity\": \"high\",\n            \"type\": \"undefined_variable\",\n            \"message\": \"La variable 'Name' n'est pas définie. Il s'agit probablement d'une erreur de casse, 'name' étant la variable locale attendue.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 5,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"La variable 'name' est définie mais jamais utilisée, probablement à cause de l'erreur de casse ('Name' au lieu de 'name') lors du retour.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Le module 'test2' manque d'un docstring, ce qui réduit la clarté et la documentabilité du code.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'divide' manque d'un docstring décrivant son rôle, ses arguments et ce qu'elle retourne.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 4,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'get_name' manque d'un docstring décrivant son rôle, ses arguments et ce qu'elle retourne.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter des docstrings significatifs au module et à toutes les fonctions pour améliorer la compréhension et la maintenabilité du code.\",\n        \"Implémenter une gestion robuste des erreurs, par exemple en ajoutant un bloc try-except ou une vérification explicite pour le cas de division par zéro.\",\n        \"Vérifier attentivement les noms de variables pour corriger les erreurs de casse et s'assurer que toutes les variables définies sont utilisées.\",\n        \"Supprimer les variables inutilisées pour éviter la confusion et maintenir un code propre.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "16ee005b-658e-4250-a127-9257416e6078",
+        "timestamp": "2026-01-04T15:42:10.196179",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a b):  # ❌ Virgule manquante\n    return a + b\n\ndef multiply(x, y):  # ❌ Pas de docstring\n    return x*y  # ❌ Pas d'espaces autour de *\n\ndef BAD_FUNCTION():  # ❌ Nom en majuscules (PEP8)\n    x=1+2  # ❌ Pas d'espaces\n    return x\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'error', 'module': 'test', 'obj': '', 'line': 3, 'column': 11, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'syntax-error', 'message': \"Parsing failed: 'invalid syntax (<unknown>, line 3)'\", 'message-id': 'E0001'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test.py\"],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"test.py\",\n            \"line\": 3,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Erreur de syntaxe: virgule manquante entre les paramètres de la fonction 'add'. Pylint: E0001 (invalid syntax).\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 6,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'multiply' manque de docstring.\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 7,\n            \"severity\": \"low\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Espacement incorrect autour de l'opérateur arithmétique '*'. (PEP8 E225)\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 9,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_naming\",\n            \"message\": \"Le nom de la fonction 'BAD_FUNCTION' ne respecte pas les conventions PEP8 (utiliser snake_case).\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 10,\n            \"severity\": \"low\",\n            \"type\": \"pep8_whitespace\",\n            \"message\": \"Espacement incorrect autour de l'opérateur d'assignation '='. (PEP8 E225)\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger les erreurs de syntaxe critiques, notamment les virgules manquantes dans les définitions de fonctions.\",\n        \"Ajouter des docstrings à toutes les fonctions pour améliorer la clarté et la maintenabilité du code.\",\n        \"Respecter les conventions d'espacement de la PEP8 autour des opérateurs binaires et d'assignation.\",\n        \"Suivre les conventions de nommage de la PEP8 pour les fonctions (utiliser le snake_case au lieu du SCREAMING_SNAKE_CASE).\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "11854efb-0247-45a7-a9f4-c1a83cf3b1a1",
+        "timestamp": "2026-01-04T15:42:26.128107",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\ndef divide(a, b):\n    return a / b  # ❌ Pas de gestion du b=0\n\ndef get_name():\n    name = \"Alice\"\n    return Name  # ❌ Erreur de casse (NameError)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 6, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test2', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'test2', 'obj': 'get_name', 'line': 4, 'column': 0, 'endLine': 4, 'endColumn': 12, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'error', 'module': 'test2', 'obj': 'get_name', 'line': 6, 'column': 11, 'endLine': 6, 'endColumn': 15, 'path': 'sandbox\\\\test2.py', 'symbol': 'undefined-variable', 'message': \"Undefined variable 'Name'\", 'message-id': 'E0602'}, {'type': 'warning', 'module': 'test2', 'obj': 'get_name', 'line': 5, 'column': 4, 'endLine': 5, 'endColumn': 8, 'path': 'sandbox\\\\test2.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'name'\", 'message-id': 'W0612'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 7,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 6,\n            \"severity\": \"low\",\n            \"type\": \"missing_final_newline\",\n            \"message\": \"Le fichier ne se termine pas par une nouvelle ligne. (Pylint C0304)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_module_docstring\",\n            \"message\": \"Le module 'test2' manque de docstring. (Pylint C0114)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_function_docstring\",\n            \"message\": \"La fonction 'divide' manque de docstring. (Pylint C0116)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 4,\n            \"severity\": \"low\",\n            \"type\": \"missing_function_docstring\",\n            \"message\": \"La fonction 'get_name' manque de docstring. (Pylint C0116)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 6,\n            \"severity\": \"high\",\n            \"type\": \"undefined_variable\",\n            \"message\": \"La variable 'Name' n'est pas définie. Il s'agit probablement d'une erreur de casse, 'name' étant attendu. (Pylint E0602)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 5,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"La variable 'name' est définie mais n'est pas utilisée dans la fonction 'get_name'. (Pylint W0612)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 2,\n            \"severity\": \"high\",\n            \"type\": \"missing_error_handling\",\n            \"message\": \"La fonction 'divide' ne gère pas le cas de la division par zéro, ce qui peut provoquer une erreur d'exécution (ZeroDivisionError).\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter des docstrings clairs pour le module et toutes les fonctions afin d'améliorer la documentation et la maintenabilité.\",\n        \"Implémenter une gestion robuste des erreurs dans la fonction 'divide' pour éviter la division par zéro, par exemple en utilisant un bloc try-except.\",\n        \"Corriger l'erreur de casse ou de définition de la variable 'Name' dans la fonction 'get_name' (probablement 'name' au lieu de 'Name').\",\n        \"Supprimer la variable 'name' dans 'get_name' si elle n'est pas utilisée, ou s'assurer de son utilisation pour éviter le code mort.\",\n        \"Ajouter une nouvelle ligne à la fin du fichier 'test2.py' pour se conformer aux standards de style Python.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "36a13164-adc2-4f67-9f1c-16782c13e332",
+        "timestamp": "2026-01-04T15:42:35.515417",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test.py",
+            "issues_count": 5,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test.py\nNOMBRE DE PROBLÈMES : 5\n\nPROBLÈMES À CORRIGER :\n- Ligne 3 : Erreur de syntaxe: virgule manquante entre les paramètres de la fonction 'add'. Pylint: E0001 (invalid syntax). (Type: syntax_error, Sévérité: high)\n- Ligne 6 : La fonction 'multiply' manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 7 : Espacement incorrect autour de l'opérateur arithmétique '*'. (PEP8 E225) (Type: pep8_whitespace, Sévérité: low)\n- Ligne 9 : Le nom de la fonction 'BAD_FUNCTION' ne respecte pas les conventions PEP8 (utiliser snake_case). (Type: pep8_naming, Sévérité: medium)\n- Ligne 10 : Espacement incorrect autour de l'opérateur d'assignation '='. (PEP8 E225) (Type: pep8_whitespace, Sévérité: low)\n\nCODE ACTUEL :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a b):  # ❌ Virgule manquante\n    return a + b\n\ndef multiply(x, y):  # ❌ Pas de docstring\n    return x*y  # ❌ Pas d'espaces autour de *\n\ndef BAD_FUNCTION():  # ❌ Nom en majuscules (PEP8)\n    x=1+2  # ❌ Pas d'espaces\n    return x\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "# Fichier avec plusieurs erreurs\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and y.\n    \"\"\"\n    return x *...",
+            "issues_types": [
+                "syntax_error",
+                "missing_docstring",
+                "pep8_whitespace",
+                "pep8_naming",
+                "pep8_whitespace"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "05ff7a7a-7736-4919-bd99-672cf920b79d",
+        "timestamp": "2026-01-04T15:42:43.465308",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 7,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 7\n\nPROBLÈMES À CORRIGER :\n- Ligne 6 : Le fichier ne se termine pas par une nouvelle ligne. (Pylint C0304) (Type: missing_final_newline, Sévérité: low)\n- Ligne 1 : Le module 'test2' manque de docstring. (Pylint C0114) (Type: missing_module_docstring, Sévérité: low)\n- Ligne 1 : La fonction 'divide' manque de docstring. (Pylint C0116) (Type: missing_function_docstring, Sévérité: low)\n- Ligne 4 : La fonction 'get_name' manque de docstring. (Pylint C0116) (Type: missing_function_docstring, Sévérité: low)\n- Ligne 6 : La variable 'Name' n'est pas définie. Il s'agit probablement d'une erreur de casse, 'name' étant attendu. (Pylint E0602) (Type: undefined_variable, Sévérité: high)\n- Ligne 5 : La variable 'name' est définie mais n'est pas utilisée dans la fonction 'get_name'. (Pylint W0612) (Type: unused_variable, Sévérité: medium)\n- Ligne 2 : La fonction 'divide' ne gère pas le cas de la division par zéro, ce qui peut provoquer une erreur d'exécution (ZeroDivisionError). (Type: missing_error_handling, Sévérité: high)\n\nCODE ACTUEL :\n```python\ndef divide(a, b):\n    return a / b  # ❌ Pas de gestion du b=0\n\ndef get_name():\n    name = \"Alice\"\n    return Name  # ❌ Erreur de casse (NameError)\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"\nThis module provides basic arithmetic and string manipulation functions.\n\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divides two numbers.\n\n    Args:\n        a (float or int): The numerator.\n        b (float or int): The denominator.\n\n    Returns:\n        float or None: The result of the division, or None if division by zero occurs.\n    \"\"\"\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None\n\n\ndef get_name():\n    \"\"\"Returns a predefined name.\n\n    Returns:\n        str: The name...",
+            "issues_types": [
+                "missing_final_newline",
+                "missing_module_docstring",
+                "missing_function_docstring",
+                "missing_function_docstring",
+                "undefined_variable",
+                "unused_variable",
+                "missing_error_handling"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2ae1e522-6ab4-4457-a914-c1c9e2bdccf6",
+        "timestamp": "2026-01-04T15:57:10.799300",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and y.\n    \"\"\"\n    return x * y\n\n\ndef bad_function():\n    \"\"\"\n    Performs a simple addition and returns the result.\n\n    Returns:\n        int: The sum of 1 and 2.\n    \"\"\"\n    x = 1 + 2\n    return x\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test', 'obj': '', 'line': 39, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test.py\"],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test.py\",\n            \"line\": 39,\n            \"severity\": \"low\",\n            \"type\": \"missing_final_newline\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"test.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_module_docstring\",\n            \"message\": \"Missing module docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au niveau du module (en début de fichier) pour décrire son objectif global, même si les fonctions sont bien documentées. Cela améliore la lisibilité et la maintenabilité.\",\n        \"Assurer que tous les fichiers Python se terminent par une nouvelle ligne. C'est une convention PEP 8 qui prévient les avertissements et assure une meilleure compatibilité avec certains outils de gestion de version.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "77d9960b-c4ec-477f-9c6f-83284d0f6c6c",
+        "timestamp": "2026-01-04T15:57:26.250345",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\nimport os, sys\nimport math\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)   # ❌ division par zéro possible\n\n\ndef lire_fichier(path):\n    f = open(path, \"r\")         # ❌ fichier jamais fermé\n    contenu = f.read()\n    return contenu\n\n\ndef est_pair(nombre):\n    if nombre % 2 = 0:          # ❌ erreur de syntaxe (= au lieu de ==)\n        return True\n    else:\n        return \"False\"          # ❌ mauvais type de retour\n\n\ndef racine(nombre):\n    return math.sqrt(nombre)   # ❌ crash si nombre < 0\n\n\ndef utilisateur_info(user):\n    print(\"Nom :\", user[\"nom\"])\n    print(\"Age :\", user[\"age\"])\n    print(\"Ville :\", user[\"ville\"])  # ❌ KeyError possible\n\n\ndef main():\n    notes = []\n    print(\"Moyenne :\", calculer_moyenne(notes))  # ❌ division par zéro\n\n    texte = lire_fichier(\"data.txt\")              # ❌ fichier peut ne pas exister\n    print(texte)\n\n    print(est_pair(3))\n\n    print(racine(-9))                              # ❌ ValueError\n\n    user = {\"nom\": \"Lina\", \"age\": 20}\n    utilisateur_info(user)                         # ❌ clé manquante\n\n    x = 5\n    if x > 3:\n        print(\"x est grand\")\n    else:\n        pass\n        pass\n        pass                                      # ❌ code inutile\n\n\nmain()                                            # ❌ pas protégé par if __name__\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'error', 'module': 'test2', 'obj': '', 'line': 22, 'column': 8, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'syntax-error', 'message': \"Parsing failed: 'cannot assign to expression here. Maybe you meant '==' instead of '='? (<unknown>, line 22)'\", 'message-id': 'E0001'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test2.py\"],\n    \"total_issues\": 10,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"style_issue\",\n            \"message\": \"Plusieurs modules sont importés sur une seule ligne. Il est préférable d'importer chaque module sur sa propre ligne (PEP 8).\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 13,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"La fonction 'calculer_moyenne' ne gère pas le cas où la liste 'notes' est vide, ce qui entraînera une 'ZeroDivisionError'.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 17,\n            \"severity\": \"high\",\n            \"type\": \"resource_leak\",\n            \"message\": \"Le fichier ouvert dans 'lire_fichier' n'est jamais explicitement fermé. Il est recommandé d'utiliser un bloc 'with open(...)' pour garantir la fermeture.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 22,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Erreur de syntaxe : L'opérateur d'assignation '=' est utilisé au lieu de l'opérateur de comparaison '==' dans la condition 'if'. (Pylint E0001)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 24,\n            \"severity\": \"moderate\",\n            \"type\": \"incorrect_return_type\",\n            \"message\": \"La fonction 'est_pair' retourne une chaîne de caractères ('\\\"False\\\"') au lieu du booléen 'False'.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 28,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"La fonction 'racine' ne gère pas les nombres négatifs, ce qui provoquera un 'ValueError' lors de l'appel à 'math.sqrt'.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 35,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"La fonction 'utilisateur_info' tente d'accéder à la clé 'ville' qui pourrait être manquante dans le dictionnaire 'user', entraînant une 'KeyError'.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 43,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"L'appel à 'lire_fichier(\\\"data.txt\\\")' peut échouer si le fichier 'data.txt' n'existe pas, provoquant un 'FileNotFoundError'.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 53,\n            \"severity\": \"low\",\n            \"type\": \"dead_code\",\n            \"message\": \"Les instructions 'pass' consécutives sont inutiles et n'apportent aucune logique. Elles peuvent être supprimées.\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 57,\n            \"severity\": \"moderate\",\n            \"type\": \"missing_entry_point_protection\",\n            \"message\": \"L'appel direct à 'main()' n'est pas protégé par 'if __name__ == \\\"__main__\\\":', ce qui peut entraîner son exécution lors de l'importation du module.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Implémenter une gestion robuste des erreurs (par exemple, avec des blocs 'try-except') pour les opérations à risque comme la division, l'accès aux dictionnaires ou les opérations sur fichiers/mathématiques.\",\n        \"Utiliser des context managers ('with open(...)') pour toutes les opérations sur fichiers afin de garantir que les ressources sont correctement fermées.\",\n        \"Corriger toutes les erreurs de syntaxe, en particulier l'utilisation des opérateurs (`==` pour la comparaison, `=` pour l'affectation).\",\n        \"Assurer la cohérence des types de retour pour les fonctions (par exemple, retourner toujours des booléens quand c'est attendu).\",\n        \"Protéger le point d'entrée principal du script en utilisant la convention 'if __name__ == \\\"__main__\\\":' pour permettre l'importation sans exécution automatique.\",\n        \"Supprimer le code inutile ou redondant comme les instructions 'pass' multiples.\",\n        \"Suivre les conventions de style Python (PEP 8), notamment pour l'importation des modules (un import par ligne).\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f1bdbfbe-f077-48ec-84ee-08d374a281ea",
+        "timestamp": "2026-01-04T15:57:31.517654",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test.py",
+            "issues_count": 2,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 39 : Final newline missing (Type: missing_final_newline, Sévérité: low)\n- Ligne 1 : Missing module docstring (Type: missing_module_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\n# Fichier avec plusieurs erreurs\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and y.\n    \"\"\"\n    return x * y\n\n\ndef bad_function():\n    \"\"\"\n    Performs a simple addition and returns the result.\n\n    Returns:\n        int: The sum of 1 and 2.\n    \"\"\"\n    x = 1 + 2\n    return x\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"\nThis module provides basic arithmetic operations.\n\"\"\"\n\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and...",
+            "issues_types": [
+                "missing_final_newline",
+                "missing_module_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "090c8e66-c538-432e-a2bd-0299f8ab44f6",
+        "timestamp": "2026-01-04T15:57:51.940590",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 10,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 10\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Plusieurs modules sont importés sur une seule ligne. Il est préférable d'importer chaque module sur sa propre ligne (PEP 8). (Type: style_issue, Sévérité: low)\n- Ligne 13 : La fonction 'calculer_moyenne' ne gère pas le cas où la liste 'notes' est vide, ce qui entraînera une 'ZeroDivisionError'. (Type: potential_runtime_error, Sévérité: high)\n- Ligne 17 : Le fichier ouvert dans 'lire_fichier' n'est jamais explicitement fermé. Il est recommandé d'utiliser un bloc 'with open(...)' pour garantir la fermeture. (Type: resource_leak, Sévérité: high)\n- Ligne 22 : Erreur de syntaxe : L'opérateur d'assignation '=' est utilisé au lieu de l'opérateur de comparaison '==' dans la condition 'if'. (Pylint E0001) (Type: syntax_error, Sévérité: high)\n- Ligne 24 : La fonction 'est_pair' retourne une chaîne de caractères ('\"False\"') au lieu du booléen 'False'. (Type: incorrect_return_type, Sévérité: moderate)\n- Ligne 28 : La fonction 'racine' ne gère pas les nombres négatifs, ce qui provoquera un 'ValueError' lors de l'appel à 'math.sqrt'. (Type: potential_runtime_error, Sévérité: high)\n- Ligne 35 : La fonction 'utilisateur_info' tente d'accéder à la clé 'ville' qui pourrait être manquante dans le dictionnaire 'user', entraînant une 'KeyError'. (Type: potential_runtime_error, Sévérité: high)\n- Ligne 43 : L'appel à 'lire_fichier(\"data.txt\")' peut échouer si le fichier 'data.txt' n'existe pas, provoquant un 'FileNotFoundError'. (Type: potential_runtime_error, Sévérité: high)\n- Ligne 53 : Les instructions 'pass' consécutives sont inutiles et n'apportent aucune logique. Elles peuvent être supprimées. (Type: dead_code, Sévérité: low)\n- Ligne 57 : L'appel direct à 'main()' n'est pas protégé par 'if __name__ == \"__main__\":', ce qui peut entraîner son exécution lors de l'importation du module. (Type: missing_entry_point_protection, Sévérité: moderate)\n\nCODE ACTUEL :\n```python\nimport os, sys\nimport math\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)   # ❌ division par zéro possible\n\n\ndef lire_fichier(path):\n    f = open(path, \"r\")         # ❌ fichier jamais fermé\n    contenu = f.read()\n    return contenu\n\n\ndef est_pair(nombre):\n    if nombre % 2 = 0:          # ❌ erreur de syntaxe (= au lieu de ==)\n        return True\n    else:\n        return \"False\"          # ❌ mauvais type de retour\n\n\ndef racine(nombre):\n    return math.sqrt(nombre)   # ❌ crash si nombre < 0\n\n\ndef utilisateur_info(user):\n    print(\"Nom :\", user[\"nom\"])\n    print(\"Age :\", user[\"age\"])\n    print(\"Ville :\", user[\"ville\"])  # ❌ KeyError possible\n\n\ndef main():\n    notes = []\n    print(\"Moyenne :\", calculer_moyenne(notes))  # ❌ division par zéro\n\n    texte = lire_fichier(\"data.txt\")              # ❌ fichier peut ne pas exister\n    print(texte)\n\n    print(est_pair(3))\n\n    print(racine(-9))                              # ❌ ValueError\n\n    user = {\"nom\": \"Lina\", \"age\": 20}\n    utilisateur_info(user)                         # ❌ clé manquante\n\n    x = 5\n    if x > 3:\n        print(\"x est grand\")\n    else:\n        pass\n        pass\n        pass                                      # ❌ code inutile\n\n\nmain()                                            # ❌ pas protégé par if __name__\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "import os\nimport sys\nimport math\n\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    \"\"\"Calcule la moyenne d'une liste de nombres.\n\n    Args:\n        notes (list): Une liste de nombres (notes).\n\n    Returns:\n        float: La moyenne des notes. Retourne 0.0 si la liste est vide.\n    \"\"\"\n    if not notes:\n        return 0.0\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)\n\n\ndef lire_fichier(path):\n    \"\"\"Lit le contenu d'un fichier texte.\n\n   ...",
+            "issues_types": [
+                "style_issue",
+                "potential_runtime_error",
+                "resource_leak",
+                "syntax_error",
+                "incorrect_return_type",
+                "potential_runtime_error",
+                "potential_runtime_error",
+                "potential_runtime_error",
+                "dead_code",
+                "missing_entry_point_protection"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b8a6cdc0-19a8-434d-97e7-5b97b7efb2d9",
+        "timestamp": "2026-01-04T15:58:20.123121",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : [Errno 11001] getaddrinfo failed",
+            "error_type": "ConnectError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ce5651d5-696a-4526-96e2-06f2a933a6e3",
+        "timestamp": "2026-01-04T15:59:07.408266",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"\nThis module provides basic arithmetic operations.\n\"\"\"\n\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and y.\n    \"\"\"\n    return x * y\n\n\ndef bad_function():\n    \"\"\"\n    Performs a simple addition and returns the result.\n\n    Returns:\n        int: The sum of 1 and 2.\n    \"\"\"\n    x = 1 + 2\n    return x\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test', 'obj': '', 'line': 42, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test.py\",\n            \"line\": 42,\n            \"severity\": \"low\",\n            \"type\": \"convention_missing_final_newline\",\n            \"message\": \"Une ligne vide finale est manquante dans le fichier.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une ligne vide à la fin du fichier `test.py` pour se conformer aux conventions de Pylint (C0304).\",\n        \"Dans la fonction `bad_function`, le code peut être simplifié en retournant directement le résultat de l'opération (ex: `return 1 + 2`) sans passer par une variable intermédiaire inutile.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c1a875bf-f34a-4ab0-a743-908eb1647c12",
+        "timestamp": "2026-01-04T15:59:24.675471",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\nimport os, sys\nimport math\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)   # ❌ division par zéro possible\n\n\ndef lire_fichier(path):\n    f = open(path, \"r\")         # ❌ fichier jamais fermé\n    contenu = f.read()\n    return contenu\n\n\ndef est_pair(nombre):\n    if nombre % 2 = 0:          # ❌ erreur de syntaxe (= au lieu de ==)\n        return True\n    else:\n        return \"False\"          # ❌ mauvais type de retour\n\n\ndef racine(nombre):\n    return math.sqrt(nombre)   # ❌ crash si nombre < 0\n\n\ndef utilisateur_info(user):\n    print(\"Nom :\", user[\"nom\"])\n    print(\"Age :\", user[\"age\"])\n    print(\"Ville :\", user[\"ville\"])  # ❌ KeyError possible\n\n\ndef main():\n    notes = []\n    print(\"Moyenne :\", calculer_moyenne(notes))  # ❌ division par zéro\n\n    texte = lire_fichier(\"data.txt\")              # ❌ fichier peut ne pas exister\n    print(texte)\n\n    print(est_pair(3))\n\n    print(racine(-9))                              # ❌ ValueError\n\n    user = {\"nom\": \"Lina\", \"age\": 20}\n    utilisateur_info(user)                         # ❌ clé manquante\n\n    x = 5\n    if x > 3:\n        print(\"x est grand\")\n    else:\n        pass\n        pass\n        pass                                      # ❌ code inutile\n\n\nmain()                                            # ❌ pas protégé par if __name__\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'error', 'module': 'test2', 'obj': '', 'line': 22, 'column': 8, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'syntax-error', 'message': \"Parsing failed: 'cannot assign to expression here. Maybe you meant '==' instead of '='? (<unknown>, line 22)'\", 'message-id': 'E0001'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"test2.py\"],\n    \"total_issues\": 12,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 11,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"La fonction `calculer_moyenne` peut causer une `ZeroDivisionError` si la liste `notes` est vide. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 16,\n            \"severity\": \"high\",\n            \"type\": \"resource_leak\",\n            \"message\": \"Le fichier ouvert avec `open()` n'est jamais fermé, ce qui peut entraîner des fuites de ressources. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 22,\n            \"severity\": \"critical\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Erreur de syntaxe: utiliser `==` pour la comparaison au lieu de `=` pour l'assignation. Ceci est l'erreur détectée par Pylint (E0001). (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 25,\n            \"severity\": \"medium\",\n            \"type\": \"inconsistent_return_type\",\n            \"message\": \"La fonction `est_pair` retourne un booléen (`True`) et une chaîne de caractères (`\\\"False\\\"`), ce qui est incohérent et potentiellement source d'erreurs. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 28,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"La fonction `racine` utilise `math.sqrt` qui lèvera une `ValueError` si l'entrée est négative. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 33,\n            \"severity\": \"high\",\n            \"type\": \"potential_runtime_error\",\n            \"message\": \"Accès direct à la clé 'ville' du dictionnaire `user` sans vérification préalable, pouvant entraîner une `KeyError` si la clé est absente. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 37,\n            \"severity\": \"high\",\n            \"type\": \"runtime_error\",\n            \"message\": \"Appel à `calculer_moyenne` avec une liste `notes` vide, provoquant une `ZeroDivisionError` à l'exécution. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 39,\n            \"severity\": \"high\",\n            \"type\": \"potential_io_error\",\n            \"message\": \"L'ouverture du fichier 'data.txt' sans gestion d'erreurs peut provoquer un `FileNotFoundError` si le fichier n'existe pas. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 43,\n            \"severity\": \"high\",\n            \"type\": \"runtime_error\",\n            \"message\": \"Appel à la fonction `racine` avec une valeur négative (`-9`), ce qui entraînera une `ValueError` à l'exécution. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 46,\n            \"severity\": \"high\",\n            \"type\": \"runtime_error\",\n            \"message\": \"Appel à `utilisateur_info` avec un dictionnaire qui ne contient pas la clé 'ville', provoquant une `KeyError` à l'exécution. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 51,\n            \"severity\": \"low\",\n            \"type\": \"dead_code\",\n            \"message\": \"Les instructions `pass` consécutives sont inutiles et peuvent être supprimées pour améliorer la clarté du code. (Indiqué par ❌)\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 56,\n            \"severity\": \"medium\",\n            \"type\": \"module_execution_without_guard\",\n            \"message\": \"L'appel de la fonction `main()` n'est pas protégé par `if __name__ == '__main__':`, ce qui peut entraîner une exécution inattendue du code lors de l'importation du module. (Indiqué par ❌)\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger l'erreur de syntaxe (`=` au lieu de `==`) pour permettre l'exécution du code.\",\n        \"Ajouter une vérification pour les listes vides dans `calculer_moyenne` avant d'effectuer la division, ou gérer la `ZeroDivisionError`.\",\n        \"Utiliser un bloc `with open(...)` pour s'assurer que les fichiers sont toujours fermés automatiquement, même en cas d'erreur.\",\n        \"Assurer un type de retour cohérent (booléen) pour la fonction `est_pair`.\",\n        \"Ajouter une validation des entrées pour les fonctions (ex: s'assurer que le nombre passé à `racine` est non-négatif) ou utiliser des blocs `try-except` pour gérer les exceptions potentielles (`ValueError`, `KeyError`, `FileNotFoundError`).\",\n        \"Vérifier l'existence des clés de dictionnaire avant d'y accéder, par exemple en utilisant `dict.get()` avec une valeur par défaut.\",\n        \"Supprimer le code inutile (comme les instructions `pass` consécutives).\",\n        \"Encapsuler l'appel à la fonction `main()` dans un bloc `if __name__ == '__main__':` pour un meilleur contrôle de l'exécution du module.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "01a12b51-fafa-46fc-976e-6c1a1be6550d",
+        "timestamp": "2026-01-04T15:59:29.567458",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 42 : Une ligne vide finale est manquante dans le fichier. (Type: convention_missing_final_newline, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"\nThis module provides basic arithmetic operations.\n\"\"\"\n\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and y.\n    \"\"\"\n    return x * y\n\n\ndef bad_function():\n    \"\"\"\n    Performs a simple addition and returns the result.\n\n    Returns:\n        int: The sum of 1 and 2.\n    \"\"\"\n    x = 1 + 2\n    return x\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"\nThis module provides basic arithmetic operations.\n\"\"\"\n\n\ndef add(a, b):\n    \"\"\"\n    Adds two numbers.\n\n    Args:\n        a (int or float): The first number.\n        b (int or float): The second number.\n\n    Returns:\n        int or float: The sum of a and b.\n    \"\"\"\n    return a + b\n\n\ndef multiply(x, y):\n    \"\"\"\n    Multiplies two numbers.\n\n    Args:\n        x (int or float): The first number.\n        y (int or float): The second number.\n\n    Returns:\n        int or float: The product of x and...",
+            "issues_types": [
+                "convention_missing_final_newline"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "27efb724-9f7a-4935-b82f-5e9fd0bd9d27",
+        "timestamp": "2026-01-04T15:59:46.182146",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 12,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 12\n\nPROBLÈMES À CORRIGER :\n- Ligne 11 : La fonction `calculer_moyenne` peut causer une `ZeroDivisionError` si la liste `notes` est vide. (Indiqué par ❌) (Type: potential_runtime_error, Sévérité: high)\n- Ligne 16 : Le fichier ouvert avec `open()` n'est jamais fermé, ce qui peut entraîner des fuites de ressources. (Indiqué par ❌) (Type: resource_leak, Sévérité: high)\n- Ligne 22 : Erreur de syntaxe: utiliser `==` pour la comparaison au lieu de `=` pour l'assignation. Ceci est l'erreur détectée par Pylint (E0001). (Indiqué par ❌) (Type: syntax_error, Sévérité: critical)\n- Ligne 25 : La fonction `est_pair` retourne un booléen (`True`) et une chaîne de caractères (`\"False\"`), ce qui est incohérent et potentiellement source d'erreurs. (Indiqué par ❌) (Type: inconsistent_return_type, Sévérité: medium)\n- Ligne 28 : La fonction `racine` utilise `math.sqrt` qui lèvera une `ValueError` si l'entrée est négative. (Indiqué par ❌) (Type: potential_runtime_error, Sévérité: high)\n- Ligne 33 : Accès direct à la clé 'ville' du dictionnaire `user` sans vérification préalable, pouvant entraîner une `KeyError` si la clé est absente. (Indiqué par ❌) (Type: potential_runtime_error, Sévérité: high)\n- Ligne 37 : Appel à `calculer_moyenne` avec une liste `notes` vide, provoquant une `ZeroDivisionError` à l'exécution. (Indiqué par ❌) (Type: runtime_error, Sévérité: high)\n- Ligne 39 : L'ouverture du fichier 'data.txt' sans gestion d'erreurs peut provoquer un `FileNotFoundError` si le fichier n'existe pas. (Indiqué par ❌) (Type: potential_io_error, Sévérité: high)\n- Ligne 43 : Appel à la fonction `racine` avec une valeur négative (`-9`), ce qui entraînera une `ValueError` à l'exécution. (Indiqué par ❌) (Type: runtime_error, Sévérité: high)\n- Ligne 46 : Appel à `utilisateur_info` avec un dictionnaire qui ne contient pas la clé 'ville', provoquant une `KeyError` à l'exécution. (Indiqué par ❌) (Type: runtime_error, Sévérité: high)\n- Ligne 51 : Les instructions `pass` consécutives sont inutiles et peuvent être supprimées pour améliorer la clarté du code. (Indiqué par ❌) (Type: dead_code, Sévérité: low)\n- Ligne 56 : L'appel de la fonction `main()` n'est pas protégé par `if __name__ == '__main__':`, ce qui peut entraîner une exécution inattendue du code lors de l'importation du module. (Indiqué par ❌) (Type: module_execution_without_guard, Sévérité: medium)\n\nCODE ACTUEL :\n```python\nimport os, sys\nimport math\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)   # ❌ division par zéro possible\n\n\ndef lire_fichier(path):\n    f = open(path, \"r\")         # ❌ fichier jamais fermé\n    contenu = f.read()\n    return contenu\n\n\ndef est_pair(nombre):\n    if nombre % 2 = 0:          # ❌ erreur de syntaxe (= au lieu de ==)\n        return True\n    else:\n        return \"False\"          # ❌ mauvais type de retour\n\n\ndef racine(nombre):\n    return math.sqrt(nombre)   # ❌ crash si nombre < 0\n\n\ndef utilisateur_info(user):\n    print(\"Nom :\", user[\"nom\"])\n    print(\"Age :\", user[\"age\"])\n    print(\"Ville :\", user[\"ville\"])  # ❌ KeyError possible\n\n\ndef main():\n    notes = []\n    print(\"Moyenne :\", calculer_moyenne(notes))  # ❌ division par zéro\n\n    texte = lire_fichier(\"data.txt\")              # ❌ fichier peut ne pas exister\n    print(texte)\n\n    print(est_pair(3))\n\n    print(racine(-9))                              # ❌ ValueError\n\n    user = {\"nom\": \"Lina\", \"age\": 20}\n    utilisateur_info(user)                         # ❌ clé manquante\n\n    x = 5\n    if x > 3:\n        print(\"x est grand\")\n    else:\n        pass\n        pass\n        pass                                      # ❌ code inutile\n\n\nmain()                                            # ❌ pas protégé par if __name__\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "import os\nimport sys\nimport math\n\nCONSTANTE = 10\n\n\ndef calculer_moyenne(notes):\n    \"\"\"Calcule la moyenne d'une liste de nombres.\n\n    Args:\n        notes (list): Une liste de nombres (notes).\n\n    Returns:\n        float: La moyenne des notes. Retourne 0.0 si la liste est vide.\n    \"\"\"\n    if not notes:\n        return 0.0\n    somme = 0\n    for i in range(len(notes)):\n        somme += notes[i]\n\n    return somme / len(notes)\n\n\ndef lire_fichier(path):\n    \"\"\"Lit le contenu d'un fichier spécifié par...",
+            "issues_types": [
+                "potential_runtime_error",
+                "resource_leak",
+                "syntax_error",
+                "inconsistent_return_type",
+                "potential_runtime_error",
+                "potential_runtime_error",
+                "runtime_error",
+                "potential_io_error",
+                "runtime_error",
+                "runtime_error",
+                "dead_code",
+                "module_execution_without_guard"
+            ]
+        },
+        "status": "SUCCESS"
+    }
 ]

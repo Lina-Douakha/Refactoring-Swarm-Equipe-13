@@ -4,16 +4,16 @@ Rôle : Exécuter les tests unitaires et valider que le code fonctionne.
 """
 
 import os
-from typing import Dict, List
+from typing import Dict, List, Tuple
 from langchain_google_genai import ChatGoogleGenerativeAI
 from src.utils.logger import log_experiment, ActionType
-
+from dotenv import load_dotenv  
 # Import des outils du Toolsmith
 try:
     from src.tools.pytest_tool import run_pytest
     from src.tools.file_tools import read_file_safe
 except ImportError:
-    print("  ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
+    print("   ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
     print("   Les fonctions suivantes doivent être créées :")
     print("   - src/tools/pytest_tool.py : run_pytest()")
     print("   - src/tools/file_tools.py : read_file_safe()")
@@ -64,7 +64,7 @@ class JudgeAgent:
             model=model_name,
             temperature=0.1,  # Basse température pour analyse précise
         )
-        print(f"  JudgeAgent initialisé avec le modèle : {model_name}")
+        print(f"⚖️  JudgeAgent initialisé avec le modèle : {model_name}")
     
     def test(self, target_dir: str) -> Dict:
         """
@@ -76,7 +76,7 @@ class JudgeAgent:
         Returns:
             Dict: Résultat des tests avec statut et détails
         """
-        print(f"\n  [JUDGE] Démarrage des tests sur : {target_dir}")
+        print(f"\n⚖️  [JUDGE] Démarrage des tests sur : {target_dir}")
         
         try:
             # Étape 1 : Exécuter pytest
@@ -91,7 +91,7 @@ class JudgeAgent:
             
             # Étape 2 : Analyser les résultats
             if test_result.get("success", False):
-                #   SUCCÈS - Tous les tests passent
+                #    SUCCÈS - Tous les tests passent
                 print("🎉 [JUDGE] Tous les tests passent !")
                 
                 result = {
@@ -120,14 +120,16 @@ class JudgeAgent:
                 return result
             
             else:
-                #   ÉCHEC - Des tests ont échoué
-                print(f"  [JUDGE] {failed} test(s) ont échoué")
+                #    ÉCHEC - Des tests ont échoué
+                print(f"   [JUDGE] {failed} test(s) ont échoué")
                 
                 errors = test_result.get("errors", [])
                 
                 # Étape 3 : Analyser les erreurs avec le LLM
                 print("  Analyse des erreurs avec le LLM...")
-                analysis = self._analyze_test_failures(errors, target_dir)
+                
+                #    CORRECTION ICI : Récupérer les DEUX valeurs
+                analysis, llm_raw_response = self._analyze_test_failures(errors, target_dir)
                 
                 result = {
                     "success": False,
@@ -146,7 +148,7 @@ class JudgeAgent:
                     details={
                         "test_directory": target_dir,
                         "input_prompt": self._build_analysis_prompt(errors),
-                        "output_response": str(analysis),
+                        "output_response": llm_raw_response,  #    RÉPONSE BRUTE DU LLM
                         "passed": passed,
                         "failed": failed,
                         "errors_sample": errors[:3] if len(errors) > 3 else errors
@@ -157,7 +159,7 @@ class JudgeAgent:
                 return result
                 
         except Exception as e:
-            print(f"  [JUDGE] Erreur lors de l'exécution des tests : {str(e)}")
+            print(f"   [JUDGE] Erreur lors de l'exécution des tests : {str(e)}")
             
             log_experiment(
                 agent_name="Judge_Agent",
@@ -181,7 +183,7 @@ class JudgeAgent:
                 "recommendations": ["Vérifier que pytest est correctement installé et que les tests sont valides"]
             }
     
-    def _analyze_test_failures(self, errors: List[str], target_dir: str) -> Dict:
+    def _analyze_test_failures(self, errors: List[str], target_dir: str) -> Tuple[Dict, str]:
         """
         Analyse les échecs de tests avec le LLM.
         
@@ -190,7 +192,7 @@ class JudgeAgent:
             target_dir: Dossier contenant le code
             
         Returns:
-            Dict: Analyse des erreurs avec recommandations
+            Tuple[Dict, str]: (analyse_structurée, réponse_brute_du_LLM)
         """
         try:
             # Construire le prompt d'analyse
@@ -202,14 +204,15 @@ class JudgeAgent:
             # Parser la réponse
             analysis = self._parse_analysis_response(llm_response)
             
-            return analysis
+            #    Retourner les DEUX : le dictionnaire ET la réponse brute
+            return analysis, llm_response
             
         except Exception as e:
-            print(f"  Erreur lors de l'analyse LLM : {str(e)}")
+            print(f"   Erreur lors de l'analyse LLM : {str(e)}")
             return {
                 "recommendations": ["Corriger les erreurs de test"],
                 "root_causes": ["Erreur d'analyse"]
-            }
+            }, f"Erreur : {str(e)}"
     
     def _build_analysis_prompt(self, errors: List[str]) -> str:
         """
@@ -296,7 +299,7 @@ Génère un rapport JSON avec :
             }
             
         except json.JSONDecodeError:
-            print("  Impossible de parser la réponse JSON du LLM")
+            print("   Impossible de parser la réponse JSON du LLM")
             # Extraire au moins du texte utile
             return {
                 "recommendations": [response[:200]] if response else ["Corriger les erreurs de test"],
@@ -331,7 +334,7 @@ Génère un rapport JSON avec :
                 print(f"  - {os.path.basename(filepath)}: {score}/10")
             
             average_score = total_score / len(python_files) if python_files else 0
-            print(f"\n📈 Score moyen : {average_score:.2f}/10")
+            print(f"\n Score moyen : {average_score:.2f}/10")
             
             return average_score >= min_score
             

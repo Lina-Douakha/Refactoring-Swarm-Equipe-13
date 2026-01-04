@@ -1,51 +1,55 @@
-"""
-Scripts de test pour valider chaque agent individuellement
-"""
 
 # ============================================================================
-# TEST 1 : AUDITOR AGENT
+# TEST 2 : FIXER AGENT
 # ============================================================================
-# Fichier : test_auditor.py
+# Fichier : test_fixer.py
 
+from src.agents.fixer import FixerAgent
 from src.agents.auditor import AuditorAgent
 import json
 
-def test_auditor():
-    """Teste l'agent Auditor sur le dossier sandbox"""
+def test_fixer():
+    """Teste l'agent Fixer avec un rapport d'audit"""
     
     print("="*60)
-    print("TEST DE L'AUDITOR AGENT")
+    print("TEST DU FIXER AGENT")
     print("="*60)
     
-    # Initialiser l'agent
+    # Étape 1 : Générer un rapport avec l'Auditor
+    print("\n📋 Étape 1 : Génération du rapport d'audit...")
     auditor = AuditorAgent(model_name="gemini-2.5-flash")
+    audit_report = auditor.analyze(target_dir="sandbox")
     
-    # Analyser le dossier sandbox
-    sandbox_dir = "sandbox"
+    print(f"✅ Rapport généré : {audit_report['total_issues']} problème(s)")
+    
+    # Étape 2 : Corriger avec le Fixer
+    print("\n🔧 Étape 2 : Correction des fichiers...")
+    fixer = FixerAgent(model_name="gemini-2.5-flash")
     
     try:
-        report = auditor.analyze(target_dir=sandbox_dir)
+        fix_result = fixer.fix(
+            audit_report=audit_report,
+            target_dir="sandbox"
+        )
         
-        # Afficher le rapport
-        print("\n📊 RAPPORT D'AUDIT :")
-        print(json.dumps(report, indent=2, ensure_ascii=False))
+        # Afficher les résultats
+        print("\n📊 RÉSULTAT DES CORRECTIONS :")
+        print(json.dumps(fix_result, indent=2, ensure_ascii=False))
         
         # Vérifications
-        assert "files_analyzed" in report, "Clé 'files_analyzed' manquante"
-        assert "total_issues" in report, "Clé 'total_issues' manquante"
-        assert "issues" in report, "Clé 'issues' manquante"
-        assert "recommendations" in report, "Clé 'recommendations' manquante"
+        assert "files_fixed" in fix_result, "Clé 'files_fixed' manquante"
+        assert "total_fixes" in fix_result, "Clé 'total_fixes' manquante"
+        assert "status" in fix_result, "Clé 'status' manquante"
         
-        print("\n✅ TEST AUDITOR RÉUSSI !")
-        print(f"   - {len(report['files_analyzed'])} fichier(s) analysé(s)")
-        print(f"   - {report['total_issues']} problème(s) détecté(s)")
+        print("\n✅ TEST FIXER RÉUSSI !")
+        print(f"   - {len(fix_result['files_fixed'])} fichier(s) corrigé(s)")
+        print(f"   - {fix_result['total_fixes']} correction(s) appliquée(s)")
         
-        return report
+        return fix_result
         
     except Exception as e:
-        print(f"\n❌ TEST AUDITOR ÉCHOUÉ : {str(e)}")
+        print(f"\n❌ TEST FIXER ÉCHOUÉ : {str(e)}")
         raise
 
 if __name__ == "__main__":
-    test_auditor()
-
+    test_fixer()

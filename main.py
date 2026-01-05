@@ -1,23 +1,205 @@
+"""
+Point d'entrée principal du Refactoring Swarm
+Lancé par le Bot de Correction avec : python main.py --target_dir "./sandbox/dataset"
+"""
+
 import argparse
 import sys
 import os
 from dotenv import load_dotenv
-from src.utils.logger import log_experiment
+from src.utils.logger import log_experiment, ActionType
 
+# Charger les variables d'environnement
 load_dotenv()
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--target_dir", type=str, required=True)
-    args = parser.parse_args()
 
+def main():
+    """
+    Point d'entrée principal du système.
+    Lit les arguments, lance le Swarm, et retourne le statut final.
+    """
+    
+    # ========================================
+    # ÉTAPE 1 : PARSING DES ARGUMENTS
+    # ========================================
+    parser = argparse.ArgumentParser(
+        description="The Refactoring Swarm - Système multi-agents de refactoring automatique"
+    )
+    parser.add_argument(
+        "--target_dir", 
+        type=str, 
+        required=True,
+        help="Dossier contenant le code Python à refactoriser"
+    )
+    parser.add_argument(
+        "--max_iterations",
+        type=int,
+        default=10,
+        help="Nombre maximum d'itérations (défaut: 10)"
+    )
+    parser.add_argument(
+        "--model",
+        type=str,
+        default="gemini-2.0-flash-exp",
+        help="Modèle LLM à utiliser (défaut: gemini-2.0-flash-exp)"
+    )
+    
+    args = parser.parse_args()
+    
+    # ========================================
+    # ÉTAPE 2 : VALIDATIONS INITIALES
+    # ========================================
+    
+    # Vérifier que le dossier cible existe
     if not os.path.exists(args.target_dir):
-        print(f"❌ Dossier {args.target_dir} introuvable.")
+        print(f" ERREUR : Le dossier {args.target_dir} n'existe pas.")
+        sys.exit(1)
+    
+    # Vérifier que la clé API est configurée
+    api_key = os.getenv("GOOGLE_API_KEY")
+    if not api_key:
+        print(" ERREUR : La clé API GOOGLE_API_KEY n'est pas configurée dans le fichier .env")
+        sys.exit(1)
+    
+    # ========================================
+    # ÉTAPE 3 : LOGGING DU DÉMARRAGE
+    # ========================================
+    print("=" * 80)
+    print(" THE REFACTORING SWARM - DÉMARRAGE")
+    print("=" * 80)
+    print(f" Dossier cible    : {args.target_dir}")
+    print(f" Itérations max   : {args.max_iterations}")
+    print(f" Modèle LLM       : {args.model}")
+    print("=" * 80)
+    
+    log_experiment(
+        agent_name="System",
+        model_used="N/A",
+        action=ActionType.ANALYSIS,
+        details={
+            "input_prompt": f"Initialisation du système sur {args.target_dir}",
+            "output_response": f"Démarrage avec model={args.model}, max_iterations={args.max_iterations}",
+            "target_directory": args.target_dir,
+            "max_iterations": args.max_iterations,
+            "model_used": args.model
+        },
+        status="SUCCESS"
+    )
+    
+    # ========================================
+    # ÉTAPE 4 : LANCEMENT DU SWARM
+    # ========================================
+    try:
+        # Import de l'orchestrateur
+        from src.orchestrator.swarm_controller import run_refactoring_swarm
+        
+        print("\n Lancement du Swarm...\n")
+        
+        # Exécution du Swarm
+        result = run_refactoring_swarm(
+            target_dir=args.target_dir,
+            model_name=args.model,
+            max_iterations=args.max_iterations
+        )
+        
+        # ========================================
+        # ÉTAPE 5 : ANALYSE DU RÉSULTAT
+        # ========================================
+        print("\n" + "=" * 80)
+        print(" RÉSULTAT FINAL")
+        print("=" * 80)
+        
+        if result["success"]:
+            print(" MISSION ACCOMPLIE !")
+            print(f"   Le code a été refactorisé avec succès en {result['total_iterations']} itération(s).")
+            
+            # Logger le succès
+            log_experiment(
+                agent_name="System",
+                model_used=args.model,
+                action=ActionType.ANALYSIS,
+                details={
+                    "input_prompt": "Finalisation du système",
+                    "output_response": f"Succès en {result['total_iterations']} itérations",
+                    "success": True,
+                    "total_iterations": result['total_iterations'],
+                    "history": result.get('history', [])
+                },
+                status="SUCCESS"
+            )
+            
+            print("\n Logs disponibles dans : logs/experiment_data.json")
+            print("=" * 80)
+            sys.exit(0)  # Code de sortie 0 = SUCCÈS
+            
+        else:
+            print("  MISSION INCOMPLÈTE")
+            print(f"   Le système a effectué {result['total_iterations']} itération(s)")
+            
+            if result.get("max_iterations_reached"):
+                print(f"   Raison : Nombre maximum d'itérations atteint ({args.max_iterations})")
+            else:
+                print("   Raison : Erreur durant l'exécution")
+            
+            # Logger l'échec
+            log_experiment(
+                agent_name="System",
+                model_used=args.model,
+                action=ActionType.DEBUG,
+                details={
+                    "input_prompt": "Finalisation du système",
+                    "output_response": f"Échec après {result['total_iterations']} itérations",
+                    "success": False,
+                    "total_iterations": result['total_iterations'],
+                    "max_iterations_reached": result.get("max_iterations_reached", False),
+                    "history": result.get('history', [])
+                },
+                status="FAILURE"
+            )
+            
+            print("\n Consultez les logs pour plus de détails : logs/experiment_data.json")
+            print("=" * 80)
+            sys.exit(1)  # Code de sortie 1 = ÉCHEC
+    
+    except ImportError as e:
+        print(f"\n ERREUR D'IMPORT : {str(e)}")
+        print("   Vérifiez que tous les modules sont correctement installés.")
+        print("   Commande : pip install -r requirements.txt")
+        
+        log_experiment(
+            agent_name="System",
+            model_used="N/A",
+            action=ActionType.DEBUG,
+            details={
+                "input_prompt": "Import des modules",
+                "output_response": f"Erreur d'import : {str(e)}",
+                "error_type": "ImportError"
+            },
+            status="FAILURE"
+        )
+        sys.exit(1)
+    
+    except Exception as e:
+        print(f"\n ERREUR CRITIQUE : {str(e)}")
+        print(f"   Type d'erreur : {type(e).__name__}")
+        
+        # Logger l'erreur critique
+        log_experiment(
+            agent_name="System",
+            model_used=args.model,
+            action=ActionType.DEBUG,
+            details={
+                "input_prompt": f"Exécution du système sur {args.target_dir}",
+                "output_response": f"Erreur critique : {str(e)}",
+                "error_type": type(e).__name__,
+                "target_dir": args.target_dir
+            },
+            status="FAILURE"
+        )
+        
+        print("\n Consultez les logs pour plus de détails : logs/experiment_data.json")
         sys.exit(1)
 
-    print(f"🚀 DEMARRAGE SUR : {args.target_dir}")
-    log_experiment("System", "STARTUP", f"Target: {args.target_dir}", "INFO")
-    print("✅ MISSION_COMPLETE")
 
 if __name__ == "__main__":
     main()

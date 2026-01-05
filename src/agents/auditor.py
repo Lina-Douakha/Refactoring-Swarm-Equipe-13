@@ -63,7 +63,7 @@ class AuditorAgent:
             temperature=0.1,  # Basse température pour plus de précision
             convert_system_message_to_human=True
         )
-        print(f"✅ AuditorAgent initialisé avec le modèle : {model_name}")
+        print(f"AuditorAgent initialisé avec le modèle : {model_name}")
     
     def analyze(self, target_dir: str) -> Dict:
         """
@@ -75,15 +75,15 @@ class AuditorAgent:
         Returns:
             Dict: Rapport d'audit contenant les problèmes détectés
         """
-        print(f"\n🔍 [AUDITOR] Démarrage de l'analyse de : {target_dir}")
+        print(f"\n [AUDITOR] Démarrage de l'analyse de : {target_dir}")
         
         try:
             # Étape 1 : Lister les fichiers Python
-            print("📂 Recherche des fichiers Python...")
+            print(" Recherche des fichiers Python...")
             python_files = list_python_files(target_dir)
             
             if not python_files:
-                print("⚠️  Aucun fichier Python trouvé dans le dossier.")
+                print("  Aucun fichier Python trouvé dans le dossier.")
                 return {
                     "files_analyzed": [],
                     "total_issues": 0,
@@ -91,14 +91,14 @@ class AuditorAgent:
                     "recommendations": ["Aucun fichier Python à analyser"]
                 }
             
-            print(f"✅ {len(python_files)} fichier(s) Python trouvé(s)")
+            print(f" {len(python_files)} fichier(s) Python trouvé(s)")
             
             # Étape 2 : Analyser chaque fichier
             all_issues = []
             files_analyzed = []
             
             for filename in python_files:
-                print(f"\n📄 Analyse de : {filename}")
+                print(f"\n Analyse de : {filename}")
                 
                 # Construire le chemin complet
                 full_path = os.path.join(target_dir, filename)
@@ -118,7 +118,7 @@ class AuditorAgent:
                 )
                 
                 # Appeler le LLM
-                print(f"🤖 Consultation du LLM pour l'analyse...")
+                print(f" Consultation du LLM pour l'analyse...")
                 llm_response = self._call_llm(user_prompt)
                 
                 # Logger l'interaction
@@ -140,7 +140,7 @@ class AuditorAgent:
                 all_issues.extend(file_issues)
                 files_analyzed.append(filename)
                 
-                print(f"✅ Analyse terminée : {len(file_issues)} problème(s) détecté(s)")
+                print(f" Analyse terminée : {len(file_issues)} problème(s) détecté(s)")
             
             # Étape 3 : Générer le rapport final
             report = {
@@ -150,11 +150,11 @@ class AuditorAgent:
                 "recommendations": self._generate_recommendations(all_issues)
             }
             
-            print(f"\n✅ [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
+            print(f"\n [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
             return report
             
         except Exception as e:
-            print(f"❌ [AUDITOR] Erreur lors de l'analyse : {str(e)}")
+            print(f" [AUDITOR] Erreur lors de l'analyse : {str(e)}")
             log_experiment(
                 agent_name="Auditor_Agent",
                 model_used=self.model_name,
@@ -253,7 +253,7 @@ Génère un rapport JSON avec les problèmes détectés les plus importants."""
             return issues
             
         except json.JSONDecodeError as e:
-            print(f"⚠️  Impossible de parser la réponse JSON du LLM : {str(e)}")
+            print(f"  Impossible de parser la réponse JSON du LLM : {str(e)}")
             # En cas d'échec, créer au moins un issue basique
             return [{
                 "file": filename,

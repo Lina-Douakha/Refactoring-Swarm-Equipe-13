@@ -52,7 +52,7 @@ class FixerAgent:
         self.model_name = model_name
         self.llm = ChatGoogleGenerativeAI(
             model=model_name,
-            temperature=0.2,  # Un peu plus de créativité pour les corrections
+            temperature=0.2,  
         )
         print(f" FixerAgent initialisé avec le modèle : {model_name}")
     
@@ -67,7 +67,7 @@ class FixerAgent:
         Returns:
             Dict: Résumé des corrections effectuées
         """
-        print(f"\n🔧 [FIXER] Démarrage des corrections...")
+        print(f"\n [FIXER] Démarrage des corrections...")
         
         try:
             issues = audit_report.get("issues", [])
@@ -277,7 +277,7 @@ Retourne uniquement le code Python corrigé, sans explication."""
         Returns:
             str: Code corrigé
         """
-        print(f"\n🔄 [FIXER] Nouvelle tentative de correction pour : {os.path.basename(filepath)}")
+        print(f"\n [FIXER] Nouvelle tentative de correction pour : {os.path.basename(filepath)}")
         
         try:
             original_content = read_file_safe(filepath, target_dir)

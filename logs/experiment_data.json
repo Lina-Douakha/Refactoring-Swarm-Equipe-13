@@ -422,5 +422,419 @@
             ]
         },
         "status": "SUCCESS"
+    },
+    {
+        "id": "3377146a-ce31-415b-b541-fc4ea38edc8d",
+        "timestamp": "2026-01-04T16:25:45.462565",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 15.225586492s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "5d443973-c987-4a3c-ba54-c8da550d7fcd",
+        "timestamp": "2026-01-04T16:47:01.988142",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 58.65385463s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "87df716d-b257-4840-9fa6-ef41071216cd",
+        "timestamp": "2026-01-04T16:47:02.264356",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 58.65385463s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "b77443a7-8963-491a-b0dd-9df4c3b3a889",
+        "timestamp": "2026-01-04T17:57:22.900066",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-flash-latest' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 37.703458987s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "68835518-f5df-48a7-bf1c-017b9d1905db",
+        "timestamp": "2026-01-04T17:58:06.902675",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-flash-latest' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 53.696565439s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "686c9222-4db8-4c8a-ad98-2b7402a72cb2",
+        "timestamp": "2026-01-04T18:00:28.557996",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-flash-latest' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c93281b2-ce7a-46f5-a374-01fcf04bc044",
+        "timestamp": "2026-01-04T18:01:07.963525",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-flash-latest' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "20f8f51f-13f8-44c0-beb1-464ac4234a74",
+        "timestamp": "2026-01-05T00:06:45.318937",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "```json\n{\n    \"error_type\": \"AnalysisFailure\",\n    \"affected_function\": \"N/A (Traceback Manquant)\",\n    \"root_cause\": \"Les résultats des tests pytest (traceback, messages d'erreur, AssertionErrors) sont manquants dans l'entrée. L'analyse de la cause profonde de l'échec du test est impossible sans le détail de l'erreur.\",\n    \"recommendation\": \"Veuillez fournir le traceback complet et exact généré par pytest pour l'échec du test (incluant le type d'erreur, la ligne de code, et les valeurs attendues/obtenues).\",\n    \"severity\": \"high\"\n}\n```",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "60e7b397-7b4a-49c0-8b80-969e1704bcb5",
+        "timestamp": "2026-01-05T00:07:27.911112",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-flash-latest' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 32.106251191s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "046696bb-fefd-411b-b16c-a0f4375164d5",
+        "timestamp": "2026-01-05T18:37:33.581222",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "```json\n{\n    \"error_type\": \"ReportingError\",\n    \"affected_function\": \"N/A (Système de Rapport Pytest)\",\n    \"root_cause\": \"Les données de sortie (STDOUT) du processus de test sont manquantes ou vides, rendant l'analyse des échecs impossible. L'erreur rapportée concerne l'incapacité à parser les résultats plutôt qu'une erreur de code Python spécifique.\",\n    \"recommendation\": \"Vérifier l'environnement d'exécution des tests. Relancer pytest avec une verbosité élevée (par exemple, `pytest -vv --showlocals`) pour s'assurer que le traceback complet est capturé, et vérifier les journaux d'erreurs au niveau du système (STDERR) pour toute anomalie d'exécution.\",\n    \"severity\": \"high\"\n}\n```",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "3aad0093-dc34-461c-8c4e-e7563c2dafd7",
+        "timestamp": "2026-01-05T18:37:45.838374",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test3.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test3.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n# ============================================================================\n# sandbox/test_calculator.py\n# ============================================================================\n\"\"\"Tests unitaires pour les fonctions mathématiques\"\"\"\n\ndef test_add():\n    \"\"\"Teste la fonction add()\"\"\"\n    from test import add\n    assert add(2, 3) == 5\n    assert add(0, 0) == 0\n    assert add(-1, 1) == 0\n    assert add(10, -5) == 5\n\ndef test_multiply():\n    \"\"\"Teste la fonction multiply()\"\"\"\n    from test import multiply\n    assert multiply(2, 3) == 6\n    assert multiply(0, 5) == 0\n    assert multiply(-2, 3) == -6\n    assert multiply(10, 10) == 100\n\ndef test_bad_function():\n    \"\"\"Teste bad_function()\"\"\"\n    from test import bad_function\n    assert bad_function() == 3\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test3', 'obj': 'test_add', 'line': 8, 'column': 4, 'endLine': 8, 'endColumn': 24, 'path': 'sandbox\\\\test3.py', 'symbol': 'import-outside-toplevel', 'message': 'Import outside toplevel (test.add)', 'message-id': 'C0415'}, {'type': 'error', 'module': 'test3', 'obj': 'test_add', 'line': 8, 'column': 4, 'endLine': 8, 'endColumn': 24, 'path': 'sandbox\\\\test3.py', 'symbol': 'no-name-in-module', 'message': \"No name 'add' in module 'test'\", 'message-id': 'E0611'}, {'type': 'convention', 'module': 'test3', 'obj': 'test_multiply', 'line': 16, 'column': 4, 'endLine': 16, 'endColumn': 29, 'path': 'sandbox\\\\test3.py', 'symbol': 'import-outside-toplevel', 'message': 'Import outside toplevel (test.multiply)', 'message-id': 'C0415'}, {'type': 'error', 'module': 'test3', 'obj': 'test_multiply', 'line': 16, 'column': 4, 'endLine': 16, 'endColumn': 29, 'path': 'sandbox\\\\test3.py', 'symbol': 'no-name-in-module', 'message': \"No name 'multiply' in module 'test'\", 'message-id': 'E0611'}, {'type': 'convention', 'module': 'test3', 'obj': 'test_bad_function', 'line': 24, 'column': 4, 'endLine': 24, 'endColumn': 33, 'path': 'sandbox\\\\test3.py', 'symbol': 'import-outside-toplevel', 'message': 'Import outside toplevel (test.bad_function)', 'message-id': 'C0415'}, {'type': 'error', 'module': 'test3', 'obj': 'test_bad_function', 'line': 24, 'column': 4, 'endLine': 24, 'endColumn': 33, 'path': 'sandbox\\\\test3.py', 'symbol': 'no-name-in-module', 'message': \"No name 'bad_function' in module 'test'\", 'message-id': 'E0611'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test3.py\"\n    ],\n    \"total_issues\": 6,\n    \"issues\": [\n        {\n            \"file\": \"test3.py\",\n            \"line\": 8,\n            \"severity\": \"high\",\n            \"type\": \"no-name-in-module\",\n            \"message\": \"L'objet 'add' est introuvable dans le module 'test'. (E0611)\"\n        },\n        {\n            \"file\": \"test3.py\",\n            \"line\": 8,\n            \"severity\": \"medium\",\n            \"type\": \"import-outside-toplevel\",\n            \"message\": \"L'instruction d'importation doit être placée au niveau supérieur du module, et non à l'intérieur de la fonction. (C0415)\"\n        },\n        {\n            \"file\": \"test3.py\",\n            \"line\": 16,\n            \"severity\": \"high\",\n            \"type\": \"no-name-in-module\",\n            \"message\": \"L'objet 'multiply' est introuvable dans le module 'test'. (E0611)\"\n        },\n        {\n            \"file\": \"test3.py\",\n            \"line\": 16,\n            \"severity\": \"medium\",\n            \"type\": \"import-outside-toplevel\",\n            \"message\": \"L'instruction d'importation doit être placée au niveau supérieur du module.\"\n        },\n        {\n            \"file\": \"test3.py\",\n            \"line\": 24,\n            \"severity\": \"high\",\n            \"type\": \"no-name-in-module\",\n            \"message\": \"L'objet 'bad_function' est introuvable dans le module 'test'. (E0611)\"\n        }\n    ],\n    \"recommendations\": [\n        \"Déplacer toutes les instructions d'importation (`from test import ...`) au début du fichier (niveau toplevel) pour respecter les conventions Python et éviter les imports dynamiques inutiles.\",\n        \"Vérifier l'existence et l'accessibilité du module 'test', et s'assurer que les fonctions 'add', 'multiply', et 'bad_function' y sont correctement définies et exportées (correction des erreurs E0611).\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "41034d8f-89de-47b5-afca-ae534619ad5a",
+        "timestamp": "2026-01-05T18:37:53.693992",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test4.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test4.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\n\n# ============================================================================\n# sandbox/test_operations.py\n# ============================================================================\n\"\"\"Tests pour les opérations avancées\"\"\"\n\ndef test_divide():\n    \"\"\"Teste la fonction divide()\"\"\"\n    from test2 import divide\n    assert divide(10, 2) == 5\n    assert divide(9, 3) == 3\n    assert divide(1, 1) == 1\n    \n    # Tester la gestion du zéro\n    try:\n        result = divide(5, 0)\n        assert False, \"Devrait lever une exception pour division par zéro\"\n    except (ZeroDivisionError, ValueError):\n        pass  # C'est attendu\n\ndef test_get_name():\n    \"\"\"Teste la fonction get_name()\"\"\"\n    from test2 import get_name\n    result = get_name()\n    assert result == \"Alice\"\n    assert isinstance(result, str)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'test4', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test4.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'test4', 'obj': '', 'line': 27, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'error', 'module': 'test4', 'obj': 'test_divide', 'line': 10, 'column': 4, 'endLine': 10, 'endColumn': 28, 'path': 'sandbox\\\\test4.py', 'symbol': 'import-error', 'message': \"Unable to import 'test2'\", 'message-id': 'E0401'}, {'type': 'convention', 'module': 'test4', 'obj': 'test_divide', 'line': 10, 'column': 4, 'endLine': 10, 'endColumn': 28, 'path': 'sandbox\\\\test4.py', 'symbol': 'import-outside-toplevel', 'message': 'Import outside toplevel (test2.divide)', 'message-id': 'C0415'}, {'type': 'warning', 'module': 'test4', 'obj': 'test_divide', 'line': 17, 'column': 8, 'endLine': 17, 'endColumn': 14, 'path': 'sandbox\\\\test4.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'result'\", 'message-id': 'W0612'}, {'type': 'error', 'module': 'test4', 'obj': 'test_get_name', 'line': 24, 'column': 4, 'endLine': 24, 'endColumn': 30, 'path': 'sandbox\\\\test4.py', 'symbol': 'import-error', 'message': \"Unable to import 'test2'\", 'message-id': 'E0401'}, {'type': 'convention', 'module': 'test4', 'obj': 'test_get_name', 'line': 24, 'column': 4, 'endLine': 24, 'endColumn': 30, 'path': 'sandbox\\\\test4.py', 'symbol': 'import-outside-toplevel', 'message': 'Import outside toplevel (test2.get_name)', 'message-id': 'C0415'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": [
+                {
+                    "type": "text",
+                    "text": "```json\n{\n    \"files_analyzed\": [\n        \"test4.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"test4.py\",\n            \"line\": 10,\n            \"severity\": \"high\",\n            \"type\": \"import_error\",\n            \"message\": \"Impossible d'importer le module 'test2'.\"\n        },\n        {\n            \"file\": \"test4.py\",\n            \"line\": 24,\n            \"severity\": \"high\",\n            \"type\": \"import_error\",\n            \"message\": \"Impossible d'importer le module 'test2'.\"\n        },\n        {\n            \"file\": \"test4.py\",\n            \"line\": 10,\n            \"severity\": \"medium\",\n            \"type\": \"convention\",\n            \"message\": \"Les importations devraient être placées au niveau supérieur du module (C0415).\"\n        },\n        {\n            \"file\": \"test4.py\",\n            \"line\": 24,\n            \"severity\": \"medium\",\n            \"type\": \"convention\",\n            \"message\": \"Les importations devraient être placées au niveau supérieur du module (C0415).\"\n        },\n        {\n            \"file\": \"test4.py\",\n            \"line\": 17,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"La variable 'result' est assignée mais jamais utilisée.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Assurez-vous que le module 'test2' est accessible dans l'environnement d'exécution (PYTHONPATH).\",\n        \"Déplacez toutes les instructions 'import' au début du fichier, au niveau supérieur, pour éviter 'import-outside-toplevel'.\",\n        \"Supprimez la variable 'result' inutilisée à la ligne 17.\",\n        \"Ajoutez une nouvelle ligne à la fin du fichier et supprimez les espaces de fin de ligne pour respecter les conventions de style (PEP 8).\"\n    ]\n}\n```",
+                    "extras": {
+                        "signature": "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"
+                    }
+                }
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e04180d7-fcfa-4440-9e07-8183fdad166c",
+        "timestamp": "2026-01-05T18:37:55.329550",
+        "agent": "Auditor_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier sandbox",
+            "output_response": "Erreur : 'list' object has no attribute 'strip'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "0c99dd85-6f2a-46ad-859c-a185a854f37f",
+        "timestamp": "2026-01-05T18:41:35.749716",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : 'list' object has no attribute 'strip'",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "4d5a1f8f-97db-4d77-a9f3-0f642c5ffc5e",
+        "timestamp": "2026-01-05T18:59:33.384846",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "```json\n{\n    \"error_type\": \"ParsingFailure\",\n    \"affected_function\": \"Test Runner/Output Collection\",\n    \"root_cause\": \"Le message d'erreur indique que le processus d'analyse des résultats (parsing) a échoué car le contenu de STDOUT (Standard Output) était vide ou illisible. Il manque le traceback réel et les détails de l'échec du test Python. Aucune information sur la fonction ou l'assertion défaillante n'est disponible.\",\n    \"recommendation\": \"Veuillez fournir le contenu complet et non tronqué du STDOUT généré par pytest. Ce contenu doit inclure le traceback détaillé, les lignes de code incriminées et les messages d'erreur spécifiques (AssertionError, TypeError, etc.), pour permettre l'analyse des tests ayant échoué.\",\n    \"severity\": \"critical\"\n}\n```",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "47a098a6-fa81-4bfa-8bae-f1d67dd88dc9",
+        "timestamp": "2026-01-05T19:01:41.541281",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "```json\n{\n    \"error_type\": \"MissingTracebackError\",\n    \"affected_function\": \"Unknown (Traceback non fourni)\",\n    \"root_cause\": \"Les données de sortie standard (STDOUT) contenant la trace d'erreur pytest sont vides ou n'ont pas pu être capturées/parsées. Il est impossible d'identifier l'erreur spécifique (AssertionError, TypeError, etc.) et sa localisation sans la trace complète du test échoué.\",\n    \"recommendation\": \"Le problème n'est pas le code Python, mais l'outil de reporting ou l'environnement d'exécution qui a généré ce rapport. Veuillez exécuter les tests à nouveau en mode verbeux (`pytest -v`) et fournir la sortie complète, y compris la traceback détaillée du test ayant échoué.\",\n    \"severity\": \"high\"\n}\n```",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e4acd288-8a84-4352-8ce9-4b0c87eaeb4f",
+        "timestamp": "2026-01-05T19:02:29.737793",
+        "agent": "Judge_Agent",
+        "model": "gemini-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "```json\n{\n    \"error_type\": \"Missing Pytest Traceback\",\n    \"affected_function\": \"N/A - Données manquantes\",\n    \"root_cause\": \"Le message d'erreur indique que le résultat du test (STDOUT) n'a pas été parsé et que le contenu de la sortie standard est vide. Il est impossible de diagnostiquer la cause réelle de l'échec du test (AssertionError, TypeError, etc.) sans le traceback complet de pytest.\",\n    \"recommendation\": \"Veuillez fournir la sortie complète de pytest. Cette sortie doit inclure le traceback détaillé, la ligne de code spécifique et le type d'erreur généré (par exemple, AssertionError: assert 5 == '5').\",\n    \"severity\": \"critical\"\n}\n```",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "6f3ab363-f1e4-44d3-b5a4-410b7ddf1cb4",
+        "timestamp": "2026-01-05T19:10:16.794648",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-2.0-flash-exp' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\\nPlease retry in 44.124505494s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "60ff872d-8ab7-41e4-bf60-b78934a849b3",
+        "timestamp": "2026-01-05T19:15:42.749113",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8271a0a8-1cdc-48ab-94d9-581efa583d03",
+        "timestamp": "2026-01-05T19:18:49.379454",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "fd415d6e-2ae5-4bb1-8fd7-918eaef67249",
+        "timestamp": "2026-01-05T19:21:39.807024",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-flash-latest' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e0e9ab17-f963-4f6f-b1df-82a7fcdc1508",
+        "timestamp": "2026-01-05T19:24:02.299007",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-flash-latest' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e8a8d359-8357-4125-aa63-a47266a4e7af",
+        "timestamp": "2026-01-05T19:24:45.727374",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-flash-latest' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "5f95766d-bbd9-497f-aa60-7814b5895863",
+        "timestamp": "2026-01-05T19:25:13.212135",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-pro-latest",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Analyse ces erreurs de tests pytest.\n\nNOMBRE D'ERREURS : 1\n\nMESSAGES D'ERREUR :\nERREUR 1:\nImpossible de parser les résultats. STDOUT: \n\nGénère un rapport JSON avec recommendations et root_causes.",
+            "output_response": "Erreur : Error calling model 'gemini-1.5-pro-latest' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+            "passed": 0,
+            "failed": 0,
+            "errors_sample": [
+                "Impossible de parser les résultats. STDOUT: "
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "39513437-5312-4ef2-b8eb-c84965c266f2",
+        "timestamp": "2026-01-05T19:34:07.181721",
+        "agent": "Judge_Agent",
+        "model": "gemini-1.5-flash",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "sandbox",
+            "input_prompt": "Exécution et validation de pytest dans sandbox",
+            "output_response": "Résultat: 4 tests réussis sur 4. Tous les tests passent.",
+            "passed": 4,
+            "failed": 0,
+            "total": 4
+        },
+        "status": "SUCCESS"
     }
 ]

@@ -32,7 +32,7 @@ def read_file_safe(filepath: str, sandbox_dir: str = None) -> str:
     
     # Vérifier la sécurité (le fichier doit être dans sandbox_dir)
     if not abs_path.startswith(sandbox_dir):
-        raise PermissionError(f"❌ Accès refusé : {filepath} est hors du sandbox {sandbox_dir}")
+        raise PermissionError(f" Accès refusé : {filepath} est hors du sandbox {sandbox_dir}")
     
     # Lire le fichier
     with open(abs_path, "r", encoding="utf-8") as f:
@@ -57,7 +57,7 @@ def write_file_safe(filepath: str, content: str, sandbox_dir: str = None):
     
     # Vérifier la sécurité
     if not abs_path.startswith(sandbox_dir):
-        raise PermissionError(f"❌ Accès refusé : {filepath} est hors du sandbox")
+        raise PermissionError(f" Accès refusé : {filepath} est hors du sandbox")
     
     # Créer les dossiers parents si nécessaires
     os.makedirs(os.path.dirname(abs_path), exist_ok=True)
@@ -78,7 +78,7 @@ def list_python_files(directory: str) -> list:
     abs_dir = os.path.abspath(directory)
     
     if not os.path.exists(abs_dir):
-        raise FileNotFoundError(f"❌ Dossier introuvable : {abs_dir}")
+        raise FileNotFoundError(f" Dossier introuvable : {abs_dir}")
     
     return [f for f in os.listdir(abs_dir) if f.endswith(".py")]
 

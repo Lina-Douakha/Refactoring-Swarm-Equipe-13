@@ -14,17 +14,17 @@ def run_pytest(test_dir: str) -> dict:
     Returns:
         dict: Résultats des tests
     """
-    # Chemin du rapport JSON
+    
     report_path = os.path.join(test_dir, ".report.json")
     
-    # ✅ SOLUTION : Exécuter pytest avec collecte forcée
+    
     result = subprocess.run(
         [
             "pytest", 
             test_dir,
-            "--python_files=*.py",      # Accepte tous les .py
-            "--python_classes=*",        # Accepte toutes les classes
-            "--python_functions=*",      # ✅ ACCEPTE TOUTES LES FONCTIONS
+            "--python_files=*.py",      
+            "--python_classes=*",        
+            "--python_functions=*",      
             "--json-report",
             f"--json-report-file={report_path}",
             "--tb=short",
@@ -35,7 +35,7 @@ def run_pytest(test_dir: str) -> dict:
         text=True
     )
     
-    # Parser les résultats
+    
     return parse_test_results(report_path, result.stdout, result.stderr, test_dir)
 
 def parse_test_results(report_path: str, stdout: str, stderr: str, test_dir: str) -> dict:
@@ -53,7 +53,7 @@ def parse_test_results(report_path: str, stdout: str, stderr: str, test_dir: str
         dict: Résultats structurés
     """
     try:
-        # Essayer de lire le rapport JSON
+        
         if os.path.exists(report_path):
             with open(report_path, "r", encoding="utf-8") as f:
                 report = json.load(f)
@@ -62,7 +62,7 @@ def parse_test_results(report_path: str, stdout: str, stderr: str, test_dir: str
             passed = sum(1 for t in tests if t.get("outcome") == "passed")
             failed = sum(1 for t in tests if t.get("outcome") == "failed")
             
-            # ✅ Si tests trouvés, retourner les résultats
+            
             if tests:
                 errors = []
                 for test in tests:
@@ -77,10 +77,10 @@ def parse_test_results(report_path: str, stdout: str, stderr: str, test_dir: str
                     "errors": errors
                 }
     except Exception as e:
-        print(f"⚠️ Erreur lors du parsing du rapport : {str(e)}")
+        print(f" Erreur lors du parsing du rapport : {str(e)}")
     
-    # ✅ SI AUCUN TEST TROUVÉ : Exécuter directement les fichiers Python
-    print("⚠️ Aucun test pytest trouvé, exécution directe des fichiers Python...")
+    
+    print(" Aucun test pytest trouvé, exécution directe des fichiers Python...")
     return run_python_files_directly(test_dir)
 
 def run_python_files_directly(test_dir: str) -> dict:
@@ -112,7 +112,7 @@ def run_python_files_directly(test_dir: str) -> dict:
         filepath = os.path.join(test_dir, filename)
         print(f"   Exécution de {filename}...")
         
-        # Exécuter le fichier Python
+        
         result = subprocess.run(
             [sys.executable, filepath],
             capture_output=True,
@@ -122,12 +122,12 @@ def run_python_files_directly(test_dir: str) -> dict:
         
         if result.returncode == 0:
             passed += 1
-            print(f"   ✅ {filename} exécuté sans erreur")
+            print(f"    {filename} exécuté sans erreur")
         else:
             failed += 1
             error_msg = result.stderr if result.stderr else result.stdout
             errors.append(f"{filename}: {error_msg[:500]}")
-            print(f"   ❌ {filename} a produit une erreur")
+            print(f"    {filename} a produit une erreur")
     
     return {
         "success": failed == 0,

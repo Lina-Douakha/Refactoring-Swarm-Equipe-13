@@ -1,4 +1,4 @@
-# pylint_tool.py
+
 import subprocess
 import json
 

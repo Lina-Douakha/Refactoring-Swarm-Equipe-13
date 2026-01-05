@@ -1,7 +1,7 @@
 import os
 import sys
 
-# Import de sandbox_guard
+
 try:
     from ..utils.sandbox_guard import is_path_safe
 except (ImportError, ValueError):
@@ -21,20 +21,20 @@ def read_file_safe(filepath: str, sandbox_dir: str = None) -> str:
     Returns:
         str: Contenu du fichier
     """
-    # Si sandbox_dir n'est pas fourni, utiliser le dossier sandbox par défaut
+    
     if sandbox_dir is None:
         sandbox_dir = os.path.abspath("sandbox")
     else:
         sandbox_dir = os.path.abspath(sandbox_dir)
     
-    # Convertir le filepath en absolu
+    
     abs_path = os.path.abspath(filepath)
     
-    # Vérifier la sécurité (le fichier doit être dans sandbox_dir)
+    
     if not abs_path.startswith(sandbox_dir):
         raise PermissionError(f" Accès refusé : {filepath} est hors du sandbox {sandbox_dir}")
     
-    # Lire le fichier
+    
     with open(abs_path, "r", encoding="utf-8") as f:
         return f.read()
 
@@ -52,14 +52,14 @@ def write_file_safe(filepath: str, content: str, sandbox_dir: str = None):
     else:
         sandbox_dir = os.path.abspath(sandbox_dir)
     
-    # Convertir en absolu
+    
     abs_path = os.path.abspath(filepath)
     
-    # Vérifier la sécurité
+    
     if not abs_path.startswith(sandbox_dir):
         raise PermissionError(f" Accès refusé : {filepath} est hors du sandbox")
     
-    # Créer les dossiers parents si nécessaires
+    
     os.makedirs(os.path.dirname(abs_path), exist_ok=True)
     
     with open(abs_path, "w", encoding="utf-8") as f:

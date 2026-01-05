@@ -7,21 +7,21 @@ import os
 from typing import Dict
 from dotenv import load_dotenv
 
-# Charger les variables d'environnement
+
 load_dotenv()
 
-# Import des agents
+
 from src.agents.auditor import AuditorAgent
 from src.agents.fixer import FixerAgent
 from src.agents.judge import JudgeAgent
 
-# Import du logger
+
 from src.utils.logger import log_experiment, ActionType
 
 
 def run_refactoring_swarm(
     target_dir: str,
-    model_name: str = "gemini-2.5-flash",
+    model_name: str = "gemini-2.5-flash-lite",  
     max_iterations: int = 10
 ) -> Dict:
     """
@@ -50,23 +50,23 @@ def run_refactoring_swarm(
     print(f" Itérations max : {max_iterations}")
     print("="*70)
     
-    # Vérifier que le dossier existe
+    
     if not os.path.exists(target_dir):
         raise FileNotFoundError(f" Le dossier {target_dir} n'existe pas")
     
-    # Initialiser les agents
+    
     print("\n Initialisation des agents...")
     auditor = AuditorAgent(model_name=model_name)
     fixer = FixerAgent(model_name=model_name)
     judge = JudgeAgent(model_name=model_name)
     print(" Tous les agents sont prêts\n")
     
-    # Variables de suivi
+    
     iteration = 0
     all_tests_passed = False
     history = []
     
-    # Boucle principale
+    
     while iteration < max_iterations and not all_tests_passed:
         iteration += 1
         
@@ -75,9 +75,9 @@ def run_refactoring_swarm(
         print("="*70)
         
         try:
-            # ========================================
-            # ÉTAPE 1 : AUDITOR - Analyse du code
-            # ========================================
+            
+            
+            
             print("\n ÉTAPE 1/3 : Analyse du code par l'Auditor")
             print("-"*70)
             
@@ -87,9 +87,9 @@ def run_refactoring_swarm(
             print(f"   - Fichiers analysés : {len(audit_report['files_analyzed'])}")
             print(f"   - Problèmes détectés : {audit_report['total_issues']}")
             
-            # ========================================
-            # ÉTAPE 2 : FIXER - Correction du code
-            # ========================================
+            
+            
+            
             print("\n ÉTAPE 2/3 : Correction du code par le Fixer")
             print("-"*70)
             
@@ -110,9 +110,9 @@ def run_refactoring_swarm(
                 print(f"   - Fichiers corrigés : {len(fix_result['files_fixed'])}")
                 print(f"   - Corrections appliquées : {fix_result['total_fixes']}")
             
-            # ========================================
-            # ÉTAPE 3 : JUDGE - Validation par tests
-            # ========================================
+            
+            
+            
             print("\n  ÉTAPE 3/3 : Validation par le Judge")
             print("-"*70)
             
@@ -122,9 +122,9 @@ def run_refactoring_swarm(
             print(f"   - Tests réussis : {test_result['passed']}")
             print(f"   - Tests échoués : {test_result['failed']}")
             
-            # ========================================
-            # DÉCISION : Continuer ou arrêter ?
-            # ========================================
+            
+            
+            
             if test_result["success"]:
                 all_tests_passed = True
                 print("\n SUCCÈS ! Tous les tests passent !")
@@ -134,13 +134,13 @@ def run_refactoring_swarm(
                 print(f"\n  {test_result['failed']} test(s) ont échoué")
                 print(" Nouvelle itération nécessaire...")
                 
-                # Afficher les recommandations du Judge
+                
                 if test_result.get("recommendations"):
-                    print("\n Recommandations du Judge :")
+                    print("\n💡 Recommandations du Judge :")
                     for rec in test_result["recommendations"]:
                         print(f"   - {rec}")
             
-            # Enregistrer l'itération dans l'historique
+            
             history.append({
                 "iteration": iteration,
                 "issues_detected": audit_report['total_issues'],
@@ -152,7 +152,7 @@ def run_refactoring_swarm(
         except Exception as e:
             print(f"\n ERREUR lors de l'itération {iteration} : {str(e)}")
             
-            # Logger l'erreur
+            
             log_experiment(
                 agent_name="Swarm_Controller",
                 model_used=model_name,
@@ -168,9 +168,9 @@ def run_refactoring_swarm(
             
             break
     
-    # ========================================
-    # RÉSULTAT FINAL
-    # ========================================
+    
+    
+    
     print("\n" + "="*70)
     print(" FIN DU SWARM")
     print("="*70)
@@ -203,18 +203,18 @@ def run_refactoring_swarm(
     return final_result
 
 
-# ========================================
-# FONCTION DE LANCEMENT RAPIDE
-# ========================================
+
+
+
 def main():
     """Point d'entrée principal pour tester le Swarm"""
     
-    # Configuration
-    TARGET_DIR = "sandbox"  # Dossier à refactoriser
-    MODEL_NAME = "gemini-2.5-flash"
-    MAX_ITERATIONS = 10
     
-    # Lancer le Swarm
+    TARGET_DIR = "sandbox"  
+    MODEL_NAME = "gemini-2.5-flash-lite"  
+    MAX_ITERATIONS = 3  
+    
+    
     try:
         result = run_refactoring_swarm(
             target_dir=TARGET_DIR,
@@ -222,16 +222,18 @@ def main():
             max_iterations=MAX_ITERATIONS
         )
         
-        # Afficher le résultat
+        
         if result["success"]:
             print("\n Le code a été refactorisé avec succès !")
             exit(0)
         else:
-            print("\n La refactorisation a échoué")
+            print("\n  La refactorisation a échoué")
             exit(1)
             
     except Exception as e:
         print(f"\n ERREUR CRITIQUE : {str(e)}")
+        import traceback
+        traceback.print_exc()
         exit(1)
 
 

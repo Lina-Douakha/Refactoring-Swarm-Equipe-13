@@ -9,15 +9,15 @@ from typing import Dict, List
 from langchain_google_genai import ChatGoogleGenerativeAI
 from src.utils.logger import log_experiment, ActionType
 load_dotenv()
-# Import des outils du Toolsmith
-# Import des outils du Toolsmith
+
+
 from src.tools.file_tools import read_file_safe, write_file_safe
 
-# Import du prompt système
+
 try:
     from src.prompts.fixer_prompts import FIXER_SYSTEM_PROMPT
 except ImportError:
-    # Prompt de secours
+    
     FIXER_SYSTEM_PROMPT = """Tu es un expert Python chargé de corriger du code.
 
 MISSION :
@@ -42,7 +42,7 @@ class FixerAgent:
     Applique les corrections basées sur le rapport d'audit.
     """
     
-    def __init__(self, model_name: str = "gemini-2.0-flash-exp"):
+    def __init__(self, model_name: str = "gemini-2.5-flash-lite"):
         """
         Initialise l'agent correcteur.
         
@@ -82,40 +82,40 @@ class FixerAgent:
             
             print(f" {len(issues)} problème(s) à corriger")
             
-            # Regrouper les problèmes par fichier
+            
             issues_by_file = self._group_issues_by_file(issues)
             
             files_fixed = []
             total_fixes = 0
             
-            # Corriger chaque fichier
+            
             for filename, file_issues in issues_by_file.items():
                 print(f"\n Correction de : {filename}")
                 
                 filepath = os.path.join(target_dir, filename)
                 
-                # Lire le contenu actuel
+                
                 try:
                     original_content = read_file_safe(filepath, target_dir)
                 except Exception as e:
                     print(f"  Impossible de lire {filename} : {str(e)}")
                     continue
                 
-                # Construire le prompt de correction
+                
                 user_prompt = self._build_fix_prompt(
                     filename=filename,
                     original_content=original_content,
                     issues=file_issues
                 )
                 
-                # Appeler le LLM pour corriger
+                
                 print(f" Génération du code corrigé...")
                 fixed_content = self._call_llm(user_prompt)
                 
-                # Nettoyer la réponse (enlever les balises markdown si présentes)
+                
                 fixed_content = self._clean_code_response(fixed_content)
                 
-                # Écrire le code corrigé
+                
                 try:
                     write_file_safe(filepath, fixed_content, target_dir)
                     print(f" Fichier corrigé et sauvegardé")
@@ -125,7 +125,7 @@ class FixerAgent:
                     print(f" Erreur lors de l'écriture de {filename} : {str(e)}")
                     continue
                 
-                # Logger la correction
+                
                 log_experiment(
                     agent_name="Fixer_Agent",
                     model_used=self.model_name,
@@ -140,7 +140,7 @@ class FixerAgent:
                     status="SUCCESS"
                 )
             
-            # Résumé final
+            
             result = {
                 "files_fixed": files_fixed,
                 "total_fixes": total_fixes,
@@ -254,7 +254,7 @@ Retourne uniquement le code Python corrigé, sans explication."""
         """
         cleaned = response.strip()
         
-        # Enlever les balises markdown
+        
         if cleaned.startswith("```python"):
             cleaned = cleaned[9:]
         elif cleaned.startswith("```"):

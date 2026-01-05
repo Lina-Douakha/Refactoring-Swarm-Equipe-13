@@ -11,15 +11,15 @@ from src.utils.logger import log_experiment, ActionType
 
 load_dotenv()
 
-# Import des outils du Toolsmith
+
 from src.tools.file_tools import read_file_safe, list_python_files
 from src.tools.pylint_tool import run_pylint, parse_pylint_output
 
-# Import du prompt système
+
 try:
     from src.prompts.auditor_prompts import AUDITOR_SYSTEM_PROMPT
 except ImportError:
-    # Prompt de secours si le Prompt Engineer n'a pas encore créé le fichier
+    
     AUDITOR_SYSTEM_PROMPT = """Tu es un expert Python chargé d'analyser du code.
 
 MISSION :
@@ -50,7 +50,7 @@ class AuditorAgent:
     Analyse la qualité, détecte les bugs et génère un rapport.
     """
     
-    def __init__(self, model_name: str = "gemini-2.0-flash-exp"):
+    def __init__(self, model_name: str = "gemini-2.5-flash-lite"):
         """
         Initialise l'agent auditeur.
         
@@ -60,7 +60,7 @@ class AuditorAgent:
         self.model_name = model_name
         self.llm = ChatGoogleGenerativeAI(
             model=model_name,
-            temperature=0.1,  # Basse température pour plus de précision
+            temperature=0.1,  
             convert_system_message_to_human=True
         )
         print(f"AuditorAgent initialisé avec le modèle : {model_name}")
@@ -78,7 +78,7 @@ class AuditorAgent:
         print(f"\n [AUDITOR] Démarrage de l'analyse de : {target_dir}")
         
         try:
-            # Étape 1 : Lister les fichiers Python
+            
             print(" Recherche des fichiers Python...")
             python_files = list_python_files(target_dir)
             
@@ -93,35 +93,35 @@ class AuditorAgent:
             
             print(f" {len(python_files)} fichier(s) Python trouvé(s)")
             
-            # Étape 2 : Analyser chaque fichier
+            
             all_issues = []
             files_analyzed = []
             
             for filename in python_files:
                 print(f"\n Analyse de : {filename}")
                 
-                # Construire le chemin complet
+                
                 full_path = os.path.join(target_dir, filename)
                 
-                # Lire le contenu du fichier
+                
                 file_content = read_file_safe(full_path, target_dir)  
                 
-                # Lancer pylint et parser le résultat
+                
                 pylint_output = run_pylint(full_path)
                 pylint_result = parse_pylint_output(pylint_output)
                 
-                # Construire le prompt pour le LLM
+                
                 user_prompt = self._build_analysis_prompt(
                     filename=filename,
                     file_content=file_content,
                     pylint_result=pylint_result
                 )
                 
-                # Appeler le LLM
+                
                 print(f" Consultation du LLM pour l'analyse...")
                 llm_response = self._call_llm(user_prompt)
                 
-                # Logger l'interaction
+                
                 log_experiment(
                     agent_name="Auditor_Agent",
                     model_used=self.model_name,
@@ -135,14 +135,14 @@ class AuditorAgent:
                     status="SUCCESS"
                 )
                 
-                # Parser la réponse du LLM
+                
                 file_issues = self._parse_llm_response(llm_response, filename)
                 all_issues.extend(file_issues)
                 files_analyzed.append(filename)
                 
                 print(f" Analyse terminée : {len(file_issues)} problème(s) détecté(s)")
             
-            # Étape 3 : Générer le rapport final
+            
             report = {
                 "files_analyzed": files_analyzed,
                 "total_issues": len(all_issues),
@@ -181,7 +181,7 @@ class AuditorAgent:
         Returns:
             str: Prompt formaté pour le LLM
         """
-        # Limiter les issues pylint pour ne pas surcharger le prompt
+        
         pylint_issues = pylint_result.get('issues', [])
         issues_summary = pylint_issues[:10] if len(pylint_issues) > 10 else pylint_issues
         
@@ -232,7 +232,7 @@ Génère un rapport JSON avec les problèmes détectés les plus importants."""
         import json
         
         try:
-            # Nettoyer la réponse (enlever les balises markdown si présentes)
+            
             cleaned = response.strip()
             if cleaned.startswith("```json"):
                 cleaned = cleaned[7:]
@@ -245,7 +245,7 @@ Génère un rapport JSON avec les problèmes détectés les plus importants."""
             data = json.loads(cleaned)
             issues = data.get("issues", [])
             
-            # S'assurer que chaque issue a le nom du fichier
+            
             for issue in issues:
                 if "file" not in issue:
                     issue["file"] = filename
@@ -254,7 +254,7 @@ Génère un rapport JSON avec les problèmes détectés les plus importants."""
             
         except json.JSONDecodeError as e:
             print(f"  Impossible de parser la réponse JSON du LLM : {str(e)}")
-            # En cas d'échec, créer au moins un issue basique
+            
             return [{
                 "file": filename,
                 "line": 0,

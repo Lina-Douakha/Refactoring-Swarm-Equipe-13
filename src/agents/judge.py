@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Import des outils du Toolsmith
+
 try:
     from src.tools.pytest_tool import run_pytest
     from src.tools.file_tools import read_file_safe
@@ -21,7 +21,7 @@ except ImportError:
     print("   - src/tools/pytest_tool.py : run_pytest()")
     print("   - src/tools/file_tools.py : read_file_safe()")
 
-# Import du prompt système
+
 try:
     from src.prompts.judge_prompts import JUDGE_SYSTEM_PROMPT
 except ImportError:
@@ -52,7 +52,7 @@ class JudgeAgent:
     Valide que le code corrigé fonctionne correctement.
     """
     
-    def __init__(self, model_name: str = "gemini-1.5-pro-latest"):
+    def __init__(self, model_name: str = "gemini-2.5-flash-lite"):
         """
         Initialise l'agent testeur.
         
@@ -89,7 +89,7 @@ class JudgeAgent:
         print(f"\n  [JUDGE] Démarrage des tests sur : {target_dir}")
         
         try:
-            # Étape 1 : Exécuter pytest
+            
             print(" Exécution de pytest...")
             test_result = run_pytest(target_dir)
             
@@ -99,7 +99,7 @@ class JudgeAgent:
             
             print(f" Résultats : {passed}/{total} tests réussis")
             
-            # Étape 2 : Analyser les résultats
+            
             if test_result.get("success", False):
                 print(" [JUDGE] Tous les tests passent !")
                 

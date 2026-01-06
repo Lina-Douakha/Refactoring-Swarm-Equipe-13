@@ -34,8 +34,8 @@ def main():
     parser.add_argument(
         "--max_iterations",
         type=int,
-        default=10,
-        help="Nombre maximum d'itérations (défaut: 10)"
+        default=50,
+        help="Nombre maximum d'itérations (défaut: 50)"
     )
     parser.add_argument(
         "--model",

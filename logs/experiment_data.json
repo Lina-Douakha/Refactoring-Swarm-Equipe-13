@@ -1002,5 +1002,728 @@
             "total": 1
         },
         "status": "SUCCESS"
+    },
+    {
+        "id": "5639c3eb-49dc-43a7-a0e0-e6030e43b9f1",
+        "timestamp": "2026-01-05T20:56:12.568635",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.0-flash-exp, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.0-flash-exp"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "90183cb2-c8e0-4e13-80db-0b725f85a289",
+        "timestamp": "2026-01-05T20:56:58.737837",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier ./sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-2.0-flash-exp' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\\nPlease retry in 2.132704564s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash-exp', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e5840ad8-33f9-4cfd-9af9-2e22caec19f5",
+        "timestamp": "2026-01-05T20:56:58.794252",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : Error calling model 'gemini-2.0-flash-exp' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\\nPlease retry in 2.132704564s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash-exp', 'location': 'global'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "810a9c89-7189-4b2f-91ed-aa3a1178edac",
+        "timestamp": "2026-01-05T20:56:58.842655",
+        "agent": "System",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "bc6e0fdb-f018-466a-9de3-53a3fbf4c434",
+        "timestamp": "2026-01-05T21:00:20.390059",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.0-flash-exp, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.0-flash-exp"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "addb1e4e-e2a0-4a64-bd54-45cfe871d2ff",
+        "timestamp": "2026-01-05T21:01:05.600026",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier ./sandbox",
+            "output_response": "Erreur : Error calling model 'gemini-2.0-flash-exp' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\\nPlease retry in 55.255048392s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "a311879e-f517-41c3-a31d-ccc937bd9ed7",
+        "timestamp": "2026-01-05T21:01:05.656278",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : Error calling model 'gemini-2.0-flash-exp' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp\\nPlease retry in 55.255048392s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash-exp'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "0d417d2a-ba48-4783-94c4-63c96e65db20",
+        "timestamp": "2026-01-05T21:01:05.692599",
+        "agent": "System",
+        "model": "gemini-2.0-flash-exp",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e78f49b1-708b-463c-9679-4e8f26249a6d",
+        "timestamp": "2026-01-05T21:03:00.038473",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f0f1a546-c843-4a1d-a862-9d35e4e7010a",
+        "timestamp": "2026-01-05T21:03:11.760143",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "n.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : n.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\nclass Livre:\n    def __init__(self, titre, auteur, exemplaires=[]):\n        self.titre = titre\n        self.auteur = auteur\n        self.exemplaires = exemplaires   # ❌ BUG : valeur mutable partagée\n\n    def est_disponible(self):\n        return len(self.exemplaires) > 0\n\n\nclass Bibliotheque:\n    def __init__(self, nom):\n        self.nom = nom\n        self.livres = {}\n\n    def ajouter_livre(self, livre):\n        if livre.titre not in self.livres:\n            self.livres[livre.titre] = livre\n        else:\n            self.livres[livre.titre].exemplaires += livre.exemplaires\n\n    def emprunter(self, titre):\n        livre = self.livres[titre]   # ❌ BUG : KeyError possible\n        if livre.est_disponible():\n            return livre.exemplaires.pop()\n        print(\"Aucun exemplaire disponible\")\n        return None\n\n    def retourner(self, titre, exemplaire):\n        if titre in self.livres:\n            self.livres[titre].exemplaires.append(exemplaire)\n        else:\n            print(\"Livre inconnu\")\n\n    def inventaire(self):\n        total = 0\n        for livre in self.livres:   # ❌ BUG : parcourt les clés (str)\n            total += len(livre.exemplaires)\n        return total\n\n\ndef afficher_bibliotheque(biblio):\n    print(\"Bibliothèque :\", biblio.nom)\n    for titre, livre in biblio.livres.items():\n        print(titre, \"-\", livre.auteur, \"-\", len(livre.exemplaires), \"exemplaires\")\n\n\nif __name__ == \"__main__\":\n    l1 = Livre(\"Python\", \"Guido\", [1, 2])\n    l2 = Livre(\"Java\", \"Gosling\")\n    l3 = Livre(\"Python\", \"Guido\", [3])\n\n    b = Bibliotheque(\"ESI\")\n\n    b.ajouter_livre(l1)\n    b.ajouter_livre(l2)\n    b.ajouter_livre(l3)\n\n    ex = b.emprunter(\"C++\")     # ❌ BUG : livre inexistant\n    b.retourner(\"Python\", ex)\n\n    print(\"Total exemplaires :\", b.inventaire())\n    afficher_bibliotheque(b)\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'n', 'obj': 'Livre', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'warning', 'module': 'n', 'obj': 'Livre.__init__', 'line': 4, 'column': 4, 'endLine': 4, 'endColumn': 16, 'path': 'sandbox\\\\n.py', 'symbol': 'dangerous-default-value', 'message': 'Dangerous default value [] as argument', 'message-id': 'W0102'}, {'type': 'convention', 'module': 'n', 'obj': 'Livre.est_disponible', 'line': 9, 'column': 4, 'endLine': 9, 'endColumn': 22, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'refactor', 'module': 'n', 'obj': 'Livre', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\n.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}, {'type': 'convention', 'module': 'n', 'obj': 'Bibliotheque', 'line': 13, 'column': 0, 'endLine': 13, 'endColumn': 18, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'convention', 'module': 'n', 'obj': 'Bibliotheque.ajouter_livre', 'line': 18, 'column': 4, 'endLine': 18, 'endColumn': 21, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'Bibliotheque.emprunter', 'line': 24, 'column': 4, 'endLine': 24, 'endColumn': 17, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'Bibliotheque.retourner', 'line': 31, 'column': 4, 'endLine': 31, 'endColumn': 17, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'Bibliotheque.inventaire', 'line': 37, 'column': 4, 'endLine': 37, 'endColumn': 18, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'afficher_bibliotheque', 'line': 44, 'column': 0, 'endLine': 44, 'endColumn': 25, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\"n.py\"],\n    \"total_issues\": 7,\n    \"issues\": [\n        {\n            \"file\": \"n.py\",\n            \"line\": 4,\n            \"severity\": \"high\",\n            \"type\": \"dangerous_default_value\",\n            \"message\": \"Dangerous default value [] as argument\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 24,\n            \"severity\": \"high\",\n            \"type\": \"key_error\",\n            \"message\": \"Potentielle KeyError lors de l'accès à self.livres[titre]\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 37,\n            \"severity\": \"high\",\n            \"type\": \"iterator_error\",\n            \"message\": \"Erreur lors de l'itération sur les clés de dictionnaire au lieu des objets livre\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 3,\n            \"severity\": \"medium\",\n            \"type\": \"missing_class_docstring\",\n            \"message\": \"Missing class docstring\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 9,\n            \"severity\": \"medium\",\n            \"type\": \"missing_function_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 13,\n            \"severity\": \"medium\",\n            \"type\": \"missing_class_docstring\",\n            \"message\": \"Missing class docstring\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 44,\n            \"severity\": \"medium\",\n            \"type\": \"missing_function_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger la valeur par défaut mutable dans __init__ de Livre\",\n        \"Gérer les erreurs KeyError potentielles dans emprunter de Bibliotheque\",\n        \"Corriger l'itération dans inventaire de Bibliotheque pour parcourir les objets livre\",\n        \"Ajouter des docstrings aux classes et méthodes manquantes\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d855003c-4f39-4500-b892-cc8c83e69f11",
+        "timestamp": "2026-01-05T21:03:15.421563",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "n.py",
+            "issues_count": 7,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : n.py\nNOMBRE DE PROBLÈMES : 7\n\nPROBLÈMES À CORRIGER :\n- Ligne 4 : Dangerous default value [] as argument (Type: dangerous_default_value, Sévérité: high)\n- Ligne 24 : Potentielle KeyError lors de l'accès à self.livres[titre] (Type: key_error, Sévérité: high)\n- Ligne 37 : Erreur lors de l'itération sur les clés de dictionnaire au lieu des objets livre (Type: iterator_error, Sévérité: high)\n- Ligne 3 : Missing class docstring (Type: missing_class_docstring, Sévérité: medium)\n- Ligne 9 : Missing function or method docstring (Type: missing_function_docstring, Sévérité: medium)\n- Ligne 13 : Missing class docstring (Type: missing_class_docstring, Sévérité: medium)\n- Ligne 44 : Missing function or method docstring (Type: missing_function_docstring, Sévérité: medium)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\nclass Livre:\n    def __init__(self, titre, auteur, exemplaires=[]):\n        self.titre = titre\n        self.auteur = auteur\n        self.exemplaires = exemplaires   # ❌ BUG : valeur mutable partagée\n\n    def est_disponible(self):\n        return len(self.exemplaires) > 0\n\n\nclass Bibliotheque:\n    def __init__(self, nom):\n        self.nom = nom\n        self.livres = {}\n\n    def ajouter_livre(self, livre):\n        if livre.titre not in self.livres:\n            self.livres[livre.titre] = livre\n        else:\n            self.livres[livre.titre].exemplaires += livre.exemplaires\n\n    def emprunter(self, titre):\n        livre = self.livres[titre]   # ❌ BUG : KeyError possible\n        if livre.est_disponible():\n            return livre.exemplaires.pop()\n        print(\"Aucun exemplaire disponible\")\n        return None\n\n    def retourner(self, titre, exemplaire):\n        if titre in self.livres:\n            self.livres[titre].exemplaires.append(exemplaire)\n        else:\n            print(\"Livre inconnu\")\n\n    def inventaire(self):\n        total = 0\n        for livre in self.livres:   # ❌ BUG : parcourt les clés (str)\n            total += len(livre.exemplaires)\n        return total\n\n\ndef afficher_bibliotheque(biblio):\n    print(\"Bibliothèque :\", biblio.nom)\n    for titre, livre in biblio.livres.items():\n        print(titre, \"-\", livre.auteur, \"-\", len(livre.exemplaires), \"exemplaires\")\n\n\nif __name__ == \"__main__\":\n    l1 = Livre(\"Python\", \"Guido\", [1, 2])\n    l2 = Livre(\"Java\", \"Gosling\")\n    l3 = Livre(\"Python\", \"Guido\", [3])\n\n    b = Bibliotheque(\"ESI\")\n\n    b.ajouter_livre(l1)\n    b.ajouter_livre(l2)\n    b.ajouter_livre(l3)\n\n    ex = b.emprunter(\"C++\")     # ❌ BUG : livre inexistant\n    b.retourner(\"Python\", ex)\n\n    print(\"Total exemplaires :\", b.inventaire())\n    afficher_bibliotheque(b)\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\n\nclass Livre:\n    \"\"\"Représente un livre avec son titre, auteur et exemplaires disponibles.\"\"\"\n    def __init__(self, titre, auteur, exemplaires=None):\n        \"\"\"\n        Initialise un nouveau livre.\n\n        Args:\n            titre (str): Le titre du livre.\n            auteur (str): L'auteur du livre.\n            exemplaires (list, optional): Une liste d'identifiants des exemplaires.\n                                           Par défau...",
+            "issues_types": [
+                "dangerous_default_value",
+                "key_error",
+                "iterator_error",
+                "missing_class_docstring",
+                "missing_function_docstring",
+                "missing_class_docstring",
+                "missing_function_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e662c618-a7e8-4ed6-aac1-7f5b2b7ed585",
+        "timestamp": "2026-01-05T21:03:17.710670",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "./sandbox",
+            "input_prompt": "Exécution et validation de pytest dans ./sandbox",
+            "output_response": "Résultat: 1 tests réussis sur 1. Tous les tests passent.",
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "5b3a03b0-9fa2-4187-bb4d-0e3d3e3d9460",
+        "timestamp": "2026-01-05T21:03:17.790282",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "73ce316d-3fdf-456a-b5c8-9dd83908fc6c",
+        "timestamp": "2026-01-06T01:44:18.820965",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "be9dfcc9-62c3-47b0-9138-13f99e158ed9",
+        "timestamp": "2026-01-06T01:44:33.648004",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "n.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : n.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\n\nclass Livre:\n    \"\"\"Représente un livre avec son titre, auteur et exemplaires disponibles.\"\"\"\n    def __init__(self, titre, auteur, exemplaires=None):\n        \"\"\"\n        Initialise un nouveau livre.\n\n        Args:\n            titre (str): Le titre du livre.\n            auteur (str): L'auteur du livre.\n            exemplaires (list, optional): Une liste d'identifiants des exemplaires.\n                                           Par défaut, une liste vide.\n        \"\"\"\n        self.titre = titre\n        self.auteur = auteur\n        if exemplaires is None:\n            self.exemplaires = []\n        else:\n            self.exemplaires = exemplaires\n\n    def est_disponible(self):\n        \"\"\"\n        Vérifie si des exemplaires du livre sont disponibles.\n\n        Returns:\n            bool: True si au moins un exemplaire est disponible, False sinon.\n        \"\"\"\n        return len(self.exemplaires) > 0\n\n\nclass Bibliotheque:\n    \"\"\"Représente une bibliothèque avec un nom et une collection de livres.\"\"\"\n    def __init__(self, nom):\n        \"\"\"\n        Initialise une nouvelle bibliothèque.\n\n        Args:\n            nom (str): Le nom de la bibliothèque.\n        \"\"\"\n        self.nom = nom\n        self.livres = {}\n\n    def ajouter_livre(self, livre):\n        \"\"\"\n        Ajoute un livre à la bibliothèque. Si le livre existe déjà,\n        ajoute ses exemplaires à ceux existants.\n\n        Args:\n            livre (Livre): L'objet Livre à ajouter.\n        \"\"\"\n        if livre.titre not in self.livres:\n            self.livres[livre.titre] = livre\n        else:\n            self.livres[livre.titre].exemplaires.extend(livre.exemplaires)\n\n    def emprunter(self, titre):\n        \"\"\"\n        Emprunte un exemplaire d'un livre de la bibliothèque.\n\n        Args:\n            titre (str): Le titre du livre à emprunter.\n\n        Returns:\n            any: L'identifiant de l'exemplaire emprunté, ou None si le livre\n                 n'est pas trouvé ou aucun exemplaire n'est disponible.\n        \"\"\"\n        livre = self.livres.get(titre)\n        if livre and livre.est_disponible():\n            return livre.exemplaires.pop()\n        if not livre:\n            print(f\"Le livre '{titre}' n'est pas dans la bibliothèque.\")\n        else:\n            print(\"Aucun exemplaire disponible pour le livre '{titre}'.\")\n        return None\n\n    def retourner(self, titre, exemplaire):\n        \"\"\"\n        Retourne un exemplaire d'un livre à la bibliothèque.\n\n        Args:\n            titre (str): Le titre du livre retourné.\n            exemplaire (any): L'identifiant de l'exemplaire retourné.\n        \"\"\"\n        livre = self.livres.get(titre)\n        if livre:\n            livre.exemplaires.append(exemplaire)\n        else:\n            print(f\"Le livre '{titre}' n'est pas connu de la bibliothèque.\")\n\n    def inventaire(self):\n        \"\"\"\n        Calcule le nombre total d'exemplaires de tous les livres dans la bibliothèque.\n\n        Returns:\n            int: Le nombre total d'exemplaires.\n        \"\"\"\n        total = 0\n        for livre in self.livres.values():\n            total += len(livre.exemplaires)\n        return total\n\n\ndef afficher_bibliotheque(biblio):\n    \"\"\"\n    Affiche les détails de la bibliothèque, y compris son nom et\n    le nombre d'exemplaires pour chaque livre.\n\n    Args:\n        biblio (Bibliotheque): L'objet Bibliotheque à afficher.\n    \"\"\"\n    print(\"Bibliothèque :\", biblio.nom)\n    for titre, livre in biblio.livres.items():\n        print(titre, \"-\", livre.auteur, \"-\", len(livre.exemplaires), \"exemplaires\")\n\n\nif __name__ == \"__main__\":\n    l1 = Livre(\"Python\", \"Guido\", [1, 2])\n    l2 = Livre(\"Java\", \"Gosling\")\n    l3 = Livre(\"Python\", \"Guido\", [3])\n\n    b = Bibliotheque(\"ESI\")\n\n    b.ajouter_livre(l1)\n    b.ajouter_livre(l2)\n    b.ajouter_livre(l3)\n\n    ex = b.emprunter(\"C++\")\n    b.retourner(\"Python\", ex)\n\n    print(\"Total exemplaires :\", b.inventaire())\n    afficher_bibliotheque(b)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'n', 'obj': '', 'line': 133, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'refactor', 'module': 'n', 'obj': 'Livre', 'line': 4, 'column': 0, 'endLine': 4, 'endColumn': 11, 'path': 'sandbox\\\\n.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"n.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"n.py\",\n            \"line\": 133,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "798bc098-1c36-413e-bdc7-554f11647815",
+        "timestamp": "2026-01-06T01:44:36.895184",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "n.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : n.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 133 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\n\nclass Livre:\n    \"\"\"Représente un livre avec son titre, auteur et exemplaires disponibles.\"\"\"\n    def __init__(self, titre, auteur, exemplaires=None):\n        \"\"\"\n        Initialise un nouveau livre.\n\n        Args:\n            titre (str): Le titre du livre.\n            auteur (str): L'auteur du livre.\n            exemplaires (list, optional): Une liste d'identifiants des exemplaires.\n                                           Par défaut, une liste vide.\n        \"\"\"\n        self.titre = titre\n        self.auteur = auteur\n        if exemplaires is None:\n            self.exemplaires = []\n        else:\n            self.exemplaires = exemplaires\n\n    def est_disponible(self):\n        \"\"\"\n        Vérifie si des exemplaires du livre sont disponibles.\n\n        Returns:\n            bool: True si au moins un exemplaire est disponible, False sinon.\n        \"\"\"\n        return len(self.exemplaires) > 0\n\n\nclass Bibliotheque:\n    \"\"\"Représente une bibliothèque avec un nom et une collection de livres.\"\"\"\n    def __init__(self, nom):\n        \"\"\"\n        Initialise une nouvelle bibliothèque.\n\n        Args:\n            nom (str): Le nom de la bibliothèque.\n        \"\"\"\n        self.nom = nom\n        self.livres = {}\n\n    def ajouter_livre(self, livre):\n        \"\"\"\n        Ajoute un livre à la bibliothèque. Si le livre existe déjà,\n        ajoute ses exemplaires à ceux existants.\n\n        Args:\n            livre (Livre): L'objet Livre à ajouter.\n        \"\"\"\n        if livre.titre not in self.livres:\n            self.livres[livre.titre] = livre\n        else:\n            self.livres[livre.titre].exemplaires.extend(livre.exemplaires)\n\n    def emprunter(self, titre):\n        \"\"\"\n        Emprunte un exemplaire d'un livre de la bibliothèque.\n\n        Args:\n            titre (str): Le titre du livre à emprunter.\n\n        Returns:\n            any: L'identifiant de l'exemplaire emprunté, ou None si le livre\n                 n'est pas trouvé ou aucun exemplaire n'est disponible.\n        \"\"\"\n        livre = self.livres.get(titre)\n        if livre and livre.est_disponible():\n            return livre.exemplaires.pop()\n        if not livre:\n            print(f\"Le livre '{titre}' n'est pas dans la bibliothèque.\")\n        else:\n            print(\"Aucun exemplaire disponible pour le livre '{titre}'.\")\n        return None\n\n    def retourner(self, titre, exemplaire):\n        \"\"\"\n        Retourne un exemplaire d'un livre à la bibliothèque.\n\n        Args:\n            titre (str): Le titre du livre retourné.\n            exemplaire (any): L'identifiant de l'exemplaire retourné.\n        \"\"\"\n        livre = self.livres.get(titre)\n        if livre:\n            livre.exemplaires.append(exemplaire)\n        else:\n            print(f\"Le livre '{titre}' n'est pas connu de la bibliothèque.\")\n\n    def inventaire(self):\n        \"\"\"\n        Calcule le nombre total d'exemplaires de tous les livres dans la bibliothèque.\n\n        Returns:\n            int: Le nombre total d'exemplaires.\n        \"\"\"\n        total = 0\n        for livre in self.livres.values():\n            total += len(livre.exemplaires)\n        return total\n\n\ndef afficher_bibliotheque(biblio):\n    \"\"\"\n    Affiche les détails de la bibliothèque, y compris son nom et\n    le nombre d'exemplaires pour chaque livre.\n\n    Args:\n        biblio (Bibliotheque): L'objet Bibliotheque à afficher.\n    \"\"\"\n    print(\"Bibliothèque :\", biblio.nom)\n    for titre, livre in biblio.livres.items():\n        print(titre, \"-\", livre.auteur, \"-\", len(livre.exemplaires), \"exemplaires\")\n\n\nif __name__ == \"__main__\":\n    l1 = Livre(\"Python\", \"Guido\", [1, 2])\n    l2 = Livre(\"Java\", \"Gosling\")\n    l3 = Livre(\"Python\", \"Guido\", [3])\n\n    b = Bibliotheque(\"ESI\")\n\n    b.ajouter_livre(l1)\n    b.ajouter_livre(l2)\n    b.ajouter_livre(l3)\n\n    ex = b.emprunter(\"C++\")\n    b.retourner(\"Python\", ex)\n\n    print(\"Total exemplaires :\", b.inventaire())\n    afficher_bibliotheque(b)\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion d'une bibliothèque universitaire.\"\"\"\n\n\nclass Livre:\n    \"\"\"Représente un livre avec son titre, auteur et exemplaires disponibles.\"\"\"\n    def __init__(self, titre, auteur, exemplaires=None):\n        \"\"\"\n        Initialise un nouveau livre.\n\n        Args:\n            titre (str): Le titre du livre.\n            auteur (str): L'auteur du livre.\n            exemplaires (list, optional): Une liste d'identifiants des exemplaires.\n                                           Par défau...",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7410bdab-5120-40a1-a58c-0be51a981fd5",
+        "timestamp": "2026-01-06T01:44:38.856441",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "./sandbox",
+            "input_prompt": "Exécution et validation de pytest dans ./sandbox",
+            "output_response": "Résultat: 1 tests réussis sur 1. Tous les tests passent.",
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "689f520d-8278-4793-9673-a459350ccef8",
+        "timestamp": "2026-01-06T01:44:38.932287",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "5c20bd2f-edb9-4c23-8b74-22f810b74af1",
+        "timestamp": "2026-01-06T01:45:39.852369",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c6ef64b5-ce9d-4053-8b6b-80c435186dd7",
+        "timestamp": "2026-01-06T01:45:54.409022",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "n.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : n.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nUTILISATEURS = []   # ❌ BUG : global mutable mal utilisé\n\n\nclass Utilisateur:\n    def __init__(self, nom, email, age):\n        nom = nom              # ❌ BUG : self oublié\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        if self.age > 18:\n            return True\n        # ❌ BUG : pas de return False\n\n\nclass Compte:\n    def __init__(self, solde):\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        if montant < 0:\n            print(\"Montant invalide\")\n        self.solde += montant   # ❌ BUG : même si montant négatif\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        if montant > self.solde:\n            print(\"Solde insuffisant\")\n        self.solde -= montant   # ❌ BUG : retrait quand même\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n        else:\n            return None    # ❌ BUG : return trop tôt\n\n\ndef total_soldes():\n    total = 0\n    for u in UTILISATEURS:\n        total += u.compte.solde   # ❌ BUG : compte peut être None\n    return total\n\n\ndef transfert(u1, u2, montant):\n    try:\n        u1.compte.retirer(montant)\n        u2.compte.deposer(montant)\n    except:\n        pass     # ❌ BUG : exceptions masquées\n\n\ndef afficher_utilisateurs():\n    for i in range(len(UTILISATEURS) + 1):   # ❌ BUG : off-by-one\n        u = UTILISATEURS[i]\n        print(u.nom, \"-\", u.email)\n\n\nif __name__ == \"__main__\":\n\n    u1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    u2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    u1.creer_compte(1000)\n    u2.creer_compte(500)\n\n    u1.compte.deposer(-200)      # ❌ BUG logique\n    u2.compte.retirer(1000)      # ❌ BUG logique\n\n    transfert(u1, u2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'n', 'obj': 'Utilisateur', 'line': 6, 'column': 0, 'endLine': 6, 'endColumn': 17, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'warning', 'module': 'n', 'obj': 'Utilisateur.__init__', 'line': 8, 'column': 8, 'endLine': 8, 'endColumn': 11, 'path': 'sandbox\\\\n.py', 'symbol': 'self-assigning-variable', 'message': \"Assigning the same variable 'nom' to itself\", 'message-id': 'W0127'}, {'type': 'convention', 'module': 'n', 'obj': 'Utilisateur.creer_compte', 'line': 13, 'column': 4, 'endLine': 13, 'endColumn': 20, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'Utilisateur.est_majeur', 'line': 16, 'column': 4, 'endLine': 16, 'endColumn': 18, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'refactor', 'module': 'n', 'obj': 'Utilisateur.est_majeur', 'line': 16, 'column': 4, 'endLine': 16, 'endColumn': 18, 'path': 'sandbox\\\\n.py', 'symbol': 'inconsistent-return-statements', 'message': 'Either all return statements in a function should return an expression, or none of them should.', 'message-id': 'R1710'}, {'type': 'convention', 'module': 'n', 'obj': 'Compte', 'line': 22, 'column': 0, 'endLine': 22, 'endColumn': 12, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'convention', 'module': 'n', 'obj': 'Compte.deposer', 'line': 27, 'column': 4, 'endLine': 27, 'endColumn': 15, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'Compte.retirer', 'line': 33, 'column': 4, 'endLine': 33, 'endColumn': 15, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'ajouter_utilisateur', 'line': 40, 'column': 0, 'endLine': 40, 'endColumn': 23, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'n', 'obj': 'trouver_utilisateur', 'line': 46, 'column': 0, 'endLine': 46, 'endColumn': 23, 'path': 'sandbox\\\\n.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"n.py\"\n    ],\n    \"total_issues\": 13,\n    \"issues\": [\n        {\n            \"file\": \"n.py\",\n            \"line\": 6,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"UTILISATEURS est une liste mutable globale qui peut être modifiée de manière inattendue par différentes parties du programme.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 8,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La variable 'nom' est affectée à elle-même, ce qui est une erreur de logique car elle devrait probablement être affectée à self.nom.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 18,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La fonction 'est_majeur' ne retourne pas de valeur lorsque la condition 'self.age > 18' est fausse.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 29,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La méthode 'deposer' ajoute le montant au solde même si le montant est négatif, ce qui est une erreur de logique.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 35,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La méthode 'retirer' retire le montant du solde même si le montant est supérieur au solde, ce qui est une erreur de logique.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 49,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La fonction 'trouver_utilisateur' retourne None prématurément dans la boucle, empêchant de trouver des utilisateurs qui ne sont pas le premier de la liste.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 55,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Le calcul du 'total_soldes' ne gère pas le cas où un utilisateur n'a pas encore de compte (self.compte est None).\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 59,\n            \"severity\": \"high\",\n            \"type\": \"security_issue\",\n            \"message\": \"La clause 'except:' masque toutes les exceptions, y compris les erreurs potentielles qui pourraient indiquer des problèmes de sécurité ou des bugs critiques.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 61,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La boucle 'afficher_utilisateurs' a une erreur off-by-one (range(len(UTILISATEURS) + 1)) qui entraînera une erreur IndexError pour le dernier élément.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 69,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Le dépôt d'un montant négatif dans 'u1.compte.deposer(-200)' est une erreur logique car il réduit le solde au lieu de le déposer.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 70,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Le retrait d'un montant supérieur au solde dans 'u2.compte.retirer(1000)' est une erreur logique car le solde devient négatif au lieu de refuser la transaction.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 6,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La classe Utilisateur manque de docstring.\"\n        },\n        {\n            \"file\": \"n.py\",\n            \"line\": 22,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La classe Compte manque de docstring.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter des docstrings pour les classes et les méthodes.\",\n        \"Vérifier la gestion des erreurs dans les fonctions pour éviter de masquer les exceptions.\",\n        \"Corriger les erreurs de logique dans les opérations de dépôt, retrait et transfert.\",\n        \"S'assurer que toutes les branches de fonctions retournent une valeur cohérente.\",\n        \"Gérer correctement l'initialisation des comptes utilisateurs pour éviter les erreurs quand le compte est 'None'.\",\n        \"Corriger l'indexation des boucles pour éviter les erreurs 'off-by-one'.\",\n        \"Éviter l'utilisation de listes globales mutables pour les données critiques.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d4a579fa-caec-42bd-a4bc-741975361543",
+        "timestamp": "2026-01-06T01:45:58.039068",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "n.py",
+            "issues_count": 13,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : n.py\nNOMBRE DE PROBLÈMES : 13\n\nPROBLÈMES À CORRIGER :\n- Ligne 6 : UTILISATEURS est une liste mutable globale qui peut être modifiée de manière inattendue par différentes parties du programme. (Type: logic_error, Sévérité: high)\n- Ligne 8 : La variable 'nom' est affectée à elle-même, ce qui est une erreur de logique car elle devrait probablement être affectée à self.nom. (Type: logic_error, Sévérité: high)\n- Ligne 18 : La fonction 'est_majeur' ne retourne pas de valeur lorsque la condition 'self.age > 18' est fausse. (Type: logic_error, Sévérité: high)\n- Ligne 29 : La méthode 'deposer' ajoute le montant au solde même si le montant est négatif, ce qui est une erreur de logique. (Type: logic_error, Sévérité: high)\n- Ligne 35 : La méthode 'retirer' retire le montant du solde même si le montant est supérieur au solde, ce qui est une erreur de logique. (Type: logic_error, Sévérité: high)\n- Ligne 49 : La fonction 'trouver_utilisateur' retourne None prématurément dans la boucle, empêchant de trouver des utilisateurs qui ne sont pas le premier de la liste. (Type: logic_error, Sévérité: high)\n- Ligne 55 : Le calcul du 'total_soldes' ne gère pas le cas où un utilisateur n'a pas encore de compte (self.compte est None). (Type: logic_error, Sévérité: high)\n- Ligne 59 : La clause 'except:' masque toutes les exceptions, y compris les erreurs potentielles qui pourraient indiquer des problèmes de sécurité ou des bugs critiques. (Type: security_issue, Sévérité: high)\n- Ligne 61 : La boucle 'afficher_utilisateurs' a une erreur off-by-one (range(len(UTILISATEURS) + 1)) qui entraînera une erreur IndexError pour le dernier élément. (Type: logic_error, Sévérité: high)\n- Ligne 69 : Le dépôt d'un montant négatif dans 'u1.compte.deposer(-200)' est une erreur logique car il réduit le solde au lieu de le déposer. (Type: logic_error, Sévérité: high)\n- Ligne 70 : Le retrait d'un montant supérieur au solde dans 'u2.compte.retirer(1000)' est une erreur logique car le solde devient négatif au lieu de refuser la transaction. (Type: logic_error, Sévérité: high)\n- Ligne 6 : La classe Utilisateur manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 22 : La classe Compte manque de docstring. (Type: missing_docstring, Sévérité: medium)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nUTILISATEURS = []   # ❌ BUG : global mutable mal utilisé\n\n\nclass Utilisateur:\n    def __init__(self, nom, email, age):\n        nom = nom              # ❌ BUG : self oublié\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        if self.age > 18:\n            return True\n        # ❌ BUG : pas de return False\n\n\nclass Compte:\n    def __init__(self, solde):\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        if montant < 0:\n            print(\"Montant invalide\")\n        self.solde += montant   # ❌ BUG : même si montant négatif\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        if montant > self.solde:\n            print(\"Solde insuffisant\")\n        self.solde -= montant   # ❌ BUG : retrait quand même\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n        else:\n            return None    # ❌ BUG : return trop tôt\n\n\ndef total_soldes():\n    total = 0\n    for u in UTILISATEURS:\n        total += u.compte.solde   # ❌ BUG : compte peut être None\n    return total\n\n\ndef transfert(u1, u2, montant):\n    try:\n        u1.compte.retirer(montant)\n        u2.compte.deposer(montant)\n    except:\n        pass     # ❌ BUG : exceptions masquées\n\n\ndef afficher_utilisateurs():\n    for i in range(len(UTILISATEURS) + 1):   # ❌ BUG : off-by-one\n        u = UTILISATEURS[i]\n        print(u.nom, \"-\", u.email)\n\n\nif __name__ == \"__main__\":\n\n    u1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    u2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    u1.creer_compte(1000)\n    u2.creer_compte(500)\n\n    u1.compte.deposer(-200)      # ❌ BUG logique\n    u2.compte.retirer(1000)      # ❌ BUG logique\n\n    transfert(u1, u2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n     ...",
+            "issues_types": [
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "security_issue",
+                "logic_error",
+                "logic_error",
+                "logic_error",
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "acd7e5d2-9f4d-4cb1-84b4-78c3bd5e05bf",
+        "timestamp": "2026-01-06T01:45:59.716254",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "./sandbox",
+            "input_prompt": "Exécution et validation de pytest dans ./sandbox",
+            "output_response": "Résultat: 1 tests réussis sur 1. Tous les tests passent.",
+            "passed": 1,
+            "failed": 0,
+            "total": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7d9fc41c-847c-46d5-a077-1816b34402fd",
+        "timestamp": "2026-01-06T01:45:59.771118",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c5f509a9-7280-41cc-a9e8-6bf1a61942b9",
+        "timestamp": "2026-01-06T01:55:04.353847",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=10",
+            "target_directory": "./sandbox",
+            "max_iterations": 10,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f12b41ee-3f3a-439f-a366-98b9e9d8f938",
+        "timestamp": "2026-01-06T01:55:17.357724",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code1.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    def __init__(self, client, produits):\n        self.client = client\n        self.produits = produits   \n\n    def total(self):\n        total = 0\n        for p in self.produits:\n            total += p[1] * p[2]\n        return total\n\n\ndef total_commandes(commandes):\n    total = 0\n    for i in range(len(commandes) + 1):   \n        total += commandes[i].total()\n    return total\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    if quantite < 0:\n        print(\"Quantité invalide\")\n    commande.produits.append((nom, prix, quantite))   \n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    ajouter_produit(c2, \"Souris\", 1500, -1)\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code1', 'obj': '', 'line': 6, 'column': 32, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': '', 'line': 17, 'column': 39, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': '', 'line': 25, 'column': 51, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': 'Commande', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 14, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'convention', 'module': 'code1', 'obj': 'Commande.total', 'line': 8, 'column': 4, 'endLine': 8, 'endColumn': 13, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'refactor', 'module': 'code1', 'obj': 'Commande', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 14, 'path': 'sandbox\\\\code1.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}, {'type': 'convention', 'module': 'code1', 'obj': 'total_commandes', 'line': 15, 'column': 0, 'endLine': 15, 'endColumn': 19, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'code1', 'obj': 'ajouter_produit', 'line': 22, 'column': 0, 'endLine': 22, 'endColumn': 19, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code1.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"code1.py\",\n            \"line\": 17,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La boucle 'for i in range(len(commandes) + 1)' accède à un index hors limites. La plage devrait être 'range(len(commandes))' pour éviter une 'IndexError'.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 3,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La classe 'Commande' manque de docstring.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 8,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La méthode 'total' de la classe 'Commande' manque de docstring.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 15,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'total_commandes' manque de docstring.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 22,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'ajouter_produit' manque de docstring.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger la limite de la boucle dans la fonction 'total_commandes'.\",\n        \"Ajouter des docstrings aux classes et fonctions manquantes.\",\n        \"Supprimer les espaces blancs à la fin des lignes.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "962b1add-c5bb-4a60-9b86-2a87300e16c7",
+        "timestamp": "2026-01-06T01:55:20.539186",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    for u in UTILISATEURS:\n        if u == login and UTILISATEURS[u] == mot_de_passe:\n            return True\n        else:\n            return False   \n\n\ndef changer_mdp(login, ancien, nouveau):\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")   \n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code2', 'obj': '', 'line': 14, 'column': 24, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code2.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code2', 'obj': '', 'line': 20, 'column': 33, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code2.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code2', 'obj': 'authentifier', 'line': 9, 'column': 0, 'endLine': 9, 'endColumn': 16, 'path': 'sandbox\\\\code2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'code2', 'obj': 'authentifier', 'line': 10, 'column': 4, 'endLine': 14, 'endColumn': 24, 'path': 'sandbox\\\\code2.py', 'symbol': 'consider-using-dict-items', 'message': 'Consider iterating with .items()', 'message-id': 'C0206'}, {'type': 'refactor', 'module': 'code2', 'obj': 'authentifier', 'line': 11, 'column': 8, 'endLine': 14, 'endColumn': 24, 'path': 'sandbox\\\\code2.py', 'symbol': 'simplifiable-if-statement', 'message': \"The if statement can be replaced with 'return bool(test)'\", 'message-id': 'R1703'}, {'type': 'refactor', 'module': 'code2', 'obj': 'authentifier', 'line': 11, 'column': 8, 'endLine': 14, 'endColumn': 24, 'path': 'sandbox\\\\code2.py', 'symbol': 'no-else-return', 'message': 'Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it', 'message-id': 'R1705'}, {'type': 'convention', 'module': 'code2', 'obj': 'changer_mdp', 'line': 17, 'column': 0, 'endLine': 17, 'endColumn': 15, 'path': 'sandbox\\\\code2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code2.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"code2.py\",\n            \"line\": 10,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La boucle for dans la fonction `authentifier` retourne immédiatement après la première itération, ce qui empêche de vérifier tous les utilisateurs.\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 9,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction `authentifier` manque de docstring.\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 17,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction `changer_mdp` manque de docstring.\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 10,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Considérer l'itération avec .items() pour parcourir le dictionnaire `UTILISATEURS`.\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 11,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"L'instruction `if` peut être simplifiée. Le `else` après un `return` est inutile.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger la logique de la fonction `authentifier` pour vérifier tous les utilisateurs.\",\n        \"Ajouter des docstrings aux fonctions `authentifier` et `changer_mdp`.\",\n        \"Utiliser `.items()` pour itérer sur les dictionnaires.\",\n        \"Simplifier les instructions `if` où un `else` suit un `return`.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "29b4494b-8e0f-40b6-9f85-24ab7bc3a2b2",
+        "timestamp": "2026-01-06T01:55:24.103604",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code3.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code3.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    def __init__(self, titre, tags=[]):\n        self.titre = titre\n        self.tags = tags   \n\n    def ajouter_tag(self, tag):\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    def __init__(self):\n        self.taches = []\n\n    def ajouter(self, tache):\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n            print(\"Tâche supprimée\")   \n\n    def afficher(self):\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code3', 'obj': '', 'line': 6, 'column': 24, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code3.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code3', 'obj': '', 'line': 23, 'column': 36, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code3.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code3', 'obj': 'Tache', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'warning', 'module': 'code3', 'obj': 'Tache.__init__', 'line': 4, 'column': 4, 'endLine': 4, 'endColumn': 16, 'path': 'sandbox\\\\code3.py', 'symbol': 'dangerous-default-value', 'message': 'Dangerous default value [] as argument', 'message-id': 'W0102'}, {'type': 'convention', 'module': 'code3', 'obj': 'Tache.ajouter_tag', 'line': 8, 'column': 4, 'endLine': 8, 'endColumn': 19, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'refactor', 'module': 'code3', 'obj': 'Tache', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\code3.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}, {'type': 'convention', 'module': 'code3', 'obj': 'GestionTaches', 'line': 12, 'column': 0, 'endLine': 12, 'endColumn': 19, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-class-docstring', 'message': 'Missing class docstring', 'message-id': 'C0115'}, {'type': 'convention', 'module': 'code3', 'obj': 'GestionTaches.ajouter', 'line': 16, 'column': 4, 'endLine': 16, 'endColumn': 15, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'code3', 'obj': 'GestionTaches.supprimer', 'line': 19, 'column': 4, 'endLine': 19, 'endColumn': 17, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}, {'type': 'convention', 'module': 'code3', 'obj': 'GestionTaches.afficher', 'line': 25, 'column': 4, 'endLine': 25, 'endColumn': 16, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code3.py\"\n    ],\n    \"total_issues\": 6,\n    \"issues\": [\n        {\n            \"file\": \"code3.py\",\n            \"line\": 4,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Dangerous default value [] as argument. Using a mutable default value can lead to unexpected behavior if the default is modified.\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 3,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing class docstring\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 12,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing class docstring\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 8,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 16,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 19,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Utiliser une valeur par défaut non mutable pour les arguments de fonction (ex: None).\",\n        \"Ajouter des docstrings aux classes et méthodes.\",\n        \"Revoir la suppression des éléments d'une liste lors de son itération pour éviter des problèmes potentiels.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "52f82a2e-f728-4d12-ba5c-7b78b1794a62",
+        "timestamp": "2026-01-06T01:55:27.269031",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code4.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        if self.age > 18:\n            return True\n        else:\n            return False\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(u1, u2, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        u1 (Utilisateur): L'utilisateur source du transfert.\n        u2 (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not u1.compte or not u2.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > u1.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        u1.compte.retirer(montant)\n        u2.compte.deposer(montant)\n    except Exception as e:\n        print(f\"Une erreur est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    for i in range(len(UTILISATEURS)):\n        u = UTILISATEURS[i]\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    u1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    u2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    u1.creer_compte(1000)\n    u2.creer_compte(500)\n\n    u1.compte.deposer(-200)\n    u2.compte.retirer(1000)\n\n    transfert(u1, u2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code4', 'obj': '', 'line': 174, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'refactor', 'module': 'code4', 'obj': 'Utilisateur.est_majeur', 'line': 33, 'column': 8, 'endLine': 36, 'endColumn': 24, 'path': 'sandbox\\\\code4.py', 'symbol': 'simplifiable-if-statement', 'message': \"The if statement can be replaced with 'return bool(test)'\", 'message-id': 'R1703'}, {'type': 'refactor', 'module': 'code4', 'obj': 'Utilisateur.est_majeur', 'line': 33, 'column': 8, 'endLine': 36, 'endColumn': 24, 'path': 'sandbox\\\\code4.py', 'symbol': 'no-else-return', 'message': 'Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it', 'message-id': 'R1705'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 123, 'column': 14, 'endLine': 123, 'endColumn': 16, 'path': 'sandbox\\\\code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'u1' from outer scope (line 157)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 123, 'column': 18, 'endLine': 123, 'endColumn': 20, 'path': 'sandbox\\\\code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'u2' from outer scope (line 158)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 144, 'column': 11, 'endLine': 144, 'endColumn': 20, 'path': 'sandbox\\\\code4.py', 'symbol': 'broad-exception-caught', 'message': 'Catching too general exception Exception', 'message-id': 'W0718'}, {'type': 'convention', 'module': 'code4', 'obj': 'afficher_utilisateurs', 'line': 150, 'column': 4, 'endLine': 152, 'endColumn': 37, 'path': 'sandbox\\\\code4.py', 'symbol': 'consider-using-enumerate', 'message': 'Consider using enumerate instead of iterating with range and len', 'message-id': 'C0200'}, {'type': 'warning', 'module': 'code4', 'obj': '', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\code4.py', 'symbol': 'unused-import', 'message': 'Unused import copy', 'message-id': 'W0611'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code4.py\"\n    ],\n    \"total_issues\": 6,\n    \"issues\": [\n        {\n            \"file\": \"code4.py\",\n            \"line\": 174,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 33,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"The if statement can be replaced with 'return bool(test)'\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 33,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Unnecessary \\\"else\\\" after \\\"return\\\", remove the \\\"else\\\" and de-indent the code inside it\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 123,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'u1' from outer scope (line 157)\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 123,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'u2' from outer scope (line 158)\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 144,\n            \"severity\": \"medium\",\n            \"type\": \"security_issue\",\n            \"message\": \"Catching too general exception Exception\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\",\n        \"Simplifier l'instruction if dans la méthode est_majeur\",\n        \"Éviter de redéfinir des noms de variables d'une portée supérieure dans la fonction transfert\",\n        \"Être plus spécifique lors de la capture d'exceptions\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6800a2c8-55db-44d8-935b-d91ec571da1c",
+        "timestamp": "2026-01-06T01:55:29.417115",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code1.py",
+            "issues_count": 5,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code1.py\nNOMBRE DE PROBLÈMES : 5\n\nPROBLÈMES À CORRIGER :\n- Ligne 17 : La boucle 'for i in range(len(commandes) + 1)' accède à un index hors limites. La plage devrait être 'range(len(commandes))' pour éviter une 'IndexError'. (Type: logic_error, Sévérité: high)\n- Ligne 3 : La classe 'Commande' manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 8 : La méthode 'total' de la classe 'Commande' manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 15 : La fonction 'total_commandes' manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 22 : La fonction 'ajouter_produit' manque de docstring. (Type: missing_docstring, Sévérité: medium)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    def __init__(self, client, produits):\n        self.client = client\n        self.produits = produits   \n\n    def total(self):\n        total = 0\n        for p in self.produits:\n            total += p[1] * p[2]\n        return total\n\n\ndef total_commandes(commandes):\n    total = 0\n    for i in range(len(commandes) + 1):   \n        total += commandes[i].total()\n    return total\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    if quantite < 0:\n        print(\"Quantité invalide\")\n    commande.produits.append((nom, prix, quantite))   \n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    ajouter_produit(c2, \"Souris\", 1500, -1)\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple \n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits   \n\n    def total(self):\n    ...",
+            "issues_types": [
+                "logic_error",
+                "missing_docstring",
+                "missing_docstring",
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ac26cb0c-3774-4897-b58d-0c36e51602cc",
+        "timestamp": "2026-01-06T01:55:30.521023",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code2.py",
+            "issues_count": 5,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code2.py\nNOMBRE DE PROBLÈMES : 5\n\nPROBLÈMES À CORRIGER :\n- Ligne 10 : La boucle for dans la fonction `authentifier` retourne immédiatement après la première itération, ce qui empêche de vérifier tous les utilisateurs. (Type: logic_error, Sévérité: high)\n- Ligne 9 : La fonction `authentifier` manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 17 : La fonction `changer_mdp` manque de docstring. (Type: missing_docstring, Sévérité: medium)\n- Ligne 10 : Considérer l'itération avec .items() pour parcourir le dictionnaire `UTILISATEURS`. (Type: pep8_violation, Sévérité: low)\n- Ligne 11 : L'instruction `if` peut être simplifiée. Le `else` après un `return` est inutile. (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    for u in UTILISATEURS:\n        if u == login and UTILISATEURS[u] == mot_de_passe:\n            return True\n        else:\n            return False   \n\n\ndef changer_mdp(login, ancien, nouveau):\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")   \n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    retur...",
+            "issues_types": [
+                "logic_error",
+                "missing_docstring",
+                "missing_docstring",
+                "pep8_violation",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2c4c24c6-c63d-42f9-a82d-2c8bdf9ee620",
+        "timestamp": "2026-01-06T01:55:32.594821",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code3.py",
+            "issues_count": 6,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code3.py\nNOMBRE DE PROBLÈMES : 6\n\nPROBLÈMES À CORRIGER :\n- Ligne 4 : Dangerous default value [] as argument. Using a mutable default value can lead to unexpected behavior if the default is modified. (Type: logic_error, Sévérité: high)\n- Ligne 3 : Missing class docstring (Type: missing_docstring, Sévérité: medium)\n- Ligne 12 : Missing class docstring (Type: missing_docstring, Sévérité: medium)\n- Ligne 8 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 16 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 19 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    def __init__(self, titre, tags=[]):\n        self.titre = titre\n        self.tags = tags   \n\n    def ajouter_tag(self, tag):\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    def __init__(self):\n        self.taches = []\n\n    def ajouter(self, tache):\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n            print(\"Tâche supprimée\")   \n\n    def afficher(self):\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.ta...",
+            "issues_types": [
+                "logic_error",
+                "missing_docstring",
+                "missing_docstring",
+                "missing_docstring",
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "efea5fa9-da1b-4713-ac19-4478379cd208",
+        "timestamp": "2026-01-06T01:55:36.487893",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code4.py",
+            "issues_count": 6,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code4.py\nNOMBRE DE PROBLÈMES : 6\n\nPROBLÈMES À CORRIGER :\n- Ligne 174 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 33 : The if statement can be replaced with 'return bool(test)' (Type: pep8_violation, Sévérité: low)\n- Ligne 33 : Unnecessary \"else\" after \"return\", remove the \"else\" and de-indent the code inside it (Type: pep8_violation, Sévérité: low)\n- Ligne 123 : Redefining name 'u1' from outer scope (line 157) (Type: naming_convention, Sévérité: medium)\n- Ligne 123 : Redefining name 'u2' from outer scope (line 158) (Type: naming_convention, Sévérité: medium)\n- Ligne 144 : Catching too general exception Exception (Type: security_issue, Sévérité: medium)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        if self.age > 18:\n            return True\n        else:\n            return False\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(u1, u2, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        u1 (Utilisateur): L'utilisateur source du transfert.\n        u2 (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not u1.compte or not u2.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > u1.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        u1.compte.retirer(montant)\n        u2.compte.deposer(montant)\n    except Exception as e:\n        print(f\"Une erreur est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    for i in range(len(UTILISATEURS)):\n        u = UTILISATEURS[i]\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    u1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    u2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    u1.creer_compte(1000)\n    u2.creer_compte(500)\n\n    u1.compte.deposer(-200)\n    u2.compte.retirer(1000)\n\n    transfert(u1, u2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n     ...",
+            "issues_types": [
+                "pep8_violation",
+                "pep8_violation",
+                "pep8_violation",
+                "naming_convention",
+                "naming_convention",
+                "security_issue"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c3ddf7b0-30be-4865-9ef2-a84eb702f374",
+        "timestamp": "2026-01-06T01:55:38.542350",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "./sandbox",
+            "input_prompt": "Exécution et validation de pytest dans ./sandbox",
+            "output_response": "Résultat: 4 tests réussis sur 4. Tous les tests passent.",
+            "passed": 4,
+            "failed": 0,
+            "total": 4
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7ccb58bd-5d85-400a-952d-d79265172cb9",
+        "timestamp": "2026-01-06T01:55:38.604752",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2c0b9af8-fb4e-4e5b-b1aa-80f21eae7ab8",
+        "timestamp": "2026-01-06T01:58:11.626622",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/dataset_inconnu",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=10",
+            "target_directory": "./sandbox/dataset_inconnu",
+            "max_iterations": 10,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "21ce6df3-bcaa-497b-b79d-e8a5b613367c",
+        "timestamp": "2026-01-06T01:58:22.822109",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code1.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple \n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits   \n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total = 0\n        for p in self.produits:\n            total += p[1] * p[2]\n        return total\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total = 0\n    for i in range(len(commandes)):   \n        total += commandes[i].total()\n    return total\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante.\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n    \"\"\"\n    if quantite < 0:\n        print(\"Quantité invalide\")\n    commande.produits.append((nom, prix, quantite))   \n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    ajouter_produit(c2, \"Souris\", 1500, -1)\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code1', 'obj': '', 'line': 14, 'column': 32, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': '', 'line': 38, 'column': 35, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': '', 'line': 54, 'column': 51, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'trailing-whitespace', 'message': 'Trailing whitespace', 'message-id': 'C0303'}, {'type': 'convention', 'module': 'code1', 'obj': '', 'line': 62, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'refactor', 'module': 'code1', 'obj': 'Commande', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 14, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}, {'type': 'convention', 'module': 'code1', 'obj': 'total_commandes', 'line': 38, 'column': 4, 'endLine': 39, 'endColumn': 37, 'path': 'sandbox\\\\dataset_inconnu\\\\code1.py', 'symbol': 'consider-using-enumerate', 'message': 'Consider using enumerate instead of iterating with range and len', 'message-id': 'C0200'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code1.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"code1.py\",\n            \"line\": 51,\n            \"severity\": \"medium\",\n            \"type\": \"logic_error\",\n            \"message\": \"La fonction ajouter_produit imprime un message d'erreur au lieu de le gérer correctement (ex: lever une exception).\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 38,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Considérer l'utilisation de enumerate au lieu d'itérer avec range et len pour plus de lisibilité.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"La classe Commande a peu de méthodes publiques, ce qui pourrait indiquer une conception simpliste.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Gérer les erreurs de manière plus robuste (ex: lever des exceptions).\",\n        \"Utiliser enumerate pour les boucles itérant sur des listes avec index.\",\n        \"Vérifier la conception des classes pour s'assurer qu'elles ont un nombre approprié de méthodes publiques.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d83d1113-a15a-4cff-b55a-427c26fe6693",
+        "timestamp": "2026-01-06T01:58:25.395592",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code2.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    return False\n\n\ndef changer_mdp(login, ancien, nouveau):\n    \"\"\"Change le mot de passe d'un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        ancien (str): L'ancien mot de passe.\n        nouveau (str): Le nouveau mot de passe.\n    \"\"\"\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")\n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n    changer_mdp(\"user\", \"abcd\", \"123\")\n    print(UTILISATEURS)\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code2', 'obj': '', 'line': 43, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code2.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"code2.py\",\n            \"line\": 34,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Le nom 'changer_mdp' est mal orthographié.\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 43,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Corriger les noms de fonctions pour respecter les conventions (snake_case).\",\n        \"Ajouter une nouvelle ligne à la fin du fichier pour respecter PEP8.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "51091669-720c-4539-a102-aae5150e14d1",
+        "timestamp": "2026-01-06T01:58:28.646608",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code3.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code3.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.tags = []\n        else:\n            self.tags = tags\n\n    def ajouter_tag(self, tag):\n        \"\"\"Ajoute un tag à la tâche.\n\n        Args:\n            tag (str): Le tag à ajouter.\n        \"\"\"\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    \"\"\"Gère une collection de tâches.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialise une nouvelle instance de GestionTaches.\"\"\"\n        self.taches = []\n\n    def ajouter(self, tache):\n        \"\"\"Ajoute une tâche à la liste des tâches.\n\n        Args:\n            tache (Tache): L'objet Tache à ajouter.\n        \"\"\"\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        \"\"\"Supprime une tâche de la liste en utilisant son titre.\n\n        Args:\n            titre (str): Le titre de la tâche à supprimer.\n        \"\"\"\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n            print(\"Tâche supprimée\")\n\n    def afficher(self):\n        \"\"\"Affiche toutes les tâches avec leur titre et leurs tags.\"\"\"\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code3', 'obj': '', 'line': 72, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code3.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'refactor', 'module': 'code3', 'obj': 'Tache', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\dataset_inconnu\\\\code3.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code3.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"code3.py\",\n            \"line\": 72,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing (C0304)\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Too few public methods (1/2) (R0903)\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 44,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"A statement should not be inside a loop if it does not depend on the loop's variables (W0107)\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier.\",\n        \"Vérifier les classes qui ont peu de méthodes publiques si elles sont nécessaires.\",\n        \"Optimiser le placement des instructions à l'intérieur des boucles si elles ne dépendent pas des variables de la boucle.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3bfa5b08-861a-48ae-9ea8-6f940c38e362",
+        "timestamp": "2026-01-06T01:58:31.545994",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : code4.py\nSCORE PYLINT : 10.0/10\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(source_user, destination_user, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        source_user (Utilisateur): L'utilisateur source du transfert.\n        destination_user (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not source_user.compte or not destination_user.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > source_user.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        source_user.compte.retirer(montant)\n        destination_user.compte.deposer(montant)\n    except Exception as e:\n        print(f\"Une erreur est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    for i in range(len(UTILISATEURS)):\n        u = UTILISATEURS[i]\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    user1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    user1.creer_compte(1000)\n    user2.creer_compte(500)\n\n    user1.compte.deposer(-200)\n    user2.compte.retirer(1000)\n\n    transfert(user1, user2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nERREURS PYLINT (échantillon) :\n[{'type': 'convention', 'module': 'code4', 'obj': '', 'line': 175, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\dataset_inconnu\\\\code4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 145, 'column': 11, 'endLine': 145, 'endColumn': 20, 'path': 'sandbox\\\\dataset_inconnu\\\\code4.py', 'symbol': 'broad-exception-caught', 'message': 'Catching too general exception Exception', 'message-id': 'W0718'}, {'type': 'convention', 'module': 'code4', 'obj': 'afficher_utilisateurs', 'line': 151, 'column': 4, 'endLine': 153, 'endColumn': 37, 'path': 'sandbox\\\\dataset_inconnu\\\\code4.py', 'symbol': 'consider-using-enumerate', 'message': 'Consider using enumerate instead of iterating with range and len', 'message-id': 'C0200'}, {'type': 'warning', 'module': 'code4', 'obj': '', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\dataset_inconnu\\\\code4.py', 'symbol': 'unused-import', 'message': 'Unused import copy', 'message-id': 'W0611'}]\n\nGénère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code4.py\"\n    ],\n    \"total_issues\": 4,\n    \"issues\": [\n        {\n            \"file\": \"code4.py\",\n            \"line\": 145,\n            \"severity\": \"medium\",\n            \"type\": \"logic_error\",\n            \"message\": \"Attraper une exception trop générale 'Exception'. Il est préférable de capturer des exceptions spécifiques pour une meilleure gestion des erreurs.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 151,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Utiliser 'enumerate' au lieu d'itérer avec 'range' et 'len' pour plus de lisibilité.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Importation non utilisée: 'copy'\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 175,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Il manque une nouvelle ligne à la fin du fichier.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Capturer des exceptions spécifiques au lieu d'une exception générale.\",\n        \"Utiliser enumerate pour itérer sur les listes.\",\n        \"Supprimer les imports inutilisés.\",\n        \"Assurer qu'il y a une nouvelle ligne à la fin du fichier.\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "eddd5d66-04aa-43eb-acca-2e9def88011d",
+        "timestamp": "2026-01-06T01:58:33.571581",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code1.py",
+            "issues_count": 3,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code1.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 51 : La fonction ajouter_produit imprime un message d'erreur au lieu de le gérer correctement (ex: lever une exception). (Type: logic_error, Sévérité: medium)\n- Ligne 38 : Considérer l'utilisation de enumerate au lieu d'itérer avec range et len pour plus de lisibilité. (Type: pep8_violation, Sévérité: low)\n- Ligne 3 : La classe Commande a peu de méthodes publiques, ce qui pourrait indiquer une conception simpliste. (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple \n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits   \n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total = 0\n        for p in self.produits:\n            total += p[1] * p[2]\n        return total\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total = 0\n    for i in range(len(commandes)):   \n        total += commandes[i].total()\n    return total\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante.\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n    \"\"\"\n    if quantite < 0:\n        print(\"Quantité invalide\")\n    commande.produits.append((nom, prix, quantite))   \n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    ajouter_produit(c2, \"Souris\", 1500, -1)\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        ...",
+            "issues_types": [
+                "logic_error",
+                "pep8_violation",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "abe3fd24-8e63-4aff-8cdd-0b856a4ccf84",
+        "timestamp": "2026-01-06T01:58:34.797715",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code2.py",
+            "issues_count": 2,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code2.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 34 : Le nom 'changer_mdp' est mal orthographié. (Type: naming_convention, Sévérité: medium)\n- Ligne 43 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    return False\n\n\ndef changer_mdp(login, ancien, nouveau):\n    \"\"\"Change le mot de passe d'un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        ancien (str): L'ancien mot de passe.\n        nouveau (str): Le nouveau mot de passe.\n    \"\"\"\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")\n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n    changer_mdp(\"user\", \"abcd\", \"123\")\n    print(UTILISATEURS)\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    retur...",
+            "issues_types": [
+                "naming_convention",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "54ae2e1a-47e3-4ec8-aa03-5962297c5ba7",
+        "timestamp": "2026-01-06T01:58:37.113820",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "code3.py",
+            "issues_count": 3,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code3.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 72 : Final newline missing (C0304) (Type: pep8_violation, Sévérité: low)\n- Ligne 3 : Too few public methods (1/2) (R0903) (Type: pep8_violation, Sévérité: low)\n- Ligne 44 : A statement should not be inside a loop if it does not depend on the loop's variables (W0107) (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.tags = []\n        else:\n            self.tags = tags\n\n    def ajouter_tag(self, tag):\n        \"\"\"Ajoute un tag à la tâche.\n\n        Args:\n            tag (str): Le tag à ajouter.\n        \"\"\"\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    \"\"\"Gère une collection de tâches.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialise une nouvelle instance de GestionTaches.\"\"\"\n        self.taches = []\n\n    def ajouter(self, tache):\n        \"\"\"Ajoute une tâche à la liste des tâches.\n\n        Args:\n            tache (Tache): L'objet Tache à ajouter.\n        \"\"\"\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        \"\"\"Supprime une tâche de la liste en utilisant son titre.\n\n        Args:\n            titre (str): Le titre de la tâche à supprimer.\n        \"\"\"\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n            print(\"Tâche supprimée\")\n\n    def afficher(self):\n        \"\"\"Affiche toutes les tâches avec leur titre et leurs tags.\"\"\"\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.ta...",
+            "issues_types": [
+                "pep8_violation",
+                "pep8_violation",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "eba61750-2a3c-4a63-919e-7eb296f4a831",
+        "timestamp": "2026-01-06T01:59:13.086101",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/dataset_inconnu",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 47.596207276s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "cf523433-9dc4-49bd-8633-f938b687afea",
+        "timestamp": "2026-01-06T01:59:13.119262",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 47.596207276s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}",
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c5f7ff5c-728f-46fd-87c7-076a3759233a",
+        "timestamp": "2026-01-06T01:59:13.261250",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
     }
 ]

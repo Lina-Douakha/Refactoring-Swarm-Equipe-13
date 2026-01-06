@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 from src.utils.logger import log_experiment, ActionType
 
-# Charger les variables d'environnement
+
 load_dotenv()
 
 
@@ -19,9 +19,9 @@ def main():
     Lit les arguments, lance le Swarm, et retourne le statut final.
     """
     
-    # ========================================
-    # ÉTAPE 1 : PARSING DES ARGUMENTS
-    # ========================================
+    
+    
+    
     parser = argparse.ArgumentParser(
         description="The Refactoring Swarm - Système multi-agents de refactoring automatique"
     )
@@ -40,30 +40,30 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        default="gemini-2.0-flash-exp",
-        help="Modèle LLM à utiliser (défaut: gemini-2.0-flash-exp)"
+        default="gemini-2.5-flash-lite",
+        help="Modèle LLM à utiliser (défaut: gemini-2.5-flash-lite)"
     )
     
     args = parser.parse_args()
     
-    # ========================================
-    # ÉTAPE 2 : VALIDATIONS INITIALES
-    # ========================================
     
-    # Vérifier que le dossier cible existe
+    
+    
+    
+    
     if not os.path.exists(args.target_dir):
         print(f" ERREUR : Le dossier {args.target_dir} n'existe pas.")
         sys.exit(1)
     
-    # Vérifier que la clé API est configurée
+    
     api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
         print(" ERREUR : La clé API GOOGLE_API_KEY n'est pas configurée dans le fichier .env")
         sys.exit(1)
     
-    # ========================================
-    # ÉTAPE 3 : LOGGING DU DÉMARRAGE
-    # ========================================
+    
+    
+    
     print("=" * 80)
     print(" THE REFACTORING SWARM - DÉMARRAGE")
     print("=" * 80)
@@ -86,25 +86,25 @@ def main():
         status="SUCCESS"
     )
     
-    # ========================================
-    # ÉTAPE 4 : LANCEMENT DU SWARM
-    # ========================================
+    
+    
+    
     try:
-        # Import de l'orchestrateur
+        
         from src.orchestrator.swarm_controller import run_refactoring_swarm
         
         print("\n Lancement du Swarm...\n")
         
-        # Exécution du Swarm
+        
         result = run_refactoring_swarm(
             target_dir=args.target_dir,
             model_name=args.model,
             max_iterations=args.max_iterations
         )
         
-        # ========================================
-        # ÉTAPE 5 : ANALYSE DU RÉSULTAT
-        # ========================================
+        
+        
+        
         print("\n" + "=" * 80)
         print(" RÉSULTAT FINAL")
         print("=" * 80)
@@ -113,7 +113,7 @@ def main():
             print(" MISSION ACCOMPLIE !")
             print(f"   Le code a été refactorisé avec succès en {result['total_iterations']} itération(s).")
             
-            # Logger le succès
+            
             log_experiment(
                 agent_name="System",
                 model_used=args.model,
@@ -130,7 +130,7 @@ def main():
             
             print("\n Logs disponibles dans : logs/experiment_data.json")
             print("=" * 80)
-            sys.exit(0)  # Code de sortie 0 = SUCCÈS
+            sys.exit(0)  
             
         else:
             print("  MISSION INCOMPLÈTE")
@@ -141,7 +141,7 @@ def main():
             else:
                 print("   Raison : Erreur durant l'exécution")
             
-            # Logger l'échec
+            
             log_experiment(
                 agent_name="System",
                 model_used=args.model,
@@ -159,7 +159,7 @@ def main():
             
             print("\n Consultez les logs pour plus de détails : logs/experiment_data.json")
             print("=" * 80)
-            sys.exit(1)  # Code de sortie 1 = ÉCHEC
+            sys.exit(1)  
     
     except ImportError as e:
         print(f"\n ERREUR D'IMPORT : {str(e)}")
@@ -183,7 +183,7 @@ def main():
         print(f"\n ERREUR CRITIQUE : {str(e)}")
         print(f"   Type d'erreur : {type(e).__name__}")
         
-        # Logger l'erreur critique
+        
         log_experiment(
             agent_name="System",
             model_used=args.model,

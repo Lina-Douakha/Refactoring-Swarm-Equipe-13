@@ -52,7 +52,8 @@ class FixerAgent:
         self.model_name = model_name
         self.llm = ChatGoogleGenerativeAI(
             model=model_name,
-            temperature=0.2,  
+            temperature=0.2, 
+            convert_system_message_to_human=True 
         )
         print(f" FixerAgent initialisé avec le modèle : {model_name}")
     
@@ -132,7 +133,7 @@ class FixerAgent:
                     action=ActionType.FIX,
                     details={
                         "file_fixed": filename,
-                        "issues_count": len(file_issues),
+                        "issues_found": len(file_issues),
                         "input_prompt": user_prompt,
                         "output_response": fixed_content[:500] + "..." if len(fixed_content) > 500 else fixed_content,
                         "issues_types": [issue.get("type") for issue in file_issues]
@@ -320,3 +321,4 @@ Analyse l'erreur et corrige le code. Retourne uniquement le code Python corrigé
         except Exception as e:
             print(f" Échec de la nouvelle tentative : {str(e)}")
             raise
+

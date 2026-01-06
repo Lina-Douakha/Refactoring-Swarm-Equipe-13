@@ -1783,5 +1783,1348 @@
             "history": []
         },
         "status": "FAILURE"
+    },
+    {
+        "id": "09d77940-57e8-4fbe-b163-441a88daff02",
+        "timestamp": "2026-01-06T17:06:24.112030",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "59c0c2fa-0c39-400c-96e9-adf8eb79327a",
+        "timestamp": "2026-01-06T17:11:37.121810",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. ",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "6df8ed44-d50c-494d-aca7-834c8a6c8fb1",
+        "timestamp": "2026-01-06T17:11:37.135879",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. ",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ccae0906-11fd-4422-aa91-952e3441dfad",
+        "timestamp": "2026-01-06T17:11:37.167983",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "603eb6d0-128c-4e6c-8916-1af47ee870db",
+        "timestamp": "2026-01-06T18:04:47.060642",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "fbe9e962-3db7-4891-b87a-8ac0dbda77c6",
+        "timestamp": "2026-01-06T18:08:28.175709",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a3f083f6-df31-4f63-a1a7-3db36a24d240",
+        "timestamp": "2026-01-06T18:11:49.841234",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "75ebc42d-e170-4295-b343-eb33bd65b945",
+        "timestamp": "2026-01-06T18:11:55.881765",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 2\n\nCODE :\n```python\ndef divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 2,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Division par zéro détectée. La fonction 'divide' ne gère pas le cas où le diviseur est zéro, ce qui entraînera une erreur ZeroDivisionError.\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Le module manque de docstring.\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction 'divide' manque de docstring.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une gestion d'erreur pour la division par zéro dans la fonction 'divide'.\",\n        \"Ajouter une docstring au module.\",\n        \"Ajouter une docstring à la fonction 'divide'.\"\n    ]\n}\n```",
+            "issues_found": 3
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "7a93efea-75a7-497d-b83d-cddfb612fb0a",
+        "timestamp": "2026-01-06T18:11:58.876339",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 3\n\nCODE :\n```python\ndef sum(a, b):\n    return a + b\n\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées comme 'sum'\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'sum'\"\n    ]\n}\n```",
+            "issues_found": 3
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8008ad85-6d07-4a46-95f1-ffad24d09d4a",
+        "timestamp": "2026-01-06T18:11:58.894232",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "c5020602-43e6-4621-a24b-39439e1ebbd8",
+        "timestamp": "2026-01-06T18:11:58.920815",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "71d47dcc-1d09-4217-bb75-45d1f6091208",
+        "timestamp": "2026-01-06T18:11:58.944919",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "7e0cb507-663c-4b83-b9b4-5bf1a2c6a94d",
+        "timestamp": "2026-01-06T18:55:35.671481",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "db35c2a0-3579-42f7-8bae-b1d1484dfbc7",
+        "timestamp": "2026-01-06T18:55:51.665567",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'divide'\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a0dc339b-e065-4aca-852f-f9fbd2987271",
+        "timestamp": "2026-01-06T18:55:55.314901",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "pylint_score": 10.0,
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def sum(a, b):\n    return a + b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction\"\n    ]\n}\n```"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ef76e9cd-dae9-41db-9e1d-ee1794ec7524",
+        "timestamp": "2026-01-06T18:55:55.420744",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "fd232ffa-2ab5-4583-b295-2124238f7f84",
+        "timestamp": "2026-01-06T18:55:55.501184",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "39929ff0-0392-4e79-b09f-90c2d84ace69",
+        "timestamp": "2026-01-06T18:55:55.558228",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "8933c4e4-baea-4445-8d4f-01b284dbf92f",
+        "timestamp": "2026-01-06T19:24:40.187795",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "23f5d3d7-17e5-4779-9a30-b2ef4121746c",
+        "timestamp": "2026-01-06T19:25:07.459102",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'divide'\"\n    ]\n}\n```",
+            "issues_count": 2
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "bab49a98-5400-4aee-9b99-e657a02abfa5",
+        "timestamp": "2026-01-06T19:25:11.026355",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def sum(a, b):\n    return a + b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction\"\n    ]\n}\n```",
+            "issues_count": 3
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "193a53da-cc51-4224-b86b-244dcac7bb28",
+        "timestamp": "2026-01-06T19:25:11.084431",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "28152781-31a3-4a2f-a424-4beebb4fad3d",
+        "timestamp": "2026-01-06T19:25:11.206480",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "17d7acdc-5d2b-42c7-8b71-81cc31cf8850",
+        "timestamp": "2026-01-06T19:25:11.330129",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "eb747417-48b8-4ef9-b70e-1181a9a4fb1f",
+        "timestamp": "2026-01-06T19:48:45.187506",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "fdb7c3b1-1562-4ef4-bad0-690f516b2c8e",
+        "timestamp": "2026-01-06T19:48:51.984359",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'divide'\"\n    ]\n}\n```",
+            "issues_count": 2
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "bab866fc-c3aa-4991-8e77-9aed8eadcb97",
+        "timestamp": "2026-01-06T19:48:54.187356",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def sum(a, b):\n    return a + b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction\"\n    ]\n}\n```",
+            "issues_count": 3
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "8de53ae0-fbeb-4b7e-8818-b0beeed61422",
+        "timestamp": "2026-01-06T19:48:54.212762",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ef116194-b6b4-4d9d-b969-3672b6048e6c",
+        "timestamp": "2026-01-06T19:48:54.241108",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : SystemMessages are not yet supported!\n\nTo automatically convert the leading SystemMessage to a HumanMessage,\nset  `convert_system_message_to_human` to True. Example:\n\nllm = ChatGoogleGenerativeAI(model=\"gemini-pro\", convert_system_message_to_human=True)\n",
+            "error_type": "ValueError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "00fc8911-f4c7-4b23-82ff-f1606a833445",
+        "timestamp": "2026-01-06T19:48:54.264660",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "ee5d8ef7-f056-4516-a107-e3a6b02bc85e",
+        "timestamp": "2026-01-06T19:54:34.328712",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e438bc47-5599-4923-b6c5-892dd826a588",
+        "timestamp": "2026-01-06T19:54:40.586868",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"medium\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'divide'\"\n    ]\n}\n```",
+            "issues_count": 2
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ab93f5ea-09ca-4947-aee4-64a971d44588",
+        "timestamp": "2026-01-06T19:54:47.258770",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def sum(a, b):\n    return a + b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction\"\n    ]\n}\n```",
+            "issues_count": 3
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7898f0e5-4553-427e-9aee-af149b7b08cf",
+        "timestamp": "2026-01-06T19:54:50.091844",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 2,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: medium)\n- Ligne 1 : Missing function or method docstring (Type: missing_docstring, Sévérité: medium)\n\nCODE ACTUEL :\n```python\ndef divide(a, b):\n    return a / b\n\nprint(divide(10, 0))\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n    \"\"\"\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "37afd8dc-ebbc-4fad-a6b4-2fffc84c6313",
+        "timestamp": "2026-01-06T19:54:51.000857",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 3,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Redefining built-in 'sum' (Type: naming_convention, Sévérité: high)\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 1 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\ndef sum(a, b):\n    return a + b\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "naming_convention",
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7976ffc8-3cfb-4387-97bd-de273b2f8668",
+        "timestamp": "2026-01-06T19:54:52.160095",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'JudgeAgent' object has no attribute '_filter_errors_for_file'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "2a53d2ae-ad49-47f6-b2fc-51accadd3624",
+        "timestamp": "2026-01-06T19:54:54.447663",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n    \"\"\"\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 17, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 17,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Division par zéro détectée. La fonction 'divide' ne gère pas le cas où le diviseur est zéro.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une gestion d'erreur pour la division par zéro dans la fonction 'divide'.\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "21d4608e-1555-48ee-89c7-b5210ce81024",
+        "timestamp": "2026-01-06T19:54:56.192719",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "494903a7-343c-4984-95cd-aa3ca15dff11",
+        "timestamp": "2026-01-06T19:54:57.231024",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 17 : Division par zéro détectée. La fonction 'divide' ne gère pas le cas où le diviseur est zéro. (Type: logic_error, Sévérité: high)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n    \"\"\"\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "logic_error"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ee1c6c52-b3de-425d-815b-856bdd6b848c",
+        "timestamp": "2026-01-06T19:54:58.825838",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b42637ee-8dfd-412b-9711-fc5ba8650094",
+        "timestamp": "2026-01-06T19:54:59.476809",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'JudgeAgent' object has no attribute '_filter_errors_for_file'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "4b894344-a705-4edb-8974-0859686ecfde",
+        "timestamp": "2026-01-06T19:55:01.389813",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a143cef3-0d2f-4dd3-b4cc-5318b5e267ce",
+        "timestamp": "2026-01-06T19:55:03.789124",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e434cf41-b9dd-423f-b1fc-3542a38891e8",
+        "timestamp": "2026-01-06T19:55:06.550190",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "643f1535-bcdd-4e58-a10d-482fa4bbe994",
+        "timestamp": "2026-01-06T20:00:10.460904",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Correction des fichiers dans ./sandbox/",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 49.697963696s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 49\n}\n]",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "42acbda3-ea61-420a-b813-3f3b477b1be1",
+        "timestamp": "2026-01-06T20:00:10.480172",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 3,
+            "input_prompt": "Orchestration itération 3",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 49.697963696s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 49\n}\n]",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "09591ebf-4e20-4965-8ed6-7389c33086f6",
+        "timestamp": "2026-01-06T20:00:10.513276",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 3 itérations",
+            "success": false,
+            "total_iterations": 3,
+            "max_iterations_reached": false,
+            "history": [
+                {
+                    "iteration": 1,
+                    "issues_detected": 5,
+                    "fixes_applied": 5,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 2,
+                    "issues_detected": 2,
+                    "fixes_applied": 2,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                }
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "35da0b61-2aad-4c24-b3ed-d63c063479cc",
+        "timestamp": "2026-01-06T20:16:11.047490",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c51bc307-6951-49f1-bffc-07dd41a5951b",
+        "timestamp": "2026-01-06T20:21:23.916848",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 36.289058912s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 36\n}\n]",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "a03b655e-9489-46d8-ab77-2d69088cd1eb",
+        "timestamp": "2026-01-06T20:21:23.932709",
+        "agent": "Swarm_Controller",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "iteration": 1,
+            "input_prompt": "Orchestration itération 1",
+            "output_response": "Erreur : 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\nPlease retry in 36.289058912s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash-lite\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 20\n}\n, retry_delay {\n  seconds: 36\n}\n]",
+            "error_type": "ResourceExhausted"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "6a900250-9ee7-4a7a-b42a-e638eed38ef7",
+        "timestamp": "2026-01-06T20:21:23.965652",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 1 itérations",
+            "success": false,
+            "total_iterations": 1,
+            "max_iterations_reached": false,
+            "history": []
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "a266b83f-885c-4841-805f-3670ef92d419",
+        "timestamp": "2026-01-06T20:43:57.394337",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d9a1786f-44bf-4238-9ac0-ed5b83a7a199",
+        "timestamp": "2026-01-06T20:48:59.638458",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7d1df0be-e178-4a3d-b873-c5c0101524d3",
+        "timestamp": "2026-01-06T20:49:07.269242",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d034c75a-5273-4a9e-9b25-183d339eb5f5",
+        "timestamp": "2026-01-06T20:49:10.596876",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a6cd3c2d-89cb-4d44-918a-c40808da81d4",
+        "timestamp": "2026-01-06T20:49:11.523498",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "232b43b7-f194-43ca-b8fe-7d51d7b96750",
+        "timestamp": "2026-01-06T20:49:12.166346",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "0a093fa3-4499-494d-b912-8222997a1c34",
+        "timestamp": "2026-01-06T20:49:14.684821",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "2e8af29f-8984-4b59-be06-fa4f200b4696",
+        "timestamp": "2026-01-06T20:49:17.592809",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e0684a4e-8e34-4a14-b33e-d0fed35f9cad",
+        "timestamp": "2026-01-06T20:49:21.014904",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "500d7542-c21d-4338-9b5d-53456bb75f2f",
+        "timestamp": "2026-01-06T20:49:21.975404",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e80757fb-7ae9-4c93-b87f-b740b7aeb1c4",
+        "timestamp": "2026-01-06T20:49:22.618141",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3dc73399-39d7-4d58-a3e4-4fbd09084cd9",
+        "timestamp": "2026-01-06T20:49:24.678399",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "75d9dd0d-a66c-413c-8e6a-e7a59e3fdcff",
+        "timestamp": "2026-01-06T20:49:28.268161",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "43856344-a441-44f5-9617-4cc87a7ce262",
+        "timestamp": "2026-01-06T20:49:31.730408",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "98cabb0d-59f0-4760-b1cc-060ad47f6990",
+        "timestamp": "2026-01-06T20:49:32.638777",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "24fe689c-2723-4c22-95c1-a97234e7ee3e",
+        "timestamp": "2026-01-06T20:50:36.189267",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ecfe1bb7-e98a-459e-8893-869459c96e4f",
+        "timestamp": "2026-01-06T20:50:38.380572",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "b4bf9e60-37c5-4de6-8692-60a00c75656b",
+        "timestamp": "2026-01-06T20:50:41.823231",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "168e4139-2162-426a-b70c-260f67177628",
+        "timestamp": "2026-01-06T20:50:45.038296",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "cedcf860-be3f-4460-b775-ba71e9e6b836",
+        "timestamp": "2026-01-06T20:50:45.968182",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "835a691d-9c8c-41e7-b9b8-414b6e559c77",
+        "timestamp": "2026-01-06T20:50:46.780455",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a9d74336-881d-408a-9db2-8694d4eb9f39",
+        "timestamp": "2026-01-06T20:50:49.643799",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "3311fa0d-6088-471e-b959-3505a3d616ff",
+        "timestamp": "2026-01-06T20:50:53.937147",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "532aa957-b32c-4d8a-9c5c-7930da702961",
+        "timestamp": "2026-01-06T20:50:58.020096",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 14, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 14,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "1ac7d026-7ddf-4f14-bb11-957c0cd19caa",
+        "timestamp": "2026-01-06T20:50:58.844493",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 22 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7d55e9d8-81ee-446d-a34f-bbe17cfc08ba",
+        "timestamp": "2026-01-06T20:50:59.668383",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 1,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 1\n\nPROBLÈMES À CORRIGER :\n- Ligne 14 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "57d9ec70-d150-49fc-8719-e0481c4300d1",
+        "timestamp": "2026-01-06T20:51:02.474491",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution de pytest sur ./sandbox/",
+            "output_response": "Erreur : 'str' object has no attribute 'get'",
+            "error_type": "AttributeError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "b6af4ae5-f7e6-4fc2-84e6-8e52cc7676a2",
+        "timestamp": "2026-01-06T20:51:06.386495",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# \"\"\"Ce module fournit une fonction pour diviser deux nombres.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division de a par b.\n\n    Raises:\n        ZeroDivisionError: Si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        raise ZeroDivisionError(\"Le diviseur ne peut pas être zéro.\")\n    return a / b\n\n\nprint(divide(10, 0))\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 22, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 1,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 22,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_count": 1
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2cb1516d-2bed-4ee3-a75a-5ab10e20df15",
+        "timestamp": "2026-01-06T20:52:00.634790",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "bc76106b-38a0-41a8-a580-e88f7de23440",
+        "timestamp": "2026-01-06T20:55:01.649825",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7e57d93b-aa40-4001-9e91-9fe63143f021",
+        "timestamp": "2026-01-06T20:56:29.339772",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9c11717a-745f-4a00-97d0-6d0069ec4af6",
+        "timestamp": "2026-01-06T21:01:16.434369",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f41c39b0-c265-4722-9e37-f0d707c6ed6d",
+        "timestamp": "2026-01-06T21:01:25.223927",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test1.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def divide(a, b):\n    if b == 0:\n        return \"Erreur : division par zéro\"\n    return a / b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'convention', 'module': 'test1', 'obj': 'divide', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 10, 'path': 'sandbox\\\\test1.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"test1.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test1.py\",\n            \"line\": 2,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction 'divide'\"\n    ]\n}\n```",
+            "issues_count": 2
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "847760ff-e2ec-45b3-a3f4-49b1adc3b35d",
+        "timestamp": "2026-01-06T21:01:28.962422",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint.\n\nFICHIER : test2.py\nSCORE PYLINT : 10.0/10\n\n# CODE :\n# ```python\n# def sum(a, b):\n    return a + b\n\n# ```\n\n# ERREURS PYLINT (échantillon) :\n# [{'type': 'convention', 'module': 'test2', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'redefined-builtin', 'message': \"Redefining built-in 'sum'\", 'message-id': 'W0622'}, {'type': 'convention', 'module': 'test2', 'obj': 'sum', 'line': 1, 'column': 0, 'endLine': 1, 'endColumn': 7, 'path': 'sandbox\\\\test2.py', 'symbol': 'missing-function-docstring', 'message': 'Missing function or method docstring', 'message-id': 'C0116'}]\n\n# Génère un rapport JSON avec les problèmes détectés les plus importants.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test2.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"high\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining built-in 'sum'\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test2.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing function or method docstring\"\n        }\n    ],\n    \"recommendations\": [\n        \"Éviter de redéfinir des fonctions intégrées\",\n        \"Ajouter une docstring au module\",\n        \"Ajouter une docstring à la fonction\"\n    ]\n}\n```",
+            "issues_count": 3
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a8efd946-49a4-4016-a52c-2c51b057e35a",
+        "timestamp": "2026-01-06T21:01:30.015539",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test1.py",
+            "issues_count": 2,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test1.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 2 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\ndef divide(a, b):\n    if b == 0:\n        return \"Erreur : division par zéro\"\n    return a / b\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour effectuer des divisions.\"\"\"\n\n\ndef divide(a, b):\n    \"\"\"Divise deux nombres.\n\n    Args:\n        a: Le dividende.\n        b: Le diviseur.\n\n    Returns:\n        Le résultat de la division ou un message d'erreur si le diviseur est zéro.\n    \"\"\"\n    if b == 0:\n        return \"Erreur : division par zéro\"\n    return a / b",
+            "issues_types": [
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3831d5a9-48c9-42c5-920e-e2f25a8cb874",
+        "timestamp": "2026-01-06T21:01:30.904581",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_fixed": "test2.py",
+            "issues_count": 3,
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test2.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Redefining built-in 'sum' (Type: naming_convention, Sévérité: high)\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 1 : Missing function or method docstring (Type: missing_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\ndef sum(a, b):\n    return a + b\n\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Ce module fournit une fonction pour additionner deux nombres.\"\"\"\n\ndef add_numbers(a, b):\n    \"\"\"Additionne deux nombres.\n\n    Args:\n        a: Le premier nombre.\n        b: Le second nombre.\n\n    Returns:\n        La somme de a et b.\n    \"\"\"\n    return a + b",
+            "issues_types": [
+                "naming_convention",
+                "missing_docstring",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3eb39b47-b373-4499-bbd4-4d731e7b016c",
+        "timestamp": "2026-01-06T21:01:33.142978",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "test_directory": "./sandbox/",
+            "input_prompt": "Exécution et validation de pytest dans ./sandbox/",
+            "output_response": "Résultat: 2 tests réussis sur 2. Tous les tests passent.",
+            "passed": 2,
+            "failed": 0,
+            "total": 2
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a14ad03f-200d-48bd-835f-e35bd3869b59",
+        "timestamp": "2026-01-06T21:01:33.181597",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
     }
 ]

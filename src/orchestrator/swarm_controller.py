@@ -16,10 +16,6 @@ from src.agents.fixer import FixerAgent
 from src.agents.judge import JudgeAgent
 
 
-# from src.agents.auditor_agent import AuditorAgent
-# from src.agents.fixer_agent import FixerAgent
-# from src.agents.judge_agent import JudgeAgent
-
 from src.utils.logger import log_experiment, ActionType
 
 

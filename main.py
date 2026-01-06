@@ -174,7 +174,7 @@ def main():
                 "interruption": "KeyboardInterrupt",
                 "target_dir": args.target_dir
             },
-            status="INTERRUPTED"
+            status="FAILURE"
         )
         
         print("\n📝 Consultez les logs pour plus de détails : logs/experiment_data.json")

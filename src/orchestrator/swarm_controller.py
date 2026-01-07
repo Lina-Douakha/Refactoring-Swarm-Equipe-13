@@ -1,4 +1,3 @@
-
 """
 Swarm Controller
 Rôle : Orchestrer les 3 agents (Auditor, Fixer, Judge) dans une boucle itérative

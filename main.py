@@ -103,6 +103,8 @@ def main():
             max_iterations=args.max_iterations,
             generate_tests=args.generate_tests,
             generate_docs=args.generate_docs
+            # generate_tests=False,   # ✅ FORCER
+            # generate_docs=False 
         )
         
         # Affichage du résultat

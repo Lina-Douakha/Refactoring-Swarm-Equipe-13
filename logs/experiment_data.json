@@ -4924,5 +4924,1806 @@
             "history": []
         },
         "status": "SUCCESS"
+    },
+    {
+        "id": "ba27c927-4554-4038-bc7b-f7694f0ab203",
+        "timestamp": "2026-01-07T23:48:28.429443",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite",
+            "generate_tests": true,
+            "generate_docs": true
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c6392d02-4972-4c78-b473-5afab5028b55",
+        "timestamp": "2026-01-07T23:48:50.556278",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "1058949b-b6c7-4bd8-af8a-e9f4d66a5fd3",
+        "timestamp": "2026-01-07T23:48:50.599765",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "88636ddf-2cd7-4382-b75d-9c1466d87827",
+        "timestamp": "2026-01-07T23:48:50.670907",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "837f0371-1573-42ec-a4fe-b1afb89509d7",
+        "timestamp": "2026-01-07T23:48:50.730929",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "87a31adc-0875-4097-819d-6ae366b5052f",
+        "timestamp": "2026-01-07T23:48:50.781742",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d8f5f348-aa08-407a-8ac3-da57addb4f1a",
+        "timestamp": "2026-01-07T23:48:50.834084",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "67e4fc56-6196-4a10-a826-a4090e3b0ec4",
+        "timestamp": "2026-01-07T23:48:50.893360",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ce134161-95eb-4dca-8e51-8080f78878d0",
+        "timestamp": "2026-01-07T23:48:50.946031",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7d02cb81-fb76-4b55-b925-bd18a06d1306",
+        "timestamp": "2026-01-07T23:48:50.996436",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "69969277-69e7-4a5f-8146-a9e2f1afa904",
+        "timestamp": "2026-01-07T23:48:51.047809",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "337f7279-4d73-473d-a0bc-e4b5fa424358",
+        "timestamp": "2026-01-07T23:48:51.098054",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a9e9626a-bc62-47f0-9ad7-fd0bed4f46b1",
+        "timestamp": "2026-01-07T23:48:51.311187",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "eada6839-b529-4e8c-8851-411e507a35c5",
+        "timestamp": "2026-01-07T23:48:51.364955",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a2c30b99-04c3-488c-8d75-62d8235df033",
+        "timestamp": "2026-01-07T23:48:51.413042",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "11a7b765-0eca-4633-9026-fe18ed77f05c",
+        "timestamp": "2026-01-07T23:48:51.465031",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "dd1f443f-f661-4a92-aa45-c8ee06ff9704",
+        "timestamp": "2026-01-07T23:48:51.644360",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ec337e87-c196-4de2-9299-46e1e89b26e8",
+        "timestamp": "2026-01-07T23:48:51.705022",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "af3c37c5-b244-4e85-bbaa-4cf17d90db85",
+        "timestamp": "2026-01-07T23:48:51.830705",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "513cb7ba-51c8-435b-b5c2-4779ff959524",
+        "timestamp": "2026-01-07T23:48:51.880774",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6567e67f-c58a-41a7-b479-350c9ce61487",
+        "timestamp": "2026-01-07T23:48:51.930080",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e43d8859-9e67-401e-9628-8418459ec0d2",
+        "timestamp": "2026-01-07T23:48:51.975761",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "940de601-5ce6-4280-bfc2-0bde9431a69a",
+        "timestamp": "2026-01-07T23:48:52.025815",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "805e32d6-6980-4688-adb1-b0760f537637",
+        "timestamp": "2026-01-07T23:48:52.074963",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "54888680-82a7-47b3-b586-e1c3309bfb82",
+        "timestamp": "2026-01-07T23:48:52.127349",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "af488427-7888-478d-b4c0-c0136a84fc7e",
+        "timestamp": "2026-01-07T23:48:52.176807",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9069db41-346e-4c1a-810b-3fb40f9dab71",
+        "timestamp": "2026-01-07T23:48:52.219329",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "353daaa9-91ba-4169-bb83-c04b746c603d",
+        "timestamp": "2026-01-07T23:48:52.340008",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "18975456-bfd5-4bc2-9b0e-61282f15f153",
+        "timestamp": "2026-01-07T23:48:52.391962",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "72da8252-fe24-4a66-89a1-b4bdf028fabe",
+        "timestamp": "2026-01-07T23:48:52.434238",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a2f59204-2c60-45c0-b4ad-01b6f5593244",
+        "timestamp": "2026-01-07T23:48:52.483773",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "37a559af-7a02-4a40-b90a-55adbb13ee72",
+        "timestamp": "2026-01-07T23:48:52.530530",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a412c2c1-d313-4e32-b398-8f8f25fd9c42",
+        "timestamp": "2026-01-07T23:48:52.588709",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "07a46b38-739f-4973-8014-9752d71ddbf7",
+        "timestamp": "2026-01-07T23:48:52.822479",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f440f462-7b7c-4a30-8af6-e70691496b26",
+        "timestamp": "2026-01-07T23:48:52.867870",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "af27da44-a458-4bf8-a4f2-2ce9ae976f77",
+        "timestamp": "2026-01-07T23:48:52.917530",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6bde6e7a-75a5-404d-a870-bc87bc485906",
+        "timestamp": "2026-01-07T23:48:52.967904",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "edaf62ba-ccd2-416d-8fe7-1ccbe034b8b9",
+        "timestamp": "2026-01-07T23:48:53.020605",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a3170b3d-a97f-4b98-bea9-280af7fc1800",
+        "timestamp": "2026-01-07T23:48:53.216599",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c55b9f8b-4180-4d31-bdcd-c2719c46ae32",
+        "timestamp": "2026-01-07T23:48:53.274649",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "12005afa-76a9-488b-ad1f-21d996a6eaa8",
+        "timestamp": "2026-01-07T23:48:53.325208",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6343a2e8-9eea-415c-b55c-725ce4ed1682",
+        "timestamp": "2026-01-07T23:48:53.372796",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2f7a6abe-c11e-4f3a-a2e2-32213824b79e",
+        "timestamp": "2026-01-07T23:48:53.420778",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a149d96c-46af-4165-9231-beabb08521ed",
+        "timestamp": "2026-01-07T23:48:53.480987",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "4c5550b2-972f-4d69-adae-241837ffc2d7",
+        "timestamp": "2026-01-07T23:48:53.542736",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f0f72800-306a-4362-99f1-82121779d3f5",
+        "timestamp": "2026-01-07T23:48:53.631882",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a0b1380c-6156-44cd-9605-c648af524dfe",
+        "timestamp": "2026-01-07T23:48:53.693130",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "704b3ef2-72ef-4127-bde1-c24715c6c157",
+        "timestamp": "2026-01-07T23:48:53.751994",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e383da57-9a06-42df-bb72-41a7ea35ca08",
+        "timestamp": "2026-01-07T23:48:53.814102",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "37f97ce0-3eb0-4bd9-8467-aa7f37a3239f",
+        "timestamp": "2026-01-07T23:48:53.919967",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f750ebf6-a947-4075-ae66-2a40cc07478e",
+        "timestamp": "2026-01-07T23:48:53.974094",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e67dd625-36b4-47f7-a920-06e7e6beae4f",
+        "timestamp": "2026-01-07T23:48:54.729738",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 50 itérations",
+            "success": false,
+            "total_iterations": 50,
+            "max_iterations_reached": true,
+            "history": [
+                {
+                    "iteration": 1,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 2,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 3,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 4,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 5,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 6,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 7,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 8,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 9,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 10,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 11,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 12,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 13,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 14,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 15,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 16,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 17,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 18,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 19,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 20,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 21,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 22,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 23,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 24,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 25,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 26,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 27,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 28,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 29,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 30,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 31,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 32,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 33,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 34,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 35,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 36,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 37,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 38,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 39,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 40,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 41,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 42,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 43,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 44,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 45,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 46,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 47,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 48,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 49,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 50,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                }
+            ]
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "e12109ca-5716-47db-9d16-f5cfc50d9cb3",
+        "timestamp": "2026-01-07T23:49:50.008484",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite",
+            "generate_tests": true,
+            "generate_docs": true
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3338751f-463b-465f-b9cf-20ee4e13d435",
+        "timestamp": "2026-01-07T23:50:14.460595",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code1.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 3\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for nom, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante.\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    if quantite < 0:\n        raise ValueError(\"La quantité ne peut pas être négative.\")\n    commande.produits.append((nom, prix, quantite))\n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    try:\n        ajouter_produit(c2, \"Souris\", 1500, -1)\n    except ValueError as e:\n        print(f\"Erreur lors de l'ajout du produit : {e}\")\n\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code1', 'obj': '', 'line': 69, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'warning', 'module': 'code1', 'obj': 'Commande.total', 'line': 23, 'column': 12, 'endLine': 23, 'endColumn': 15, 'path': 'sandbox\\\\code1.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'nom'\", 'message-id': 'W0612'}, {'type': 'refactor', 'module': 'code1', 'obj': 'Commande', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 14, 'path': 'sandbox\\\\code1.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code1.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"code1.py\",\n            \"line\": 23,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"La variable 'nom' dans la méthode Commande.total est déclarée mais non utilisée.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"La classe Commande a trop peu de méthodes publiques (1/2). Considérez l'ajout d'une méthode ou la fusion avec une autre classe.\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 69,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Le fichier ne se termine pas par une nouvelle ligne.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Supprimer les variables non utilisées dans la méthode Commande.total\",\n        \"Revoir la conception de la classe Commande pour respecter les conventions de nombre de méthodes publiques\",\n        \"Ajouter une nouvelle ligne à la fin du fichier\"\n    ]\n}\n```",
+            "issues_found": 3,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 3,
+            "file_path": "./sandbox/code1.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "282ca614-6fce-4531-a518-869097c4c7a3",
+        "timestamp": "2026-01-07T23:50:18.498806",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code4.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 4\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))...\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code4', 'obj': '', 'line': 175, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 145, 'column': 11, 'endLine': 145, 'endColumn': 20, 'path': 'sandbox\\\\code4.py', 'symbol': 'broad-exception-caught', 'message': 'Catching too general exception Exception', 'message-id': 'W0718'}, {'type': 'convention', 'module': 'code4', 'obj': 'afficher_utilisateurs', 'line': 151, 'column': 4, 'endLine': 153, 'endColumn': 37, 'path': 'sandbox\\\\code4.py', 'symbol': 'consider-using-enumerate', 'message': 'Consider using enumerate instead of iterating with range and len', 'message-id': 'C0200'}, {'type': 'warning', 'module': 'code4', 'obj': '', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\code4.py', 'symbol': 'unused-import', 'message': 'Unused import copy', 'message-id': 'W0611'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code4.py\"\n    ],\n    \"total_issues\": 5,\n    \"issues\": [\n        {\n            \"file\": \"code4.py\",\n            \"line\": 175,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 145,\n            \"severity\": \"medium\",\n            \"type\": \"logic_error\",\n            \"message\": \"Catching too general exception Exception. Il est préférable de capturer des exceptions plus spécifiques.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 151,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Consider using enumerate instead of iterating with range and len. L'utilisation d'enumerate améliore la lisibilité lors de l'itération sur des séquences.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused import copy. Le module 'copy' est importé mais pas utilisé.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 174,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Unexpected EOF while parsing. Il manque la fin de l'instruction dans la méthode 'retirer'.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier.\",\n        \"Capturer des exceptions plus spécifiques dans le bloc try/except.\",\n        \"Utiliser enumerate pour une meilleure lisibilité lors de l'itération.\",\n        \"Supprimer l'importation inutile du module 'copy'.\",\n        \"Corriger la fin de la méthode 'retirer' pour résoudre l'erreur de syntaxe.\"\n    ]\n}\n```",
+            "issues_found": 5,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 4,
+            "file_path": "./sandbox/code4.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "1d47c490-0d42-48bc-8462-389400bbfebb",
+        "timestamp": "2026-01-07T23:50:21.648798",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code1.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 23 : La variable 'nom' dans la méthode Commande.total est déclarée mais non utilisée. (Type: unused_variable, Sévérité: medium)\n- Ligne 3 : La classe Commande a trop peu de méthodes publiques (1/2). Considérez l'ajout d'une méthode ou la fusion avec une autre classe. (Type: pep8_violation, Sévérité: low)\n- Ligne 69 : Le fichier ne se termine pas par une nouvelle ligne. (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for nom, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante.\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    if quantite < 0:\n        raise ValueError(\"La quantité ne peut pas être négative.\")\n    commande.produits.append((nom, prix, quantite))\n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    try:\n        ajouter_produit(c2, \"Souris\", 1500, -1)\n    except ValueError as e:\n        print(f\"Erreur lors de l'ajout du produit : {e}\")\n\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        ...",
+            "issues_found": 3,
+            "issues_types": [
+                "unused_variable",
+                "pep8_violation",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "873f07ee-285e-4784-9186-554937a362e8",
+        "timestamp": "2026-01-07T23:51:24.737505",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code4.py\nNOMBRE DE PROBLÈMES : 5\n\nPROBLÈMES À CORRIGER :\n- Ligne 175 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 145 : Catching too general exception Exception. Il est préférable de capturer des exceptions plus spécifiques. (Type: logic_error, Sévérité: medium)\n- Ligne 151 : Consider using enumerate instead of iterating with range and len. L'utilisation d'enumerate améliore la lisibilité lors de l'itération sur des séquences. (Type: pep8_violation, Sévérité: low)\n- Ligne 3 : Unused import copy. Le module 'copy' est importé mais pas utilisé. (Type: unused_variable, Sévérité: low)\n- Ligne 174 : Unexpected EOF while parsing. Il manque la fin de l'instruction dans la méthode 'retirer'. (Type: syntax_error, Sévérité: high)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nimport copy\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(source_user, destination_user, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        source_user (Utilisateur): L'utilisateur source du transfert.\n        destination_user (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not source_user.compte or not destination_user.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > source_user.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        source_user.compte.retirer(montant)\n        destination_user.compte.deposer(montant)\n    except Exception as e:\n        print(f\"Une erreur est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    for i in range(len(UTILISATEURS)):\n        u = UTILISATEURS[i]\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    user1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    user1.creer_compte(1000)\n    user2.creer_compte(500)\n\n    user1.compte.deposer(-200)\n    user2.compte.retirer(1000)\n\n    transfert(user1, user2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"...",
+            "issues_found": 5,
+            "issues_types": [
+                "pep8_violation",
+                "logic_error",
+                "pep8_violation",
+                "unused_variable",
+                "syntax_error"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c857bca6-1e7c-4287-accb-9a5296a461db",
+        "timestamp": "2026-01-07T23:51:28.515413",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "test_code1.py",
+            "input_prompt": "Génère des tests unitaires pytest pour ce code Python :\n\nFICHIER : code1.py\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for _, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n    def ajouter_produit(self, nom, prix, quantite):\n        \"\"\"Ajoute un produit à la commande.\n\n        Args:\n            nom (str): Le nom du produit.\n            prix (int): Le prix du produit.\n            quantite (int): La quantité du produit.\n\n        Raises:\n            ValueError: Si la quantité est négative.\n        \"\"\"\n        if quantite < 0:\n            raise ValueError(\"La quantité ne peut pas être négative.\")\n        self.produits.append((nom, prix, quantite))\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit_globale(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante (fonction globale).\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    if quantite < 0:\n        raise ValueError(\"La quantité ne peut pas être négative.\")\n    commande.produits.append((nom, prix, quantite))\n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    try:\n        ajouter_produit_globale(c2, \"Souris\", 1500, -1)\n    except ValueError as e:\n        print(f\"Erreur lors de l'ajout du produit : {e}\")\n\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nINSTRUCTIONS :\n1. Crée au moins 5 tests unitaires complets\n2. Utilise pytest et les fixtures si nécessaire\n3. Teste les cas normaux ET les cas d'erreur\n4. Nomme les tests de façon explicite (test_nom_fonction_cas)\n5. Ajoute des docstrings aux tests\n6. Import toutes les dépendances nécessaires\n\nRetourne UNIQUEMENT le code des tests, sans explication.",
+            "output_response": "import pytest\nfrom code1 import Commande, total_commandes, ajouter_produit_globale\n\n@pytest.fixture\ndef commande_vide():\n    \"\"\"Fixture pour une commande vide.\"\"\"\n    return Commande(\"Test Client\", [])\n\n@pytest.fixture\ndef commande_avec_produits():\n    \"\"\"Fixture pour une commande avec des produits.\"\"\"\n    return Commande(\"Test Client\", [(\"Produit A\", 100, 2), (\"Produit B\", 50, 1)])\n\n@pytest.fixture\ndef liste_commandes():\n    \"\"\"Fixture pour une liste de commandes.\"\"\"\n    cmd1 = Commande(\"Client...",
+            "issues_found": 0,
+            "source_file": "code1.py",
+            "content_type": "unit_tests"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9d632820-9b58-412e-b493-6a8b45892c58",
+        "timestamp": "2026-01-07T23:51:35.670063",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "test_code4.py",
+            "input_prompt": "Génère des tests unitaires pytest pour ce code Python :\n\nFICHIER : code4.py\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n        # Ligne 174 : Unexpected EOF while parsing. Il manque la fin de\n        # l'instruction dans la méthode 'retirer'.\n        # Ligne 175 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(source_user, destination_user, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        source_user (Utilisateur): L'utilisateur source du transfert.\n        destination_user (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not source_user.compte or not destination_user.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > source_user.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        source_user.compte.retirer(montant)\n        destination_user.compte.deposer(montant)\n    except ValueError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur de valeur est survenue lors du transfert: {e}\")\n    except IOError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur d'entrée/sortie est survenue lors du transfert: {e}\")\n    except Exception as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur inattendue est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    # Ligne 151 : Consider using enumerate instead of iterating with range and len.\n    for i, u in enumerate(UTILISATEURS):\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    user1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    user1.creer_compte(1000)\n    user2.creer_compte(500)\n\n    user1.compte.deposer(-200)\n    user2.compte.retirer(1000)\n\n    transfert(user1, user2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nINSTRUCTIONS :\n1. Crée au moins 5 tests unitaires complets\n2. Utilise pytest et les fixtures si nécessaire\n3. Teste les cas normaux ET les cas d'erreur\n4. Nomme les tests de façon explicite (test_nom_fonction_cas)\n5. Ajoute des docstrings aux tests\n6. Import toutes les dépendances nécessaires\n\nRetourne UNIQUEMENT le code des tests, sans explication.",
+            "output_response": "import pytest\nfrom code4 import Utilisateur, Compte, ajouter_utilisateur, trouver_utilisateur, total_soldes, transfert, afficher_utilisateurs, UTILISATEURS\n\n@pytest.fixture\ndef initial_data():\n    \"\"\"Fournit des données initiales pour les tests.\"\"\"\n    UTILISATEURS.clear()\n    user1 = Utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user1.creer_compte(1000)\n    user2 = Utilisateur(\"Sara\", \"sara@mail.com\", 17)\n    user2.creer_compte(500)\n    return user1, user2\n\n@pytest.fixture\ndef empty_users():\n    \"...",
+            "issues_found": 0,
+            "source_file": "code4.py",
+            "content_type": "unit_tests"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "7a4c5bc2-6259-4f23-ae9b-5f8ad7a909c2",
+        "timestamp": "2026-01-07T23:51:42.113846",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Analyse du fichier code1.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": "✅ Fichier code1.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code1.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "812b791c-ab3b-4d3e-abb5-bd1866d8b4e9",
+        "timestamp": "2026-01-07T23:51:42.178113",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Analyse du fichier code4.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": "✅ Fichier code4.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code4.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a6683b1f-3417-410b-9b33-ae61d86ca01f",
+        "timestamp": "2026-01-07T23:51:42.218843",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code1.py",
+            "input_prompt": "Analyse du fichier test_code1.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": "✅ Fichier test_code1.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/test_code1.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "fabd9cb3-fd25-4128-8106-ab2212d5945c",
+        "timestamp": "2026-01-07T23:51:42.260253",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code4.py",
+            "input_prompt": "Analyse du fichier test_code4.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": "✅ Fichier test_code4.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/test_code4.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "27f3a8f5-36c7-4461-9c8e-f3d390bf255e",
+        "timestamp": "2026-01-07T23:51:44.878347",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "README_code1.md",
+            "input_prompt": "Génère une documentation complète pour ce code Python :\n\nFICHIER : code1.py\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for _, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n    def ajouter_produit(self, nom, prix, quantite):\n        \"\"\"Ajoute un produit à la commande.\n\n        Args:\n            nom (str): Le nom du produit.\n            prix (int): Le prix du produit.\n            quantite (int): La quantité du produit.\n\n        Raises:\n            ValueError: Si la quantité est négative.\n        \"\"\"\n        if quantite < 0:\n            raise ValueError(\"La quantité ne peut pas être négative.\")\n        self.produits.append((nom, prix, quantite))\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit_globale(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante (fonction globale).\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    if quantite < 0:\n        raise ValueError(\"La quantité ne peut pas être négative.\")\n    commande.produits.append((nom, prix, quantite))\n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    try:\n        ajouter_produit_globale(c2, \"Souris\", 1500, -1)\n    except ValueError as e:\n        print(f\"Erreur lors de l'ajout du produit : {e}\")\n\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nINSTRUCTIONS :\nCrée un README.md avec :\n1. ## Description\n   - Résumé du module/fichier\n   - Objectif principal\n\n2. ## Fonctions principales\n   - Liste des fonctions avec description\n   - Paramètres et retours\n\n3. ## Utilisation\n   - Exemples de code concrets\n   - Cas d'usage typiques\n\n4. ## Dépendances\n   - Liste des imports nécessaires\n\nFormat Markdown strict. Sois concis mais complet.",
+            "output_response": "```markdown\n# Module de gestion des commandes clients\n\n## Description\nCe module Python fournit des classes et fonctions pour gérer les commandes clients, calculer les totaux et ajouter des produits aux commandes.\n\n## Fonctions principales\n\n### Classe `Commande`\n\n**`__init__(self, client, produits)`**\nInitialise une nouvelle commande.\n\n*   **Args:**\n    *   `client` (str): Le nom du client.\n    *   `produits` (list): Une liste de produits, où chaque produit est un tuple (nom, prix, quantité).\n\n**...",
+            "issues_found": 0,
+            "source_file": "code1.py",
+            "content_type": "documentation"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "0fc66441-52c1-4fe8-9fab-f8c0783d1a61",
+        "timestamp": "2026-01-07T23:51:53.547312",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "README_code4.md",
+            "input_prompt": "Génère une documentation complète pour ce code Python :\n\nFICHIER : code4.py\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n        # Ligne 174 : Unexpected EOF while parsing. Il manque la fin de\n        # l'instruction dans la méthode 'retirer'.\n        # Ligne 175 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(source_user, destination_user, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        source_user (Utilisateur): L'utilisateur source du transfert.\n        destination_user (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not source_user.compte or not destination_user.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > source_user.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        source_user.compte.retirer(montant)\n        destination_user.compte.deposer(montant)\n    except ValueError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur de valeur est survenue lors du transfert: {e}\")\n    except IOError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur d'entrée/sortie est survenue lors du transfert: {e}\")\n    except Exception as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur inattendue est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    # Ligne 151 : Consider using enumerate instead of iterating with range and len.\n    for i, u in enumerate(UTILISATEURS):\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    user1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    user1.creer_compte(1000)\n    user2.creer_compte(500)\n\n    user1.compte.deposer(-200)\n    user2.compte.retirer(1000)\n\n    transfert(user1, user2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nINSTRUCTIONS :\nCrée un README.md avec :\n1. ## Description\n   - Résumé du module/fichier\n   - Objectif principal\n\n2. ## Fonctions principales\n   - Liste des fonctions avec description\n   - Paramètres et retours\n\n3. ## Utilisation\n   - Exemples de code concrets\n   - Cas d'usage typiques\n\n4. ## Dépendances\n   - Liste des imports nécessaires\n\nFormat Markdown strict. Sois concis mais complet.",
+            "output_response": "```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        ...",
+            "issues_found": 0,
+            "source_file": "code4.py",
+            "content_type": "documentation"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "0c42b1ca-1d09-46ae-9aea-5fe25436b1fb",
+        "timestamp": "2026-01-07T23:51:53.627899",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "50923fec-0877-450b-a133-51288210fbe2",
+        "timestamp": "2026-01-08T00:06:33.395586",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite",
+            "generate_tests": true,
+            "generate_docs": true
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9d77258f-cd80-4413-aaae-615df724a7c4",
+        "timestamp": "2026-01-08T00:06:45.977831",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code1.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 1\n\nCODE :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for _, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n    def ajouter_produit(self, nom, prix, quantite):\n        \"\"\"Ajoute un produit à la commande.\n\n        Args:\n            nom (str): Le nom du produit.\n            prix (int): Le prix du produit.\n            quantite (int): La quantité du produit.\n\n        Raises:\n            ValueError: Si la quantité est négative.\n        \"\"\"\n        if quantite < 0:\n            raise ValueError(\"La quantité ne peut pas être négative.\")\n        self.produits.append((nom, prix, quantite))\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit_globale(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante (fonction globale).\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    ...\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code1', 'obj': '', 'line': 84, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code1.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"code1.py\",\n            \"line\": 84,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code1.py\",\n            \"line\": 85,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"La fonction 'ajouter_produit_globale' contient '...' (Ellipsis) et n'est pas implémentée, ce qui la rend inutilisable.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier.\",\n        \"Implémenter la fonction 'ajouter_produit_globale' pour qu'elle exécute l'ajout de produit.\"\n    ]\n}\n```",
+            "issues_found": 2,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 1,
+            "file_path": "./sandbox/code1.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "8285c15c-4f62-4960-b7a0-fec964af7119",
+        "timestamp": "2026-01-08T00:06:48.488367",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code2.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code2.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 1\n\nCODE :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    return False\n\n\ndef changer_mdp(login, ancien, nouveau):\n    \"\"\"Change le mot de passe d'un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        ancien (str): L'ancien mot de passe.\n        nouveau (str): Le nouveau mot de passe.\n    \"\"\"\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")\n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n    changer_mdp(\"user\", \"abcd\", \"123\")\n    print(UTILISATEURS)\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code2', 'obj': '', 'line': 43, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code2.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code2.py\"\n    ],\n    \"total_issues\": 2,\n    \"issues\": [\n        {\n            \"file\": \"code2.py\",\n            \"line\": 43,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code2.py\",\n            \"line\": 25,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"La fonction changer_mdp devrait avoir une docstring décrivant son comportement attendu, notamment ce qui se passe si l'ancien mot de passe est incorrect.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier.\",\n        \"Améliorer la docstring de la fonction `changer_mdp` pour préciser ce qui se passe en cas d'échec d'authentification et si le mot de passe n'est pas modifié. De plus, considérer le stockage des mots de passe de manière plus sécurisée (hachage).\"\n    ]\n}\n```",
+            "issues_found": 2,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 1,
+            "file_path": "./sandbox/code2.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e9bc158c-d2f4-4079-87cf-b450c902dbab",
+        "timestamp": "2026-01-08T00:06:51.205981",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code3.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code3.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 2\n\nCODE :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.tags = []\n        else:\n            self.tags = tags\n\n    def ajouter_tag(self, tag):\n        \"\"\"Ajoute un tag à la tâche.\n\n        Args:\n            tag (str): Le tag à ajouter.\n        \"\"\"\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    \"\"\"Gère une collection de tâches.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialise une nouvelle instance de GestionTaches.\"\"\"\n        self.taches = []\n\n    def ajouter(self, tache):\n        \"\"\"Ajoute une tâche à la liste des tâches.\n\n        Args:\n            tache (Tache): L'objet Tache à ajouter.\n        \"\"\"\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        \"\"\"Supprime une tâche de la liste en utilisant son titre.\n\n        Args:\n            titre (str): Le titre de la tâche à supprimer.\n        \"\"\"\n        tache_trouvee = False\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n                tache_trouvee = True\n                break  # Sortir de la boucle une fois la tâche trouvée et supprimée\n\n        if tache_trouvee:\n            print(\"Tâche supprimée\")\n\n    def afficher(self):\n        \"\"\"Affiche toutes les tâches avec leur titre et leurs tags.\"\"\"\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code3', 'obj': '', 'line': 77, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code3.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'refactor', 'module': 'code3', 'obj': 'Tache', 'line': 3, 'column': 0, 'endLine': 3, 'endColumn': 11, 'path': 'sandbox\\\\code3.py', 'symbol': 'too-few-public-methods', 'message': 'Too few public methods (1/2)', 'message-id': 'R0903'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code3.py\"\n    ],\n    \"total_issues\": 3,\n    \"issues\": [\n        {\n            \"file\": \"code3.py\",\n            \"line\": 77,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 3,\n            \"severity\": \"medium\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Too few public methods (1/2)\"\n        },\n        {\n            \"file\": \"code3.py\",\n            \"line\": 55,\n            \"severity\": \"medium\",\n            \"type\": \"logic_error\",\n            \"message\": \"La suppression d'une tâche par titre peut échouer si plusieurs tâches ont le même titre. La boucle s'arrête après la première suppression.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier\",\n        \"Pour la classe Tache, envisagez d'ajouter une méthode publique supplémentaire ou de revoir sa responsabilité si elle n'en a qu'une.\",\n        \"Pour la méthode supprimer de GestionTaches, une approche plus robuste pour gérer les doublons de titres pourrait être nécessaire, par exemple, supprimer toutes les tâches correspondantes ou demander une confirmation.\"\n    ]\n}\n```",
+            "issues_found": 3,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 2,
+            "file_path": "./sandbox/code3.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "961c6fb6-41fe-4d70-a15e-045a6d5724d9",
+        "timestamp": "2026-01-08T00:06:53.899649",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : code4.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 3\n\nCODE :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n ...\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'code4', 'obj': '', 'line': 182, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\code4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'warning', 'module': 'code4', 'obj': 'transfert', 'line': 152, 'column': 11, 'endLine': 152, 'endColumn': 20, 'path': 'sandbox\\\\code4.py', 'symbol': 'broad-exception-caught', 'message': 'Catching too general exception Exception', 'message-id': 'W0718'}, {'type': 'warning', 'module': 'code4', 'obj': 'afficher_utilisateurs', 'line': 159, 'column': 8, 'endLine': 159, 'endColumn': 9, 'path': 'sandbox\\\\code4.py', 'symbol': 'unused-variable', 'message': \"Unused variable 'i'\", 'message-id': 'W0612'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"code4.py\"\n    ],\n    \"total_issues\": 4,\n    \"issues\": [\n        {\n            \"file\": \"code4.py\",\n            \"line\": 182,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 152,\n            \"severity\": \"medium\",\n            \"type\": \"logic_error\",\n            \"message\": \"Catching too general exception Exception. Il est préférable de capturer des exceptions plus spécifiques pour une meilleure gestion des erreurs.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 159,\n            \"severity\": \"low\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused variable 'i'. La variable 'i' est déclarée mais n'est pas utilisée dans la boucle.\"\n        },\n        {\n            \"file\": \"code4.py\",\n            \"line\": 3,\n            \"severity\": \"low\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused import copy. Le module 'copy' est importé mais pas utilisé.\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une nouvelle ligne à la fin du fichier.\",\n        \"Capturer des exceptions plus spécifiques dans la gestion des erreurs.\",\n        \"Supprimer les variables non utilisées.\",\n        \"Supprimer les imports de modules non utilisés.\"\n    ]\n}\n```",
+            "issues_found": 4,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 3,
+            "file_path": "./sandbox/code4.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9b06d7ca-03a3-4bcf-b325-883bf1782282",
+        "timestamp": "2026-01-08T00:07:01.390382",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code1.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : test_code1.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 9\n\nCODE :\n```python\nimport pytest\nfrom code1 import Commande, total_commandes, ajouter_produit_globale\n\n@pytest.fixture\ndef commande_vide():\n    \"\"\"Fixture pour une commande vide.\"\"\"\n    return Commande(\"Test Client\", [])\n\n@pytest.fixture\ndef commande_avec_produits():\n    \"\"\"Fixture pour une commande avec des produits.\"\"\"\n    return Commande(\"Test Client\", [(\"Produit A\", 100, 2), (\"Produit B\", 50, 1)])\n\n@pytest.fixture\ndef liste_commandes():\n    \"\"\"Fixture pour une liste de commandes.\"\"\"\n    cmd1 = Commande(\"Client 1\", [(\"Item 1\", 10, 2)])\n    cmd2 = Commande(\"Client 2\", [(\"Item 2\", 20, 1), (\"Item 3\", 5, 3)])\n    return [cmd1, cmd2]\n\ndef test_commande_total_vide(commande_vide):\n    \"\"\"Teste le total d'une commande vide.\"\"\"\n    assert commande_vide.total() == 0\n\ndef test_commande_total_avec_produits(commande_avec_produits):\n    \"\"\"Teste le total d'une commande avec des produits.\"\"\"\n    assert commande_avec_produits.total() == 250  # (100*2) + (50*1)\n\ndef test_commande_ajouter_produit_valide(commande_vide):\n    \"\"\"Teste l'ajout d'un produit valide à une commande.\"\"\"\n    commande_vide.ajouter_produit(\"Nouveau Produit\", 25, 3)\n    assert len(commande_vide.produits) == 1\n    assert commande_vide.produits[0] == (\"Nouveau Produit\", 25, 3)\n    assert commande_vide.total() == 75\n\ndef test_commande_ajouter_produit_quantite_negative(commande_vide):\n    \"\"\"Teste l'ajout d'un produit avec une quantité négative.\"\"\"\n    with pytest.raises(ValueError, match=\"La quantité ne peut pas être négative.\"):\n        commande_vide.ajouter_produit(\"Produit Erreur\", 10, -5)\n    assert len(commande_vide.produits) == 0\n\ndef test_total_commandes_liste_vide():\n    \"\"\"Teste le total de commandes pour une liste vide.\"\"\"\n    assert total_commandes([]) == 0\n\ndef test_total_commandes_liste_non_vide(liste_commandes):\n    \"\"\"Teste le total de commandes pour une liste non vide.\"\"\"\n    # commande 1: 10 * 2 = 20\n    # commande 2: (20 * 1) + (5 * 3) = 20 + 15 = 35\n    # total: 20 + 35 = 55\n    assert total_commandes(liste_comma...\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'test_code1', 'obj': '', 'line': 67, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test_code1', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_commande_total_vide', 'line': 21, 'column': 29, 'endLine': 21, 'endColumn': 42, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_vide' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_commande_total_avec_produits', 'line': 25, 'column': 38, 'endLine': 25, 'endColumn': 60, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_avec_produits' from outer scope (line 10)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_commande_ajouter_produit_valide', 'line': 29, 'column': 41, 'endLine': 29, 'endColumn': 54, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_vide' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_commande_ajouter_produit_quantite_negative', 'line': 36, 'column': 52, 'endLine': 36, 'endColumn': 65, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_vide' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_total_commandes_liste_non_vide', 'line': 46, 'column': 40, 'endLine': 46, 'endColumn': 55, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'liste_commandes' from outer scope (line 15)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_ajouter_produit_globale_valide', 'line': 53, 'column': 40, 'endLine': 53, 'endColumn': 62, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_avec_produits' from outer scope (line 10)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code1', 'obj': 'test_ajouter_produit_globale_quantite_negative', 'line': 60, 'column': 51, 'endLine': 60, 'endColumn': 73, 'path': 'sandbox\\\\test_code1.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'commande_avec_produits' from outer scope (line 10)\", 'message-id': 'W0621'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test_code1.py\"\n    ],\n    \"total_issues\": 10,\n    \"issues\": [\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 21,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_vide' from outer scope (line 5)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 25,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_avec_produits' from outer scope (line 10)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 29,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_vide' from outer scope (line 5)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 36,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_vide' from outer scope (line 5)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 46,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'liste_commandes' from outer scope (line 15)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 53,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_avec_produits' from outer scope (line 10)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 60,\n            \"severity\": \"medium\",\n            \"type\": \"naming_convention\",\n            \"message\": \"Redefining name 'commande_avec_produits' from outer scope (line 10)\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 47,\n            \"severity\": \"high\",\n            \"type\": \"syntax_error\",\n            \"message\": \"Unexpected end of file\"\n        },\n        {\n            \"file\": \"test_code1.py\",\n            \"line\": 67,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module\",\n        \"Corriger les noms de variables redéfinis dans les fonctions de test pour éviter la confusion (W0621)\",\n        \"Compléter la fonction 'test_total_commandes_liste_non_vide' qui semble incomplète\",\n        \"Assurer qu'une nouvelle ligne termine le fichier\"\n    ]\n}\n```",
+            "issues_found": 10,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 9,
+            "file_path": "./sandbox/test_code1.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "0fcc082c-3b59-40ee-928c-fac0346abfb8",
+        "timestamp": "2026-01-08T00:07:09.193501",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code4.py",
+            "input_prompt": "Analyse ce code Python et le rapport pylint pour identifier les problèmes de qualité.\n\nFICHIER : test_code4.py\nSCORE PYLINT : 10.0/10\nNOMBRE D'ERREURS PYLINT : 28\n\nCODE :\n```python\nimport pytest\nfrom code4 import Utilisateur, Compte, ajouter_utilisateur, trouver_utilisateur, total_soldes, transfert, afficher_utilisateurs, UTILISATEURS\n\n@pytest.fixture\ndef initial_data():\n    \"\"\"Fournit des données initiales pour les tests.\"\"\"\n    UTILISATEURS.clear()\n    user1 = Utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user1.creer_compte(1000)\n    user2 = Utilisateur(\"Sara\", \"sara@mail.com\", 17)\n    user2.creer_compte(500)\n    return user1, user2\n\n@pytest.fixture\ndef empty_users():\n    \"\"\"Assure que la liste UTILISATEURS est vide avant chaque test.\"\"\"\n    UTILISATEURS.clear()\n    yield\n    UTILISATEURS.clear()\n\ndef test_ajouter_utilisateur(empty_users):\n    \"\"\"Teste l'ajout d'un utilisateur.\"\"\"\n    user = ajouter_utilisateur(\"Bob\", \"bob@mail.com\", 30)\n    assert isinstance(user, Utilisateur)\n    assert user.nom == \"Bob\"\n    assert user.email == \"bob@mail.com\"\n    assert user.age == 30\n    assert len(UTILISATEURS) == 1\n\ndef test_trouver_utilisateur_present(initial_data):\n    \"\"\"Teste la recherche d'un utilisateur existant.\"\"\"\n    user1, _ = initial_data\n    found_user = trouver_utilisateur(user1.email)\n    assert found_user is not None\n    assert found_user.nom == \"Ali\"\n\ndef test_trouver_utilisateur_absent(initial_data):\n    \"\"\"Teste la recherche d'un utilisateur inexistant.\"\"\"\n    found_user = trouver_utilisateur(\"unknown@mail.com\")\n    assert found_user is None\n\ndef test_utilisateur_est_majeur(initial_data):\n    \"\"\"Teste la méthode est_majeur pour un utilisateur majeur.\"\"\"\n    user1, _ = initial_data\n    assert user1.est_majeur() is True\n\ndef test_utilisateur_est_mineur(initial_data):\n    \"\"\"Teste la méthode est_majeur pour un utilisateur mineur.\"\"\"\n    _, user2 = initial_data\n    assert user2.est_majeur() is False\n\ndef test_compte_deposer_montant_positif(initial_data):\n    \"\"\"Teste le dépôt d'un montant positif sur un compte.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.deposer(200)\n    assert user1.compte.solde ==...\n```\n\nERREURS PYLINT (échantillon des plus importantes) :\n[{'type': 'convention', 'module': 'test_code4', 'obj': '', 'line': 2, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'line-too-long', 'message': 'Line too long (141/100)', 'message-id': 'C0301'}, {'type': 'convention', 'module': 'test_code4', 'obj': '', 'line': 165, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'missing-final-newline', 'message': 'Final newline missing', 'message-id': 'C0304'}, {'type': 'convention', 'module': 'test_code4', 'obj': '', 'line': 1, 'column': 0, 'endLine': None, 'endColumn': None, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'missing-module-docstring', 'message': 'Missing module docstring', 'message-id': 'C0114'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_ajouter_utilisateur', 'line': 21, 'column': 29, 'endLine': 21, 'endColumn': 40, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'empty_users' from outer scope (line 15)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_ajouter_utilisateur', 'line': 21, 'column': 29, 'endLine': 21, 'endColumn': 40, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'unused-argument', 'message': \"Unused argument 'empty_users'\", 'message-id': 'W0613'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_trouver_utilisateur_present', 'line': 30, 'column': 37, 'endLine': 30, 'endColumn': 49, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'initial_data' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_trouver_utilisateur_absent', 'line': 37, 'column': 36, 'endLine': 37, 'endColumn': 48, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'initial_data' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_trouver_utilisateur_absent', 'line': 37, 'column': 36, 'endLine': 37, 'endColumn': 48, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'unused-argument', 'message': \"Unused argument 'initial_data'\", 'message-id': 'W0613'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_utilisateur_est_majeur', 'line': 42, 'column': 32, 'endLine': 42, 'endColumn': 44, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'initial_data' from outer scope (line 5)\", 'message-id': 'W0621'}, {'type': 'warning', 'module': 'test_code4', 'obj': 'test_utilisateur_est_mineur', 'line': 47, 'column': 32, 'endLine': 47, 'endColumn': 44, 'path': 'sandbox\\\\test_code4.py', 'symbol': 'redefined-outer-name', 'message': \"Redefining name 'initial_data' from outer scope (line 5)\", 'message-id': 'W0621'}]\n\nINSTRUCTIONS :\n1. Identifie les problèmes les plus critiques (bugs, erreurs de logique, code non maintenable)\n2. Classe-les par sévérité : \"high\", \"medium\", \"low\"\n3. Propose des recommandations concrètes\n\nGénère un rapport JSON strict avec les champs : files_analyzed, total_issues, issues, recommendations.\nRéponds UNIQUEMENT avec du JSON valide.",
+            "output_response": "```json\n{\n    \"files_analyzed\": [\n        \"test_code4.py\"\n    ],\n    \"total_issues\": 7,\n    \"issues\": [\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 2,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Line too long (141/100)\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 1,\n            \"severity\": \"low\",\n            \"type\": \"missing_docstring\",\n            \"message\": \"Missing module docstring\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 21,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused argument 'empty_users' in test_ajouter_utilisateur\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 30,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused argument 'initial_data' in test_trouver_utilisateur_present. The fixture is redefined in the test function, but not used.\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 37,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused argument 'initial_data' in test_trouver_utilisateur_absent. The fixture is redefined in the test function, but not used.\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 42,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused argument 'initial_data' in test_utilisateur_est_majeur. The fixture is redefined in the test function, but not used.\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 47,\n            \"severity\": \"medium\",\n            \"type\": \"unused_variable\",\n            \"message\": \"Unused argument 'initial_data' in test_utilisateur_est_mineur. The fixture is redefined in the test function, but not used.\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 55,\n            \"severity\": \"high\",\n            \"type\": \"logic_error\",\n            \"message\": \"Assertion incomplete: user1.compte.solde == ...\"\n        },\n        {\n            \"file\": \"test_code4.py\",\n            \"line\": 165,\n            \"severity\": \"low\",\n            \"type\": \"pep8_violation\",\n            \"message\": \"Final newline missing\"\n        }\n    ],\n    \"recommendations\": [\n        \"Ajouter une docstring au module.\",\n        \"Corriger les lignes trop longues (supérieures à 100 caractères).\",\n        \"Vérifier et utiliser correctement les fixtures 'empty_users' et 'initial_data' dans les fonctions de test. Actuellement, elles sont déclarées comme arguments mais non utilisées, et le nom de la fixture est redéfini dans la fonction.\",\n        \"Compléter l'assertion sur la ligne 55 pour vérifier le nouveau solde après le dépôt.\",\n        \"Assurer qu'un saut de ligne final est présent dans le fichier.\"\n    ]\n}\n```",
+            "issues_found": 9,
+            "pylint_score": 10.0,
+            "pylint_issues_count": 28,
+            "file_path": "./sandbox/test_code4.py"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "2359edaf-3ff2-4dbd-b1ee-f10d2e926088",
+        "timestamp": "2026-01-08T00:07:11.900032",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code1.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 84 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 85 : La fonction 'ajouter_produit_globale' contient '...' (Ellipsis) et n'est pas implémentée, ce qui la rend inutilisable. (Type: logic_error, Sévérité: high)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantité).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n        \"\"\"Calcule le prix total de la commande.\n\n        Returns:\n            int: Le prix total de la commande.\n        \"\"\"\n        total_prix = 0\n        for _, prix, quantite in self.produits:\n            total_prix += prix * quantite\n        return total_prix\n\n    def ajouter_produit(self, nom, prix, quantite):\n        \"\"\"Ajoute un produit à la commande.\n\n        Args:\n            nom (str): Le nom du produit.\n            prix (int): Le prix du produit.\n            quantite (int): La quantité du produit.\n\n        Raises:\n            ValueError: Si la quantité est négative.\n        \"\"\"\n        if quantite < 0:\n            raise ValueError(\"La quantité ne peut pas être négative.\")\n        self.produits.append((nom, prix, quantite))\n\n\ndef total_commandes(commandes):\n    \"\"\"Calcule le total de toutes les commandes d'une liste.\n\n    Args:\n        commandes (list): Une liste d'objets Commande.\n\n    Returns:\n        int: Le total de toutes les commandes.\n    \"\"\"\n    total_global = 0\n    for commande in commandes:\n        total_global += commande.total()\n    return total_global\n\n\ndef ajouter_produit_globale(commande, nom, prix, quantite):\n    \"\"\"Ajoute un produit à une commande existante (fonction globale).\n\n    Args:\n        commande (Commande): L'objet Commande auquel ajouter le produit.\n        nom (str): Le nom du produit.\n        prix (int): Le prix du produit.\n        quantite (int): La quantité du produit.\n\n    Raises:\n        ValueError: Si la quantité est négative.\n    \"\"\"\n    if quantite < 0:\n        raise ValueError(\"La quantité ne peut pas être négative.\")\n    commande.produits.append((nom, prix, quantite))\n\n\nif __name__ == \"__main__\":\n    c1 = Commande(\"Ali\", [(\"PC\", 120000, 1)])\n    c2 = Commande(\"Sara\", [(\"Clavier\", 3000, 2)])\n\n    try:\n        ajouter_produit_globale(c2, \"Souris\", 1500, -1)\n    except ValueError as e:\n        print(f\"Erreur lors de l'ajout du produit : {e}\")\n\n    print(\"Total commandes :\", total_commandes([c1, c2]))\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des commandes clients.\"\"\"\n\nclass Commande:\n    \"\"\"Classe représentant une commande client.\"\"\"\n\n    def __init__(self, client, produits):\n        \"\"\"Initialise une nouvelle commande.\n\n        Args:\n            client (str): Le nom du client.\n            produits (list): Une liste de produits, où chaque produit est un tuple\n                             (nom, prix, quantite).\n        \"\"\"\n        self.client = client\n        self.produits = produits\n\n    def total(self):\n       ...",
+            "issues_found": 2,
+            "issues_types": [
+                "pep8_violation",
+                "logic_error"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "627334d5-bc49-4557-9ea1-b8f555367033",
+        "timestamp": "2026-01-08T00:07:13.433179",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code2.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code2.py\nNOMBRE DE PROBLÈMES : 2\n\nPROBLÈMES À CORRIGER :\n- Ligne 43 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 25 : La fonction changer_mdp devrait avoir une docstring décrivant son comportement attendu, notamment ce qui se passe si l'ancien mot de passe est incorrect. (Type: missing_docstring, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    return False\n\n\ndef changer_mdp(login, ancien, nouveau):\n    \"\"\"Change le mot de passe d'un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        ancien (str): L'ancien mot de passe.\n        nouveau (str): Le nouveau mot de passe.\n    \"\"\"\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")\n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n    changer_mdp(\"user\", \"abcd\", \"123\")\n    print(UTILISATEURS)\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    retur...",
+            "issues_found": 2,
+            "issues_types": [
+                "pep8_violation",
+                "missing_docstring"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "df4f0e47-2f00-4065-909e-3d2e22f59b10",
+        "timestamp": "2026-01-08T00:07:16.095976",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code3.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code3.py\nNOMBRE DE PROBLÈMES : 3\n\nPROBLÈMES À CORRIGER :\n- Ligne 77 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 3 : Too few public methods (1/2) (Type: pep8_violation, Sévérité: medium)\n- Ligne 55 : La suppression d'une tâche par titre peut échouer si plusieurs tâches ont le même titre. La boucle s'arrête après la première suppression. (Type: logic_error, Sévérité: medium)\n\nCODE ACTUEL :\n```python\n\"\"\"Gestionnaire de tâches.\"\"\"\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.tags = []\n        else:\n            self.tags = tags\n\n    def ajouter_tag(self, tag):\n        \"\"\"Ajoute un tag à la tâche.\n\n        Args:\n            tag (str): Le tag à ajouter.\n        \"\"\"\n        self.tags.append(tag)\n\n\nclass GestionTaches:\n    \"\"\"Gère une collection de tâches.\"\"\"\n\n    def __init__(self):\n        \"\"\"Initialise une nouvelle instance de GestionTaches.\"\"\"\n        self.taches = []\n\n    def ajouter(self, tache):\n        \"\"\"Ajoute une tâche à la liste des tâches.\n\n        Args:\n            tache (Tache): L'objet Tache à ajouter.\n        \"\"\"\n        self.taches.append(tache)\n\n    def supprimer(self, titre):\n        \"\"\"Supprime une tâche de la liste en utilisant son titre.\n\n        Args:\n            titre (str): Le titre de la tâche à supprimer.\n        \"\"\"\n        tache_trouvee = False\n        for t in self.taches:\n            if t.titre == titre:\n                self.taches.remove(t)\n                tache_trouvee = True\n                break  # Sortir de la boucle une fois la tâche trouvée et supprimée\n\n        if tache_trouvee:\n            print(\"Tâche supprimée\")\n\n    def afficher(self):\n        \"\"\"Affiche toutes les tâches avec leur titre et leurs tags.\"\"\"\n        for t in self.taches:\n            print(t.titre, t.tags)\n\n\nif __name__ == \"__main__\":\n    t1 = Tache(\"Réviser\", [\"python\"])\n    t2 = Tache(\"Projet\")\n\n    t2.ajouter_tag(\"urgent\")\n\n    g = GestionTaches()\n    g.ajouter(t1)\n    g.ajouter(t2)\n\n    g.supprimer(\"Réviser\")\n    g.afficher()\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Gestionnaire de tâches.\"\"\"\n\n\nclass Tache:\n    \"\"\"Représente une tâche avec un titre et des tags.\"\"\"\n\n    def __init__(self, titre, tags=None):\n        \"\"\"Initialise une nouvelle instance de Tache.\n\n        Args:\n            titre (str): Le titre de la tâche.\n            tags (list, optional): Une liste de tags associés à la tâche.\n                                   Par défaut, une nouvelle liste vide est créée.\n        \"\"\"\n        self.titre = titre\n        if tags is None:\n            self.t...",
+            "issues_found": 3,
+            "issues_types": [
+                "pep8_violation",
+                "pep8_violation",
+                "logic_error"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "310eef52-cc44-4416-a77b-6d17e60c6518",
+        "timestamp": "2026-01-08T00:07:21.495343",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : code4.py\nNOMBRE DE PROBLÈMES : 4\n\nPROBLÈMES À CORRIGER :\n- Ligne 182 : Final newline missing (Type: pep8_violation, Sévérité: low)\n- Ligne 152 : Catching too general exception Exception. Il est préférable de capturer des exceptions plus spécifiques pour une meilleure gestion des erreurs. (Type: logic_error, Sévérité: medium)\n- Ligne 159 : Unused variable 'i'. La variable 'i' est déclarée mais n'est pas utilisée dans la boucle. (Type: unused_variable, Sévérité: low)\n- Ligne 3 : Unused import copy. Le module 'copy' est importé mais pas utilisé. (Type: unused_variable, Sévérité: low)\n\nCODE ACTUEL :\n```python\n\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"\"\"\n        self.nom = nom\n        self.email = email\n        self.age = age\n        self.compte = None\n\n    def creer_compte(self, solde_initial):\n        \"\"\"Crée un compte pour l'utilisateur.\n\n        Args:\n            solde_initial (float): Le solde initial du compte.\n        \"\"\"\n        self.compte = Compte(solde_initial)\n\n    def est_majeur(self):\n        \"\"\"Vérifie si l'utilisateur est majeur.\n\n        Returns:\n            bool: True si l'utilisateur est majeur, False sinon.\n        \"\"\"\n        return bool(self.age > 18)\n\n\nclass Compte:\n    \"\"\"Classe représentant un compte bancaire.\"\"\"\n    def __init__(self, solde):\n        \"\"\"Initialise un compte.\n\n        Args:\n            solde (float): Le solde initial du compte.\n        \"\"\"\n        self.solde = solde\n        self.historique = []    # liste des opérations\n\n    def deposer(self, montant):\n        \"\"\"Dépose un montant sur le compte.\n\n        Args:\n            montant (float): Le montant à déposer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le dépôt.\")\n            return\n        self.solde += montant\n        self.historique.append((\"DEPOT\", montant))\n\n    def retirer(self, montant):\n        \"\"\"Retire un montant du compte.\n\n        Args:\n            montant (float): Le montant à retirer.\n        \"\"\"\n        if montant < 0:\n            print(\"Montant invalide pour le retrait.\")\n            return\n        if montant > self.solde:\n            print(\"Solde insuffisant.\")\n            return\n        self.solde -= montant\n        self.historique.append((\"RETRAIT\", montant))\n        # Ligne 174 : Unexpected EOF while parsing. Il manque la fin de\n        # l'instruction dans la méthode 'retirer'.\n        # Ligne 175 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\n\ndef ajouter_utilisateur(nom, email, age):\n    \"\"\"Ajoute un nouvel utilisateur à la liste globale.\n\n    Args:\n        nom (str): Le nom de l'utilisateur.\n        email (str): L'adresse e-mail de l'utilisateur.\n        age (int): L'âge de l'utilisateur.\n\n    Returns:\n        Utilisateur: L'utilisateur nouvellement créé.\n    \"\"\"\n    u = Utilisateur(nom, email, age)\n    UTILISATEURS.append(u)\n    return u\n\n\ndef trouver_utilisateur(email):\n    \"\"\"Trouve un utilisateur par son adresse e-mail.\n\n    Args:\n        email (str): L'adresse e-mail de l'utilisateur à trouver.\n\n    Returns:\n        Utilisateur or None: L'utilisateur trouvé ou None si aucun utilisateur\n                             ne correspond à l'e-mail.\n    \"\"\"\n    for u in UTILISATEURS:\n        if u.email == email:\n            return u\n    return None\n\n\ndef total_soldes():\n    \"\"\"Calcule le total des soldes de tous les comptes utilisateurs.\n\n    Returns:\n        float: Le total des soldes.\n    \"\"\"\n    total = 0\n    for u in UTILISATEURS:\n        if u.compte:\n            total += u.compte.solde\n    return total\n\n\ndef transfert(source_user, destination_user, montant):\n    \"\"\"Transfère un montant d'un compte à un autre.\n\n    Args:\n        source_user (Utilisateur): L'utilisateur source du transfert.\n        destination_user (Utilisateur): L'utilisateur destination du transfert.\n        montant (float): Le montant à transférer.\n    \"\"\"\n    try:\n        if montant < 0:\n            print(\"Le montant du transfert ne peut pas être négatif.\")\n            return\n        if not source_user.compte or not destination_user.compte:\n            print(\"Un des comptes n'existe pas pour le transfert.\")\n            return\n        if montant > source_user.compte.solde:\n            print(\"Solde insuffisant pour le transfert.\")\n            return\n\n        source_user.compte.retirer(montant)\n        destination_user.compte.deposer(montant)\n    except ValueError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur de valeur est survenue lors du transfert: {e}\")\n    except IOError as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur d'entrée/sortie est survenue lors du transfert: {e}\")\n    except Exception as e:  # Ligne 145 : Catching too general exception Exception.\n        print(f\"Une erreur inattendue est survenue lors du transfert: {e}\")\n\n\ndef afficher_utilisateurs():\n    \"\"\"Affiche les informations de tous les utilisateurs.\"\"\"\n    # Ligne 151 : Consider using enumerate instead of iterating with range and len.\n    for i, u in enumerate(UTILISATEURS):\n        print(f\"{u.nom} - {u.email}\")\n\n\nif __name__ == \"__main__\":\n\n    user1 = ajouter_utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user2 = ajouter_utilisateur(\"Sara\", \"sara@mail.com\", 17)\n\n    user1.creer_compte(1000)\n    user2.creer_compte(500)\n\n    user1.compte.deposer(-200)\n    user2.compte.retirer(1000)\n\n    transfert(user1, user2, 300)\n\n    print(\"Total soldes :\", total_soldes())\n\n    user = trouver_utilisateur(\"sara@mail.com\")\n    if user:\n        print(\"Utilisateur trouvé :\", user.nom)\n\n    afficher_utilisateurs()\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de gestion des utilisateurs et de leurs comptes.\"\"\"\n\n# import copy  # Ligne 3: Unused import copy. Le module 'copy' est importé mais pas utilisé.\n\nUTILISATEURS = []\n\n\nclass Utilisateur:\n    \"\"\"Classe représentant un utilisateur.\"\"\"\n    def __init__(self, nom, email, age):\n        \"\"\"Initialise un utilisateur.\n\n        Args:\n            nom (str): Le nom de l'utilisateur.\n            email (str): L'adresse e-mail de l'utilisateur.\n            age (int): L'âge de l'utilisateur.\n        \"...",
+            "issues_found": 4,
+            "issues_types": [
+                "pep8_violation",
+                "logic_error",
+                "unused_variable",
+                "unused_variable"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "104e5766-4b09-4f1a-a820-c1e02703786e",
+        "timestamp": "2026-01-08T00:07:25.266374",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "test_code1.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test_code1.py\nNOMBRE DE PROBLÈMES : 10\n\nPROBLÈMES À CORRIGER :\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 21 : Redefining name 'commande_vide' from outer scope (line 5) (Type: naming_convention, Sévérité: medium)\n- Ligne 25 : Redefining name 'commande_avec_produits' from outer scope (line 10) (Type: naming_convention, Sévérité: medium)\n- Ligne 29 : Redefining name 'commande_vide' from outer scope (line 5) (Type: naming_convention, Sévérité: medium)\n- Ligne 36 : Redefining name 'commande_vide' from outer scope (line 5) (Type: naming_convention, Sévérité: medium)\n- Ligne 46 : Redefining name 'liste_commandes' from outer scope (line 15) (Type: naming_convention, Sévérité: medium)\n- Ligne 53 : Redefining name 'commande_avec_produits' from outer scope (line 10) (Type: naming_convention, Sévérité: medium)\n- Ligne 60 : Redefining name 'commande_avec_produits' from outer scope (line 10) (Type: naming_convention, Sévérité: medium)\n- Ligne 47 : Unexpected end of file (Type: syntax_error, Sévérité: high)\n- Ligne 67 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\nimport pytest\nfrom code1 import Commande, total_commandes, ajouter_produit_globale\n\n@pytest.fixture\ndef commande_vide():\n    \"\"\"Fixture pour une commande vide.\"\"\"\n    return Commande(\"Test Client\", [])\n\n@pytest.fixture\ndef commande_avec_produits():\n    \"\"\"Fixture pour une commande avec des produits.\"\"\"\n    return Commande(\"Test Client\", [(\"Produit A\", 100, 2), (\"Produit B\", 50, 1)])\n\n@pytest.fixture\ndef liste_commandes():\n    \"\"\"Fixture pour une liste de commandes.\"\"\"\n    cmd1 = Commande(\"Client 1\", [(\"Item 1\", 10, 2)])\n    cmd2 = Commande(\"Client 2\", [(\"Item 2\", 20, 1), (\"Item 3\", 5, 3)])\n    return [cmd1, cmd2]\n\ndef test_commande_total_vide(commande_vide):\n    \"\"\"Teste le total d'une commande vide.\"\"\"\n    assert commande_vide.total() == 0\n\ndef test_commande_total_avec_produits(commande_avec_produits):\n    \"\"\"Teste le total d'une commande avec des produits.\"\"\"\n    assert commande_avec_produits.total() == 250  # (100*2) + (50*1)\n\ndef test_commande_ajouter_produit_valide(commande_vide):\n    \"\"\"Teste l'ajout d'un produit valide à une commande.\"\"\"\n    commande_vide.ajouter_produit(\"Nouveau Produit\", 25, 3)\n    assert len(commande_vide.produits) == 1\n    assert commande_vide.produits[0] == (\"Nouveau Produit\", 25, 3)\n    assert commande_vide.total() == 75\n\ndef test_commande_ajouter_produit_quantite_negative(commande_vide):\n    \"\"\"Teste l'ajout d'un produit avec une quantité négative.\"\"\"\n    with pytest.raises(ValueError, match=\"La quantité ne peut pas être négative.\"):\n        commande_vide.ajouter_produit(\"Produit Erreur\", 10, -5)\n    assert len(commande_vide.produits) == 0\n\ndef test_total_commandes_liste_vide():\n    \"\"\"Teste le total de commandes pour une liste vide.\"\"\"\n    assert total_commandes([]) == 0\n\ndef test_total_commandes_liste_non_vide(liste_commandes):\n    \"\"\"Teste le total de commandes pour une liste non vide.\"\"\"\n    # commande 1: 10 * 2 = 20\n    # commande 2: (20 * 1) + (5 * 3) = 20 + 15 = 35\n    # total: 20 + 35 = 55\n    assert total_commandes(liste_commandes) == 55\n\ndef test_ajouter_produit_globale_valide(commande_avec_produits):\n    \"\"\"Teste l'ajout d'un produit via la fonction globale.\"\"\"\n    ajouter_produit_globale(commande_avec_produits, \"Produit C\", 75, 1)\n    assert len(commande_avec_produits.produits) == 3\n    assert commande_avec_produits.produits[2] == (\"Produit C\", 75, 1)\n    assert commande_avec_produits.total() == 325 # 250 + 75\n\ndef test_ajouter_produit_globale_quantite_negative(commande_avec_produits):\n    \"\"\"Teste l'ajout d'un produit via la fonction globale avec quantité négative.\"\"\"\n    initial_len = len(commande_avec_produits.produits)\n    initial_total = commande_avec_produits.total()\n    with pytest.raises(ValueError, match=\"La quantité ne peut pas être négative.\"):\n        ajouter_produit_globale(commande_avec_produits, \"Produit Erreur Globale\", 50, -2)\n    assert len(commande_avec_produits.produits) == initial_len\n    assert commande_avec_produits.total() == initial_total\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de test pour le code de gestion des commandes.\"\"\"\n\nimport pytest\nfrom code1 import Commande, total_commandes, ajouter_produit_globale\n\n\n@pytest.fixture\ndef commande_vide():\n    \"\"\"Fixture pour une commande vide.\n\n    Returns:\n        Commande: Une instance de Commande vide.\n    \"\"\"\n    return Commande(\"Test Client\", [])\n\n\n@pytest.fixture\ndef commande_avec_produits():\n    \"\"\"Fixture pour une commande avec des produits.\n\n    Returns:\n        Commande: Une instance de Commande avec des pr...",
+            "issues_found": 10,
+            "issues_types": [
+                "missing_docstring",
+                "naming_convention",
+                "naming_convention",
+                "naming_convention",
+                "naming_convention",
+                "naming_convention",
+                "naming_convention",
+                "naming_convention",
+                "syntax_error",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9b4e476a-8c2e-4285-8125-2f9aa1cf3729",
+        "timestamp": "2026-01-08T00:08:05.587139",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "FIX",
+        "details": {
+            "file_analyzed": "test_code4.py",
+            "input_prompt": "Corrige ce code Python selon les problèmes détectés.\n\nFICHIER : test_code4.py\nNOMBRE DE PROBLÈMES : 9\n\nPROBLÈMES À CORRIGER :\n- Ligne 2 : Line too long (141/100) (Type: pep8_violation, Sévérité: low)\n- Ligne 1 : Missing module docstring (Type: missing_docstring, Sévérité: low)\n- Ligne 21 : Unused argument 'empty_users' in test_ajouter_utilisateur (Type: unused_variable, Sévérité: medium)\n- Ligne 30 : Unused argument 'initial_data' in test_trouver_utilisateur_present. The fixture is redefined in the test function, but not used. (Type: unused_variable, Sévérité: medium)\n- Ligne 37 : Unused argument 'initial_data' in test_trouver_utilisateur_absent. The fixture is redefined in the test function, but not used. (Type: unused_variable, Sévérité: medium)\n- Ligne 42 : Unused argument 'initial_data' in test_utilisateur_est_majeur. The fixture is redefined in the test function, but not used. (Type: unused_variable, Sévérité: medium)\n- Ligne 47 : Unused argument 'initial_data' in test_utilisateur_est_mineur. The fixture is redefined in the test function, but not used. (Type: unused_variable, Sévérité: medium)\n- Ligne 55 : Assertion incomplete: user1.compte.solde == ... (Type: logic_error, Sévérité: high)\n- Ligne 165 : Final newline missing (Type: pep8_violation, Sévérité: low)\n\nCODE ACTUEL :\n```python\nimport pytest\nfrom code4 import Utilisateur, Compte, ajouter_utilisateur, trouver_utilisateur, total_soldes, transfert, afficher_utilisateurs, UTILISATEURS\n\n@pytest.fixture\ndef initial_data():\n    \"\"\"Fournit des données initiales pour les tests.\"\"\"\n    UTILISATEURS.clear()\n    user1 = Utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user1.creer_compte(1000)\n    user2 = Utilisateur(\"Sara\", \"sara@mail.com\", 17)\n    user2.creer_compte(500)\n    return user1, user2\n\n@pytest.fixture\ndef empty_users():\n    \"\"\"Assure que la liste UTILISATEURS est vide avant chaque test.\"\"\"\n    UTILISATEURS.clear()\n    yield\n    UTILISATEURS.clear()\n\ndef test_ajouter_utilisateur(empty_users):\n    \"\"\"Teste l'ajout d'un utilisateur.\"\"\"\n    user = ajouter_utilisateur(\"Bob\", \"bob@mail.com\", 30)\n    assert isinstance(user, Utilisateur)\n    assert user.nom == \"Bob\"\n    assert user.email == \"bob@mail.com\"\n    assert user.age == 30\n    assert len(UTILISATEURS) == 1\n\ndef test_trouver_utilisateur_present(initial_data):\n    \"\"\"Teste la recherche d'un utilisateur existant.\"\"\"\n    user1, _ = initial_data\n    found_user = trouver_utilisateur(user1.email)\n    assert found_user is not None\n    assert found_user.nom == \"Ali\"\n\ndef test_trouver_utilisateur_absent(initial_data):\n    \"\"\"Teste la recherche d'un utilisateur inexistant.\"\"\"\n    found_user = trouver_utilisateur(\"unknown@mail.com\")\n    assert found_user is None\n\ndef test_utilisateur_est_majeur(initial_data):\n    \"\"\"Teste la méthode est_majeur pour un utilisateur majeur.\"\"\"\n    user1, _ = initial_data\n    assert user1.est_majeur() is True\n\ndef test_utilisateur_est_mineur(initial_data):\n    \"\"\"Teste la méthode est_majeur pour un utilisateur mineur.\"\"\"\n    _, user2 = initial_data\n    assert user2.est_majeur() is False\n\ndef test_compte_deposer_montant_positif(initial_data):\n    \"\"\"Teste le dépôt d'un montant positif sur un compte.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.deposer(200)\n    assert user1.compte.solde == initial_solde + 200\n    assert (\"DEPOT\", 200) in user1.compte.historique\n\ndef test_compte_deposer_montant_negatif(initial_data):\n    \"\"\"Teste le dépôt d'un montant négatif sur un compte.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.deposer(-100)\n    assert user1.compte.solde == initial_solde\n    assert (\"DEPOT\", -100) not in user1.compte.historique\n\ndef test_compte_retirer_montant_positif_solde_suffisant(initial_data):\n    \"\"\"Teste le retrait d'un montant positif avec un solde suffisant.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.retirer(100)\n    assert user1.compte.solde == initial_solde - 100\n    assert (\"RETRAIT\", 100) in user1.compte.historique\n\ndef test_compte_retirer_montant_positif_solde_insuffisant(initial_data):\n    \"\"\"Teste le retrait d'un montant positif avec un solde insuffisant.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.retirer(1500)\n    assert user1.compte.solde == initial_solde\n    assert (\"RETRAIT\", 1500) not in user1.compte.historique\n\ndef test_compte_retirer_montant_negatif(initial_data):\n    \"\"\"Teste le retrait d'un montant négatif sur un compte.\"\"\"\n    user1, _ = initial_data\n    initial_solde = user1.compte.solde\n    user1.compte.retirer(-100)\n    assert user1.compte.solde == initial_solde\n    assert (\"RETRAIT\", -100) not in user1.compte.historique\n\ndef test_total_soldes_vide(empty_users):\n    \"\"\"Teste le calcul du total des soldes lorsque la liste d'utilisateurs est vide.\"\"\"\n    assert total_soldes() == 0\n\ndef test_total_soldes_avec_utilisateurs(initial_data):\n    \"\"\"Teste le calcul du total des soldes avec des utilisateurs existants.\"\"\"\n    user1, user2 = initial_data\n    expected_total = user1.compte.solde + user2.compte.solde\n    assert total_soldes() == expected_total\n\ndef test_transfert_montant_positif_solde_suffisant(initial_data):\n    \"\"\"Teste un transfert de montant positif avec solde suffisant.\"\"\"\n    user1, user2 = initial_data\n    initial_solde_source = user1.compte.solde\n    initial_solde_dest = user2.compte.solde\n    montant = 200\n    transfert(user1, user2, montant)\n    assert user1.compte.solde == initial_solde_source - montant\n    assert user2.compte.solde == initial_solde_dest + montant\n    assert (\"RETRAIT\", montant) in user1.compte.historique\n    assert (\"DEPOT\", montant) in user2.compte.historique\n\ndef test_transfert_montant_negatif(initial_data):\n    \"\"\"Teste un transfert avec un montant négatif.\"\"\"\n    user1, user2 = initial_data\n    initial_solde_source = user1.compte.solde\n    initial_solde_dest = user2.compte.solde\n    transfert(user1, user2, -100)\n    assert user1.compte.solde == initial_solde_source\n    assert user2.compte.solde == initial_solde_dest\n    assert (\"RETRAIT\", -100) not in user1.compte.historique\n    assert (\"DEPOT\", -100) not in user2.compte.historique\n\ndef test_transfert_solde_insuffisant(initial_data):\n    \"\"\"Teste un transfert avec un solde insuffisant sur le compte source.\"\"\"\n    user1, user2 = initial_data\n    initial_solde_source = user1.compte.solde\n    initial_solde_dest = user2.compte.solde\n    transfert(user1, user2, 1500)\n    assert user1.compte.solde == initial_solde_source\n    assert user2.compte.solde == initial_solde_dest\n    assert (\"RETRAIT\", 1500) not in user1.compte.historique\n    assert (\"DEPOT\", 1500) not in user2.compte.historique\n\ndef test_transfert_compte_source_inexistant(empty_users):\n    \"\"\"Teste un transfert lorsque le compte source n'existe pas.\"\"\"\n    user_dest = Utilisateur(\"Dest\", \"dest@mail.com\", 25)\n    user_dest.creer_compte(1000)\n    UTILISATEURS.append(user_dest)\n    user_source_no_account = Utilisateur(\"SourceNo\", \"sourcenos@mail.com\", 30)\n    UTILISATEURS.append(user_source_no_account)\n\n    initial_solde_dest = user_dest.compte.solde\n    transfert(user_source_no_account, user_dest, 100)\n    assert user_dest.compte.solde == initial_solde_dest\n\ndef test_transfert_compte_destination_inexistant(empty_users):\n    \"\"\"Teste un transfert lorsque le compte de destination n'existe pas.\"\"\"\n    user_source = Utilisateur(\"Source\", \"source@mail.com\", 25)\n    user_source.creer_compte(1000)\n    UTILISATEURS.append(user_source)\n    user_dest_no_account = Utilisateur(\"DestNo\", \"destnos@mail.com\", 30)\n    UTILISATEURS.append(user_dest_no_account)\n\n    initial_solde_source = user_source.compte.solde\n    transfert(user_source, user_dest_no_account, 100)\n    assert user_source.compte.solde == initial_solde_source\n\ndef test_afficher_utilisateurs_output(initial_data, capsys):\n    \"\"\"Teste que afficher_utilisateurs() imprime les informations correctes.\"\"\"\n    afficher_utilisateurs()\n    captured = capsys.readouterr()\n    assert \"Ali - ali@mail.com\" in captured.out\n    assert \"Sara - sara@mail.com\" in captured.out\n```\n\nINSTRUCTIONS :\n1. Corrige tous les problèmes listés\n2. Ajoute les docstrings manquantes (format Google/NumPy style)\n3. Respecte PEP8 (espaces, nommage, etc.)\n4. Ne change PAS la logique du code\n5. Conserve tous les noms de fonctions/variables\n\nRetourne uniquement le code Python corrigé, sans explication.",
+            "output_response": "\"\"\"Module de tests pour le système de gestion bancaire.\"\"\"\nimport pytest\nfrom code4 import Utilisateur, Compte, ajouter_utilisateur, trouver_utilisateur, total_soldes, transfert, afficher_utilisateurs, UTILISATEURS\n\n@pytest.fixture\ndef initial_data():\n    \"\"\"Fournit des données initiales pour les tests.\"\"\"\n    UTILISATEURS.clear()\n    user1 = Utilisateur(\"Ali\", \"ali@mail.com\", 20)\n    user1.creer_compte(1000)\n    user2 = Utilisateur(\"Sara\", \"sara@mail.com\", 17)\n    user2.creer_compte(500)\n    re...",
+            "issues_found": 9,
+            "issues_types": [
+                "pep8_violation",
+                "missing_docstring",
+                "unused_variable",
+                "unused_variable",
+                "unused_variable",
+                "unused_variable",
+                "unused_variable",
+                "logic_error",
+                "pep8_violation"
+            ]
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d082f969-efef-45c3-a36b-b7fb5e114b97",
+        "timestamp": "2026-01-08T00:08:09.511518",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "test_code2.py",
+            "input_prompt": "Génère des tests unitaires pytest pour ce code Python :\n\nFICHIER : code2.py\n\nCODE :\n```python\n\"\"\"Module d'authentification simple.\"\"\"\n\nUTILISATEURS = {\n    \"admin\": \"1234\",\n    \"user\": \"abcd\"\n}\n\n\ndef authentifier(login, mot_de_passe):\n    \"\"\"Authentifie un utilisateur.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        mot_de_passe (str): Le mot de passe de l'utilisateur.\n\n    Returns:\n        bool: True si l'utilisateur est authentifié, False sinon.\n    \"\"\"\n    for u, mdp in UTILISATEURS.items():\n        if u == login and mdp == mot_de_passe:\n            return True\n    return False\n\n\ndef changer_mdp(login, ancien, nouveau):\n    \"\"\"Change le mot de passe d'un utilisateur.\n\n    Si l'ancien mot de passe est incorrect, le mot de passe\n    de l'utilisateur n'est pas modifié.\n\n    Args:\n        login (str): Le nom d'utilisateur.\n        ancien (str): L'ancien mot de passe.\n        nouveau (str): Le nouveau mot de passe.\n    \"\"\"\n    if authentifier(login, ancien):\n        UTILISATEURS[login] = nouveau\n    print(\"Mot de passe modifié\")\n\n\nif __name__ == \"__main__\":\n    print(authentifier(\"user\", \"abcd\"))\n    changer_mdp(\"user\", \"faux\", \"123\")\n    print(UTILISATEURS)\n    changer_mdp(\"user\", \"abcd\", \"123\")\n    print(UTILISATEURS)\n```\n\nINSTRUCTIONS :\n1. Crée au moins 5 tests unitaires complets\n2. Utilise pytest et les fixtures si nécessaire\n3. Teste les cas normaux ET les cas d'erreur\n4. Nomme les tests de façon explicite (test_nom_fonction_cas)\n5. Ajoute des docstrings aux tests\n6. Import toutes les dépendances nécessaires\n\nRetourne UNIQUEMENT le code des tests, sans explication.",
+            "output_response": "import pytest\nfrom code2 import UTILISATEURS, authentifier, changer_mdp\n\n@pytest.fixture(autouse=True)\ndef reset_users():\n    \"\"\"Fixture pour réinitialiser la base d'utilisateurs avant chaque test.\"\"\"\n    original_users = UTILISATEURS.copy()\n    yield\n    # Restaure l'état original après le test\n    # Ceci est important si changer_mdp modifie UTILISATEURS directement\n    # et que les tests suivants dépendent de l'état initial.\n    # Dans ce cas précis, changer_mdp ne modifie pas UTILISATEURS en ...",
+            "issues_found": 0,
+            "source_file": "code2.py",
+            "content_type": "unit_tests"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "1410e98a-28da-4255-852d-59ce36b1bbd7",
+        "timestamp": "2026-01-08T00:08:48.956184",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "test_code3.py",
+            "input_prompt": "Génération de tests pour code3.py",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 11.731753473s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}",
+            "issues_found": 1,
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "11521875-c134-48eb-83c5-319e41e0b150",
+        "timestamp": "2026-01-08T00:08:52.973237",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code1.py",
+            "input_prompt": "Analyse du fichier code1.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier code1.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code1.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "fa6c366b-c0db-4b1e-9033-2672abaafd6f",
+        "timestamp": "2026-01-08T00:08:53.048212",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code2.py",
+            "input_prompt": "Analyse du fichier code2.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier code2.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code2.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "18173106-47e6-415b-8022-7198ae1be2d1",
+        "timestamp": "2026-01-08T00:08:53.118233",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code3.py",
+            "input_prompt": "Analyse du fichier code3.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier code3.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code3.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ad48ff10-74c5-4148-bbc5-33e8b4223d08",
+        "timestamp": "2026-01-08T00:08:53.171014",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "code4.py",
+            "input_prompt": "Analyse du fichier code4.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier code4.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/code4.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ea38f9f2-218a-4f8e-8b85-ab30a4cf9d96",
+        "timestamp": "2026-01-08T00:08:53.222239",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code1.py",
+            "input_prompt": "Analyse du fichier test_code1.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier test_code1.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/test_code1.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "0ce0183d-6ee3-4f38-97be-8c17ef3f7ede",
+        "timestamp": "2026-01-08T00:08:53.271929",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code2.py",
+            "input_prompt": "Analyse du fichier test_code2.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier test_code2.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/test_code2.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e56f5364-3165-4162-b660-a89b9f5c27a2",
+        "timestamp": "2026-01-08T00:08:53.339458",
+        "agent": "Judge_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "test_code4.py",
+            "input_prompt": "Analyse du fichier test_code4.py dans ./sandbox/. Tests exécutés avec pytest.",
+            "output_response": " Fichier test_code4.py : Aucune erreur détectée. Tous les tests passent.",
+            "issues_found": 0,
+            "file_path": "./sandbox/test_code4.py",
+            "test_directory": "./sandbox/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "524d4455-0bf2-465e-acee-7501328b7524",
+        "timestamp": "2026-01-08T00:09:45.337493",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "README_code2.md",
+            "input_prompt": "Génération de documentation pour code2.py",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 15.29415583s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}",
+            "issues_found": 1,
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "2096a718-5e2b-48a1-b588-a7cb5bff1d85",
+        "timestamp": "2026-01-08T00:10:21.088891",
+        "agent": "Fixer_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_GEN",
+        "details": {
+            "file_analyzed": "README_code3.md",
+            "input_prompt": "Génération de documentation pour code3.py",
+            "output_response": "Erreur : Error calling model 'gemini-2.5-flash-lite' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash-lite\\nPlease retry in 39.557058115s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash-lite'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}",
+            "issues_found": 1,
+            "error_type": "ChatGoogleGenerativeAIError"
+        },
+        "status": "FAILURE"
+    },
+    {
+        "id": "aef86bf6-ddcb-4d2a-9ec5-99f7dffbd9ac",
+        "timestamp": "2026-01-08T00:10:21.175721",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Succès en 1 itérations",
+            "success": true,
+            "total_iterations": 1,
+            "history": []
+        },
+        "status": "SUCCESS"
     }
 ]

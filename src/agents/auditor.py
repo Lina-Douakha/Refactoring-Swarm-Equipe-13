@@ -62,7 +62,7 @@ class AuditorAgent:
         
         if not api_key:
             raise ValueError(
-                "❌ Clé API Google non trouvée. "
+                " Clé API Google non trouvée. "
                 "Assurez-vous d'avoir GOOGLE_API_KEY dans votre fichier .env"
             )
         
@@ -72,7 +72,7 @@ class AuditorAgent:
             temperature=0.1,
             convert_system_message_to_human=True
         )
-        print(f"✅ AuditorAgent initialisé avec le modèle : {model_name}")
+        print(f" AuditorAgent initialisé avec le modèle : {model_name}")
     
     def analyze(self, target_dir: str) -> Dict:
         """
@@ -90,17 +90,17 @@ class AuditorAgent:
         Returns:
             Dict: Rapport d'audit contenant les problèmes détectés
         """
-        print(f"\n🔍 [AUDITOR] Démarrage de l'analyse de : {target_dir}")
+        print(f"\ [AUDITOR] Démarrage de l'analyse de : {target_dir}")
         
         try:
-            # ✅ ÉTAPE 1 : Recherche des fichiers Python
-            print("📂 Recherche des fichiers Python...")
+            
+            print(" Recherche des fichiers Python...")
             python_files = list_python_files(target_dir)
             
             if not python_files:
-                print("⚠️  Aucun fichier Python trouvé dans le dossier.")
+                print("  Aucun fichier Python trouvé dans le dossier.")
                 
-                # Logger l'absence de fichiers
+                
                 log_experiment(
                     agent_name="Auditor_Agent",
                     model_used=self.model_name,
@@ -122,73 +122,73 @@ class AuditorAgent:
                     "recommendations": ["Aucun fichier Python à analyser"]
                 }
             
-            print(f"📁 {len(python_files)} fichier(s) Python trouvé(s)")
+            print(f" {len(python_files)} fichier(s) Python trouvé(s)")
             
-            # ✅ ÉTAPE 2 : Analyse de chaque fichier individuellement
+            
             all_issues = []
             files_analyzed = []
             
             for filename in python_files:
-                print(f"\n📄 Analyse de : {filename}")
+                print(f"\n Analyse de : {filename}")
                 
                 try:
-                    # Lecture du fichier
+                    
                     full_path = os.path.join(target_dir, filename)
                     file_content = read_file_safe(full_path, target_dir)
                     
-                    # Analyse Pylint
-                    print(f"  ⚙️ Exécution de pylint sur {filename}...")
+                    
+                    print(f"   Exécution de pylint sur {filename}...")
                     pylint_output = run_pylint(full_path)
                     pylint_result = parse_pylint_output(pylint_output)
                     pylint_score = pylint_result.get("score", 0)
                     pylint_issues = pylint_result.get("issues", [])
                     
-                    print(f"  📊 Score Pylint : {pylint_score}/10")
-                    print(f"  🔍 Problèmes Pylint détectés : {len(pylint_issues)}")
+                    print(f"   Score Pylint : {pylint_score}/10")
+                    print(f"   Problèmes Pylint détectés : {len(pylint_issues)}")
                     
-                    # Construction du prompt pour le LLM
+                    
                     user_prompt = self._build_analysis_prompt(
                         filename=filename,
                         file_content=file_content,
                         pylint_result=pylint_result
                     )
                     
-                    # Appel du LLM
-                    print(f"  🤖 Consultation du LLM pour l'analyse approfondie...")
+                    
+                    print(f"   Consultation du LLM pour l'analyse approfondie...")
                     llm_response = self._call_llm(user_prompt)
                     
-                    # Parser la réponse du LLM
+                    
                     file_issues = self._parse_llm_response(llm_response, filename)
                     file_issues_count = len(file_issues)
                     
-                    # ✅ LOGGING OBLIGATOIRE pour chaque fichier
+                    
                     log_experiment(
                         agent_name="Auditor_Agent",
                         model_used=self.model_name,
                         action=ActionType.ANALYSIS,
                         details={
-                            "file_analyzed": filename,  # ✅ OBLIGATOIRE : Nom du fichier
-                            "input_prompt": user_prompt,  # ✅ OBLIGATOIRE : Prompt envoyé
-                            "output_response": llm_response,  # ✅ OBLIGATOIRE : Réponse LLM
-                            "issues_found": file_issues_count,  # ✅ OBLIGATOIRE : Nombre d'erreurs
+                            "file_analyzed": filename,  
+                            "input_prompt": user_prompt,  
+                            "output_response": llm_response,  
+                            "issues_found": file_issues_count,  
                             "pylint_score": pylint_score,
                             "pylint_issues_count": len(pylint_issues),
                             "file_path": full_path,
                             
                         },
-                        status="SUCCESS"  # ✅ L'analyse a fonctionné (même si erreurs détectées)
+                        status="SUCCESS"  
                     )
                     
-                    # Ajouter les problèmes à la liste globale
+                    
                     all_issues.extend(file_issues)
                     files_analyzed.append(filename)
                     
-                    print(f"  {'✅' if file_issues_count == 0 else '❌'} Analyse terminée : {file_issues_count} problème(s) détecté(s)")
+                    print(f"  {'' if file_issues_count == 0 else ''} Analyse terminée : {file_issues_count} problème(s) détecté(s)")
                     
                 except Exception as e:
-                    print(f"⚠️ Erreur lors de l'analyse de {filename} : {str(e)}")
+                    print(f" Erreur lors de l'analyse de {filename} : {str(e)}")
                     
-                    # Logger l'erreur pour ce fichier spécifique
+                    
                     log_experiment(
                         agent_name="Auditor_Agent",
                         model_used=self.model_name,
@@ -196,14 +196,14 @@ class AuditorAgent:
                         details={
                             "file_analyzed": filename,
                             "input_prompt": f"Tentative d'analyse de {filename} dans {target_dir}",
-                            "output_response": f"❌ Erreur : {str(e)}",
+                            "output_response": f" Erreur : {str(e)}",
                             "issues_found": 1,
                             "error_type": type(e).__name__
                         },
-                        status="FAILURE"  # ✅ L'action a échoué (erreur système)
+                        status="FAILURE"  
                     )
                     
-                    # Ajouter une erreur générique
+                    
                     all_issues.append({
                         "file": filename,
                         "line": 0,
@@ -212,7 +212,7 @@ class AuditorAgent:
                         "message": f"Erreur lors de l'analyse : {str(e)}"
                     })
             
-            # ✅ ÉTAPE 3 : Génération du rapport final
+            
             report = {
                 "files_analyzed": files_analyzed,
                 "total_issues": len(all_issues),
@@ -220,14 +220,14 @@ class AuditorAgent:
                 "recommendations": self._generate_recommendations(all_issues)
             }
             
-            print(f"\n✅ [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
+            print(f"\n [AUDITOR] Analyse terminée : {report['total_issues']} problème(s) au total")
             
             return report
             
         except Exception as e:
-            print(f"❌ [AUDITOR] Erreur critique lors de l'analyse : {str(e)}")
+            print(f" [AUDITOR] Erreur critique lors de l'analyse : {str(e)}")
             
-            # Logger l'erreur globale
+            
             log_experiment(
                 agent_name="Auditor_Agent",
                 model_used=self.model_name,
@@ -235,7 +235,7 @@ class AuditorAgent:
                 details={
                     "file_analyzed": "system_error",
                     "input_prompt": f"Analyse du dossier {target_dir}",
-                    "output_response": f"❌ Erreur système : {str(e)}",
+                    "output_response": f" Erreur système : {str(e)}",
                     "issues_found": 1,
                     "error_type": type(e).__name__
                 },
@@ -298,7 +298,7 @@ Réponds UNIQUEMENT avec du JSON valide."""
         
         response = self.llm.invoke(messages)
         
-        # Gestion des différents formats de réponse
+        
         if isinstance(response.content, list):
             content = response.content[0] if response.content else ""
             if hasattr(content, 'text'):
@@ -321,7 +321,7 @@ Réponds UNIQUEMENT avec du JSON valide."""
         import json
         
         try:
-            # Nettoyer la réponse des balises markdown
+            
             cleaned = response.strip()
             if cleaned.startswith("```json"):
                 cleaned = cleaned[7:]
@@ -331,11 +331,11 @@ Réponds UNIQUEMENT avec du JSON valide."""
                 cleaned = cleaned[:-3]
             cleaned = cleaned.strip()
             
-            # Parser le JSON
+            
             data = json.loads(cleaned)
             issues = data.get("issues", [])
             
-            # S'assurer que chaque problème a un champ "file"
+            
             for issue in issues:
                 if "file" not in issue:
                     issue["file"] = filename
@@ -343,10 +343,10 @@ Réponds UNIQUEMENT avec du JSON valide."""
             return issues
             
         except json.JSONDecodeError as e:
-            print(f"⚠️  Impossible de parser la réponse JSON du LLM : {str(e)}")
+            print(f"  Impossible de parser la réponse JSON du LLM : {str(e)}")
             print(f"Réponse brute : {response[:200]}...")
             
-            # Retourner une erreur de parsing
+            
             return [{
                 "file": filename,
                 "line": 0,
@@ -366,43 +366,43 @@ Réponds UNIQUEMENT avec du JSON valide."""
             List[str]: Recommandations
         """
         if not issues:
-            return ["✅ Le code semble conforme aux standards Python"]
+            return [" Le code semble conforme aux standards Python"]
         
         recommendations = []
         issue_types = set(issue.get("type", "") for issue in issues)
         
-        # Recommandations basées sur les types de problèmes
-        if "missing_docstring" in issue_types:
-            recommendations.append("📝 Ajouter des docstrings aux fonctions et classes")
-        if "syntax_error" in issue_types:
-            recommendations.append("🔧 Corriger les erreurs de syntaxe")
-        if "naming_convention" in issue_types:
-            recommendations.append("📏 Respecter les conventions de nommage PEP8")
-        if "import_error" in issue_types:
-            recommendations.append("📦 Vérifier et corriger les imports")
-        if "unused_variable" in issue_types:
-            recommendations.append("🧹 Supprimer les variables non utilisées")
-        if "complexity" in issue_types:
-            recommendations.append("🔄 Réduire la complexité cyclomatique des fonctions")
-        if "security" in issue_types:
-            recommendations.append("🔒 Corriger les vulnérabilités de sécurité")
-        if "type_error" in issue_types:
-            recommendations.append("🔤 Corriger les erreurs de typage")
-        if "logic_error" in issue_types:
-            recommendations.append("🧠 Corriger les erreurs de logique")
         
-        # Recommandations basées sur la sévérité
+        if "missing_docstring" in issue_types:
+            recommendations.append(" Ajouter des docstrings aux fonctions et classes")
+        if "syntax_error" in issue_types:
+            recommendations.append(" Corriger les erreurs de syntaxe")
+        if "naming_convention" in issue_types:
+            recommendations.append(" Respecter les conventions de nommage PEP8")
+        if "import_error" in issue_types:
+            recommendations.append(" Vérifier et corriger les imports")
+        if "unused_variable" in issue_types:
+            recommendations.append(" Supprimer les variables non utilisées")
+        if "complexity" in issue_types:
+            recommendations.append(" Réduire la complexité cyclomatique des fonctions")
+        if "security" in issue_types:
+            recommendations.append(" Corriger les vulnérabilités de sécurité")
+        if "type_error" in issue_types:
+            recommendations.append(" Corriger les erreurs de typage")
+        if "logic_error" in issue_types:
+            recommendations.append(" Corriger les erreurs de logique")
+        
+        
         high_severity_count = sum(1 for issue in issues if issue.get("severity") == "high")
         medium_severity_count = sum(1 for issue in issues if issue.get("severity") == "medium")
         low_severity_count = sum(1 for issue in issues if issue.get("severity") == "low")
         
         if high_severity_count > 0:
-            recommendations.insert(0, f"⚠️ PRIORITÉ : Corriger les {high_severity_count} problème(s) de sévérité HAUTE")
+            recommendations.insert(0, f" PRIORITÉ : Corriger les {high_severity_count} problème(s) de sévérité HAUTE")
         
         if medium_severity_count > 3:
-            recommendations.append(f"⚠️ Attention : {medium_severity_count} problème(s) de sévérité moyenne à traiter")
+            recommendations.append(f" Attention : {medium_severity_count} problème(s) de sévérité moyenne à traiter")
         
         if low_severity_count > 5:
-            recommendations.append(f"ℹ️ {low_severity_count} problème(s) mineurs identifiés")
+            recommendations.append(f" {low_severity_count} problème(s) mineurs identifiés")
             
-        return recommendations if recommendations else ["🔧 Améliorer la qualité générale du code"]
+        return recommendations if recommendations else [" Améliorer la qualité générale du code"]

@@ -15,7 +15,7 @@ try:
     from src.tools.pytest_tool import run_pytest
     from src.tools.file_tools import read_file_safe
 except ImportError:
-    print("⚠️  ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
+    print("  ATTENTION : Les outils du Toolsmith ne sont pas encore disponibles.")
     print("   Les fonctions suivantes doivent être créées :")
     print("   - src/tools/pytest_tool.py : run_pytest()")
     print("   - src/tools/file_tools.py : read_file_safe()")
@@ -65,7 +65,7 @@ class JudgeAgent:
         
         if not api_key:
             raise ValueError(
-                "❌ Clé API Google non trouvée. "
+                " Clé API Google non trouvée. "
                 "Assurez-vous d'avoir GOOGLE_API_KEY dans votre fichier .env"
             )
         
@@ -74,7 +74,7 @@ class JudgeAgent:
             google_api_key=api_key,
             temperature=0.1,
         )
-        print(f"✅  JudgeAgent initialisé avec le modèle : {model_name}")
+        print(f"  JudgeAgent initialisé avec le modèle : {model_name}")
     
     def test(self, target_dir: str) -> Dict:
         """
@@ -92,15 +92,15 @@ class JudgeAgent:
         Returns:
             Dict: Résultat des tests avec statut et détails
         """
-        print(f"\n🔍  [JUDGE] Démarrage des tests sur : {target_dir}")
+        print(f"\n  [JUDGE] Démarrage des tests sur : {target_dir}")
         
         try:
-            # ✅ ÉTAPE 1 : Lister tous les fichiers Python dans le dossier
+            #  ÉTAPE 1 : Lister tous les fichiers Python dans le dossier
             python_files = [f for f in os.listdir(target_dir) if f.endswith(".py")]
-            print(f"📁 Fichiers Python trouvés : {len(python_files)}")
+            print(f" Fichiers Python trouvés : {len(python_files)}")
             
             if len(python_files) == 0:
-                print("⚠️  Aucun fichier Python trouvé dans le dossier cible.")
+                print("  Aucun fichier Python trouvé dans le dossier cible.")
                 return {
                     "success": False,
                     "passed": 0,
@@ -109,8 +109,8 @@ class JudgeAgent:
                     "recommendations": ["Vérifier que le dossier contient des fichiers .py"]
                 }
             
-            # ✅ ÉTAPE 2 : Exécution de pytest sur tout le dossier
-            print("⚙️ Exécution de pytest...")
+            #  ÉTAPE 2 : Exécution de pytest sur tout le dossier
+            print(" Exécution de pytest...")
             test_result = run_pytest(target_dir)
             
             passed = test_result.get("passed", 0)
@@ -118,9 +118,9 @@ class JudgeAgent:
             total = passed + failed
             errors = test_result.get("errors", [])
             
-            print(f"📊 Résultats globaux : {passed}/{total} tests réussis")
+            print(f" Résultats globaux : {passed}/{total} tests réussis")
             
-            # ✅ ÉTAPE 3 : Logger chaque fichier Python individuellement
+            #  ÉTAPE 3 : Logger chaque fichier Python individuellement
             for file_name in python_files:
                 file_path = os.path.join(target_dir, file_name)
                 
@@ -137,33 +137,33 @@ class JudgeAgent:
                     
                     # Construire la réponse
                     if file_issues_count == 0:
-                        output_response = f"✅ Fichier {file_name} : Aucune erreur détectée. Tous les tests passent."
+                        output_response = f" Fichier {file_name} : Aucune erreur détectée. Tous les tests passent."
                         file_status = "SUCCESS"
                     else:
-                        output_response = f"❌ Fichier {file_name} : {file_issues_count} erreur(s) détectée(s).\n"
+                        output_response = f" Fichier {file_name} : {file_issues_count} erreur(s) détectée(s).\n"
                         output_response += "\n".join(file_errors[:3])  # Limiter à 3 erreurs pour le log
-                        file_status = "SUCCESS"  # ✅ CORRIGÉ : L'analyse a fonctionné
+                        file_status = "SUCCESS"  #  CORRIGÉ : L'analyse a fonctionné
                     
-                    # ✅ LOGGING OBLIGATOIRE selon le protocole du TP
+                    #  LOGGING OBLIGATOIRE selon le protocole du TP
                     log_experiment(
                         agent_name="Judge_Agent",
                         model_used=self.model_name,
                         action=ActionType.DEBUG if file_issues_count > 0 else ActionType.ANALYSIS,
                         details={
-                            "file_analyzed": file_name,  # ✅ OBLIGATOIRE : Nom du fichier
-                            "input_prompt": input_prompt,  # ✅ OBLIGATOIRE : Prompt envoyé
-                            "output_response": output_response,  # ✅ OBLIGATOIRE : Réponse
-                            "issues_found": file_issues_count,  # ✅ OBLIGATOIRE : Nombre d'erreurs
+                            "file_analyzed": file_name,  #  OBLIGATOIRE : Nom du fichier
+                            "input_prompt": input_prompt,  #  OBLIGATOIRE : Prompt envoyé
+                            "output_response": output_response,  #  OBLIGATOIRE : Réponse
+                            "issues_found": file_issues_count,  #  OBLIGATOIRE : Nombre d'erreurs
                             "file_path": file_path,                         
                             "test_directory": target_dir
                         },
-                        status=file_status  # ✅ CORRIGÉ : SUCCESS même si erreurs détectées
+                        status=file_status  #  CORRIGÉ : SUCCESS même si erreurs détectées
                     )
                     
-                    print(f"  {'✅' if file_issues_count == 0 else '❌'} {file_name}: {file_issues_count} erreur(s)")
+                    print(f"  {'' if file_issues_count == 0 else ''} {file_name}: {file_issues_count} erreur(s)")
                     
                 except Exception as e:
-                    print(f"⚠️ Erreur lors de l'analyse de {file_name} : {str(e)}")
+                    print(f" Erreur lors de l'analyse de {file_name} : {str(e)}")
                     
                     # Log en cas d'erreur de lecture du fichier
                     log_experiment(
@@ -173,16 +173,16 @@ class JudgeAgent:
                         details={
                             "file_analyzed": file_name,
                             "input_prompt": f"Tentative d'analyse de {file_name} dans {target_dir}",
-                            "output_response": f"❌ Erreur lors de la lecture : {str(e)}",
+                            "output_response": f" Erreur lors de la lecture : {str(e)}",
                             "issues_found": 1,
                             "error_type": type(e).__name__
                         },
-                        status="FAILURE"  # ✅ Ici FAILURE est correct car erreur système
+                        status="FAILURE"  #  Ici FAILURE est correct car erreur système
                     )
             
-            # ✅ ÉTAPE 4 : Analyse LLM si des erreurs existent
+            #  ÉTAPE 4 : Analyse LLM si des erreurs existent
             if failed > 0:
-                print(f"\n❌ [JUDGE] {failed} test(s) ont échoué - Analyse LLM en cours...")
+                print(f"\n [JUDGE] {failed} test(s) ont échoué - Analyse LLM en cours...")
                 analysis, llm_raw_response = self._analyze_test_failures(errors, target_dir)
                 
                 # Logger l'analyse LLM globale
@@ -198,7 +198,7 @@ class JudgeAgent:
                         "recommendations": analysis.get("recommendations", []),
                         "root_causes": analysis.get("root_causes", [])
                     },
-                    status="SUCCESS"  # ✅ CORRIGÉ : L'analyse a fonctionné
+                    status="SUCCESS"  #  CORRIGÉ : L'analyse a fonctionné
                 )
                 
                 return {
@@ -210,7 +210,7 @@ class JudgeAgent:
                     "root_causes": analysis.get("root_causes", [])
                 }
             else:
-                print("✅ [JUDGE] Tous les tests passent !")
+                print(" [JUDGE] Tous les tests passent !")
                 return {
                     "success": True,
                     "passed": passed,
@@ -220,9 +220,9 @@ class JudgeAgent:
                 }
                 
         except Exception as e:
-            print(f"❌ [JUDGE] Erreur critique lors de l'exécution des tests : {str(e)}")
+            print(f" [JUDGE] Erreur critique lors de l'exécution des tests : {str(e)}")
             
-            # ✅ LOGGING de l'erreur critique
+            #  LOGGING de l'erreur critique
             log_experiment(
                 agent_name="Judge_Agent",
                 model_used=self.model_name,
@@ -230,12 +230,12 @@ class JudgeAgent:
                 details={
                     "file_analyzed": "system_error",
                     "input_prompt": f"Exécution de pytest sur {target_dir}",
-                    "output_response": f"❌ Erreur système : {str(e)}",
+                    "output_response": f" Erreur système : {str(e)}",
                     "issues_found": 1,
                     "error_type": type(e).__name__,
                     "test_directory": target_dir
                 },
-                status="FAILURE"  # ✅ Ici FAILURE est correct car erreur système
+                status="FAILURE"  #  Ici FAILURE est correct car erreur système
             )
             
             return {
@@ -284,7 +284,7 @@ class JudgeAgent:
             analysis = self._parse_analysis_response(llm_response)
             return analysis, llm_response
         except Exception as e:
-            print(f"⚠️  Erreur lors de l'analyse LLM : {str(e)}")
+            print(f"  Erreur lors de l'analyse LLM : {str(e)}")
             return {
                 "recommendations": ["Corriger les erreurs de test détectées"],
                 "root_causes": ["Erreur d'analyse LLM"],
@@ -339,7 +339,7 @@ Réponds UNIQUEMENT avec du JSON valide."""
         import json
         
         if not isinstance(response, str):
-            print(f"⚠️  Réponse LLM inattendue (type: {type(response)})")
+            print(f"  Réponse LLM inattendue (type: {type(response)})")
             return {
                 "recommendations": ["Corriger les erreurs de test"],
                 "root_causes": ["Format de réponse LLM inattendu"],
@@ -367,7 +367,7 @@ Réponds UNIQUEMENT avec du JSON valide."""
                 "severity": data.get("severity", "medium")
             }
         except json.JSONDecodeError as e:
-            print(f"⚠️  Erreur de parsing JSON : {str(e)}")
+            print(f"  Erreur de parsing JSON : {str(e)}")
             return {
                 "recommendations": [response[:200]] if response else ["Corriger les erreurs"],
                 "root_causes": ["Analyse non structurée"],

@@ -1,0 +1,1136 @@
+[
+    {
+        "id": "e2908b1b-1c60-4c98-bb26-31bb91282b9a",
+        "timestamp": "2026-02-28T23:46:52.291342",
+        "agent": "System",
+        "model": "N/A",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "input_prompt": "Initialisation du système sur ./sandbox/hidden_dataset/",
+            "output_response": "Démarrage avec model=gemini-2.5-flash-lite, max_iterations=50",
+            "target_directory": "./sandbox/hidden_dataset/",
+            "max_iterations": 50,
+            "model_used": "gemini-2.5-flash-lite",
+            "generate_tests": true,
+            "generate_docs": true
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "afb51c1b-ecf9-46fc-ad3b-6cae29c33bb8",
+        "timestamp": "2026-02-28T23:46:56.673011",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "dfac0852-ead1-4493-a5ab-2f2d880c5456",
+        "timestamp": "2026-02-28T23:46:56.707607",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "50a1fa9b-b97d-4326-a56b-47e27c8626a9",
+        "timestamp": "2026-02-28T23:46:56.748423",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "56f288a7-8c29-457b-a71b-2af91a33e1f4",
+        "timestamp": "2026-02-28T23:46:56.786725",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6206e55e-1f6d-4491-a742-2c67fa04e59f",
+        "timestamp": "2026-02-28T23:46:56.817690",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "92a9b174-b444-4e9b-a0af-fca905209413",
+        "timestamp": "2026-02-28T23:46:56.846902",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "711fe463-460a-4f0e-9a25-550ff5748825",
+        "timestamp": "2026-02-28T23:46:56.871855",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "43456841-1491-4fff-bb18-e9435479a41a",
+        "timestamp": "2026-02-28T23:46:56.902072",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "4b75b497-980c-4533-a102-b4735b0b0ddf",
+        "timestamp": "2026-02-28T23:46:57.062498",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "5a01eaca-2a2f-44da-be3f-2251909afa10",
+        "timestamp": "2026-02-28T23:46:57.118241",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "6508ad70-f3b6-4aac-9fd4-c8bf9cea06cd",
+        "timestamp": "2026-02-28T23:46:57.145983",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b9be25a2-61fa-41c9-920a-b09ce1e7df88",
+        "timestamp": "2026-02-28T23:46:57.174529",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "3f20c74a-c35b-44f5-b5e9-30a436cd9e7f",
+        "timestamp": "2026-02-28T23:46:57.205167",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "d5a9040f-1389-42dd-917f-0dcac6e11133",
+        "timestamp": "2026-02-28T23:46:57.235113",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ac3b2b9c-7027-44fb-9d34-6942a388c4d0",
+        "timestamp": "2026-02-28T23:46:57.265234",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "29a1b10f-c7a2-4cb9-a905-eeb59d5a7de2",
+        "timestamp": "2026-02-28T23:46:57.295090",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "82191978-3d8b-43fe-b287-82c9205a0490",
+        "timestamp": "2026-02-28T23:46:57.322725",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "9ce00b29-141a-4c5d-a47f-96e3159082e7",
+        "timestamp": "2026-02-28T23:46:57.352953",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "5d101e9d-e0a0-4c79-99c8-0fb2a25a5a51",
+        "timestamp": "2026-02-28T23:46:57.385287",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f47ca808-8bc0-44fa-948e-504353afa9a9",
+        "timestamp": "2026-02-28T23:46:57.414809",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "52e33197-6a74-497f-933d-87b67f377c9b",
+        "timestamp": "2026-02-28T23:46:57.452661",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b5447412-d968-46e1-95c8-dcb963dc92fc",
+        "timestamp": "2026-02-28T23:46:57.483403",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c3df21c0-b4a2-489d-8f31-868bb6a3357b",
+        "timestamp": "2026-02-28T23:46:57.512191",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "5b844038-aee7-4bb8-8ac2-1c35788e3f76",
+        "timestamp": "2026-02-28T23:46:57.537352",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "bb0f4b10-7dc4-41f7-8bc5-2ac0728a483a",
+        "timestamp": "2026-02-28T23:46:57.567823",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a0517cd4-f2cf-42e4-a662-4808491c67f3",
+        "timestamp": "2026-02-28T23:46:57.600223",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ecee321a-3baa-496d-9b82-0d1bc4eb19ca",
+        "timestamp": "2026-02-28T23:46:57.626409",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e71d74a8-f722-4c11-9e9c-2f16e8fb8ff9",
+        "timestamp": "2026-02-28T23:46:57.657318",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b84632e0-6892-4ca2-aa6d-5e2b22899578",
+        "timestamp": "2026-02-28T23:46:57.685197",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "c8f2a577-55a9-4c81-ac4a-87a64190d333",
+        "timestamp": "2026-02-28T23:46:57.716350",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "e31d8160-6fb6-44ec-a04d-d9192cb90721",
+        "timestamp": "2026-02-28T23:46:57.749109",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "51544c8b-080a-436b-ac77-0ad66dbfde9b",
+        "timestamp": "2026-02-28T23:46:57.779373",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "dfbadd95-e04a-4e4f-b157-d25a174169af",
+        "timestamp": "2026-02-28T23:46:57.810112",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "02048025-98be-4dd2-b70c-2ae80173b5b9",
+        "timestamp": "2026-02-28T23:46:57.838254",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "12797f83-fe78-45c6-8270-f52fcc860b84",
+        "timestamp": "2026-02-28T23:46:57.868292",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "70202b0d-2e0f-4cd2-b031-d49d15e294fe",
+        "timestamp": "2026-02-28T23:46:57.896771",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "900e5697-1af3-43bb-9e74-3f471c455378",
+        "timestamp": "2026-02-28T23:46:57.922444",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ed825491-f6ce-4da1-b689-bdebf47b1e8c",
+        "timestamp": "2026-02-28T23:46:57.951503",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "74e2913f-6c65-474c-aca6-51b9843e16d7",
+        "timestamp": "2026-02-28T23:46:57.976254",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ca28a87b-986f-467c-9abe-350a19117ebe",
+        "timestamp": "2026-02-28T23:46:58.003354",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "72694efa-26a9-4d8d-9816-8e85ca127759",
+        "timestamp": "2026-02-28T23:46:58.031748",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "f1b2eadc-836a-4436-9d13-25acd209ee6d",
+        "timestamp": "2026-02-28T23:46:58.057034",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "80df38c6-af6d-4112-b6d8-bc1a33d682dd",
+        "timestamp": "2026-02-28T23:46:58.087529",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b667bf29-8462-4b6a-8826-2cb632f8a4ef",
+        "timestamp": "2026-02-28T23:46:58.117271",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "86d5c194-7c2f-4921-a8b9-82e5e061d2f3",
+        "timestamp": "2026-02-28T23:46:58.147476",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "a9eec799-2743-49e2-b9f0-0b926ade1c1c",
+        "timestamp": "2026-02-28T23:46:58.177135",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "093ce68f-6690-4f2c-9d32-ed8beba2e6fe",
+        "timestamp": "2026-02-28T23:46:58.204871",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "54d601e6-c3db-4e17-92c8-6c2c42fab0cd",
+        "timestamp": "2026-02-28T23:46:58.233952",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "ed955e83-08cf-4930-8f93-94deeb261d99",
+        "timestamp": "2026-02-28T23:46:58.270801",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "b54e73ce-1724-4e6d-8e42-cf744ae8a270",
+        "timestamp": "2026-02-28T23:46:58.300061",
+        "agent": "Auditor_Agent",
+        "model": "gemini-2.5-flash-lite",
+        "action": "CODE_ANALYSIS",
+        "details": {
+            "file_analyzed": "N/A",
+            "input_prompt": "Analyse du dossier ./sandbox/hidden_dataset/",
+            "output_response": "Aucun fichier Python trouvé dans le dossier cible",
+            "issues_found": 0,
+            "target_directory": "./sandbox/hidden_dataset/"
+        },
+        "status": "SUCCESS"
+    },
+    {
+        "id": "623e5c7d-70ae-4a94-9ab3-679bdeb9fce5",
+        "timestamp": "2026-02-28T23:46:58.386519",
+        "agent": "System",
+        "model": "gemini-2.5-flash-lite",
+        "action": "DEBUG",
+        "details": {
+            "input_prompt": "Finalisation du système",
+            "output_response": "Échec après 50 itérations",
+            "success": false,
+            "total_iterations": 50,
+            "max_iterations_reached": true,
+            "history": [
+                {
+                    "iteration": 1,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 2,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 3,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 4,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 5,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 6,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 7,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 8,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 9,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 10,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 11,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 12,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 13,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 14,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 15,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 16,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 17,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 18,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 19,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 20,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 21,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 22,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 23,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 24,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 25,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 26,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 27,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 28,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 29,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 30,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 31,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 32,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 33,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 34,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 35,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 36,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 37,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 38,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 39,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 40,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 41,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 42,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 43,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 44,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 45,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 46,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 47,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 48,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 49,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                },
+                {
+                    "iteration": 50,
+                    "issues_detected": 0,
+                    "fixes_applied": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                }
+            ]
+        },
+        "status": "FAILURE"
+    }
+]
